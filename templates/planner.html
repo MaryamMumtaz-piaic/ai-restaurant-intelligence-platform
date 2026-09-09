@@ -1,0 +1,185 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="border-b border-hairline bg-paper">
+  <div class="container-editorial py-10 text-center">
+    <p class="text-eyebrow mb-2">AI Dining Planner</p>
+    <h1 class="font-display text-4xl font-semibold">Let's build your dining plan</h1>
+    <p class="mt-2 text-inksoft max-w-lg mx-auto">Tell us the essentials. Our agents will discover a restaurant, analyze the menu, and put together a complete plan.</p>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container-editorial grid lg:grid-cols-[1fr_420px] gap-10 items-start">
+
+    <!-- ============================== PLANNER FORM ============================== -->
+    <form id="planner-form" class="space-y-8" novalidate>
+      <input type="hidden" id="planner-restaurant-id" name="restaurant_id" value="{{ request.query_params.get('restaurant_id', '') }}">
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label for="planner-city" class="field-label">Where? <span aria-hidden="true">*</span></label>
+          <select id="planner-city" name="city" class="field-input" required>
+            <option value="Karachi">Karachi</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Dubai">Dubai</option>
+            <option value="London">London</option>
+            <option value="New York">New York</option>
+          </select>
+        </div>
+        <div>
+          <label for="planner-area" class="field-label">Area / neighborhood</label>
+          <input id="planner-area" name="area" type="text" placeholder="e.g. Clifton" class="field-input">
+        </div>
+      </div>
+
+      <div>
+        <p class="field-label mb-2">What cuisine?</p>
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Cuisine preference">
+          {% for c in ["Pakistani", "Indian", "Chinese", "Japanese", "Korean", "Thai", "Italian", "Mexican", "Turkish", "Middle Eastern", "Mediterranean", "American", "French", "Other"] %}
+          <label class="checkbox-pill">
+            <input type="checkbox" name="cuisine" value="{{ c }}"> {{ c }}
+          </label>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label for="planner-party-size" class="field-label">Who are you dining with? (party size) <span aria-hidden="true">*</span></label>
+          <input id="planner-party-size" name="party_size" type="number" min="1" max="20" value="2" class="field-input" required>
+        </div>
+        <div>
+          <label for="planner-budget" class="field-label">Budget per person</label>
+          <select id="planner-budget" name="budget_preset" class="field-input">
+            <option value="2000">Budget &mdash; ~PKR 2,000</option>
+            <option value="5000" selected>Moderate &mdash; ~PKR 5,000</option>
+            <option value="10000">Premium &mdash; ~PKR 10,000</option>
+            <option value="20000">Luxury &mdash; ~PKR 20,000</option>
+            <option value="custom">Custom</option>
+          </select>
+          <input id="planner-budget-custom" name="budget_per_person" type="number" min="0" placeholder="Custom amount (PKR)" class="field-input mt-2 hidden">
+        </div>
+      </div>
+
+      <div>
+        <p class="field-label mb-2">Dietary requirements</p>
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Dietary requirements">
+          {% for d in ["No restrictions", "Halal", "Vegetarian", "Vegan", "Gluten-free", "Dairy-free", "Nut-free", "Low-carb", "High-protein"] %}
+          <label class="checkbox-pill">
+            <input type="checkbox" name="diet" value="{{ d }}"> {{ d }}
+          </label>
+          {% endfor %}
+        </div>
+        <div class="mt-2">
+          <label for="planner-diet-custom" class="sr-only">Custom dietary restriction</label>
+          <input id="planner-diet-custom" name="diet_custom" type="text" placeholder="Custom restriction (optional)" class="field-input max-w-sm">
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label for="planner-occasion" class="field-label">Occasion</label>
+          <select id="planner-occasion" name="occasion" class="field-input">
+            <option value="">Select an occasion</option>
+            {% for o in ["Casual Meal", "Family Dinner", "Date Night", "Business Dinner", "Birthday", "Celebration", "Solo Dining", "Brunch", "Quick Lunch", "Late Night", "Friends Gathering"] %}
+            <option value="{{ o }}">{{ o }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label for="planner-datetime" class="field-label">Date / time</label>
+          <input id="planner-datetime" name="datetime" type="datetime-local" class="field-input">
+        </div>
+      </div>
+
+      <div>
+        <p class="field-label mb-2">Atmosphere</p>
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Atmosphere preference">
+          {% for a in ["Quiet", "Romantic", "Family-friendly", "Casual", "Luxury", "Outdoor", "Cozy", "Modern", "Traditional", "Lively", "Work-friendly"] %}
+          <label class="checkbox-pill">
+            <input type="checkbox" name="atmosphere" value="{{ a }}"> {{ a }}
+          </label>
+          {% endfor %}
+        </div>
+      </div>
+
+      <button type="submit" id="planner-submit-btn" class="btn-primary text-base px-8 py-4 w-full sm:w-auto">Build My Plan</button>
+    </form>
+
+    <!-- ============================== LOADING / RESULTS ============================== -->
+    <div class="lg:sticky lg:top-24 space-y-6">
+
+      <div id="planner-loading" class="ai-insight-panel hidden">
+        <p class="text-eyebrow mb-4">AI Dining Intelligence</p>
+        <ul class="loading-steps">
+          <li id="step-preferences" class="loading-step" data-state="pending"><span class="loading-step__icon"></span> Understanding your preferences</li>
+          <li id="step-filtering" class="loading-step" data-state="pending"><span class="loading-step__icon"></span> Finding restaurant candidates</li>
+          <li id="step-menu" class="loading-step" data-state="pending"><span class="loading-step__icon"></span> Reading relevant menus</li>
+          <li id="step-dietary" class="loading-step" data-state="pending"><span class="loading-step__icon"></span> Checking dietary compatibility</li>
+          <li id="step-comparing" class="loading-step" data-state="pending"><span class="loading-step__icon"></span> Comparing top matches</li>
+          <li id="step-building" class="loading-step" data-state="pending"><span class="loading-step__icon"></span> Building your recommendation</li>
+        </ul>
+      </div>
+
+      <div id="planner-placeholder" class="border border-dashed border-hairline-strong rounded-xl p-8 text-center">
+        <p class="text-inksoft text-sm">Fill in the form and select <strong>Build My Plan</strong> to see your personalized dining plan here.</p>
+      </div>
+
+      <div id="planner-error" class="empty-state hidden !py-8">
+        <div class="empty-state__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 30 30" fill="none"><path d="M15 9v8M15 21h.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="15" cy="15" r="12" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <p class="font-semibold">We couldn't complete your dining analysis right now.</p>
+        <p class="text-sm text-inksoft">Please try again.</p>
+      </div>
+
+      <div id="planner-results" class="hidden space-y-5">
+        <div class="ai-insight-panel">
+          <p class="text-eyebrow mb-2">Your Best Match</p>
+          <h2 id="result-restaurant-name" class="font-display text-2xl font-semibold mb-3"></h2>
+          <div class="flex items-center gap-4 mb-4">
+            <div id="result-match-badge" class="match-badge" style="--pct:0;"><span class="match-badge__value">—</span></div>
+            <div>
+              <p class="text-sm text-inksoft">Occasion</p>
+              <p id="result-occasion" class="font-semibold"></p>
+            </div>
+          </div>
+          <p class="field-label mb-1">Why this plan works</p>
+          <p id="result-explanation" class="text-sm text-inksoft leading-relaxed"></p>
+        </div>
+
+        <div class="border border-hairline rounded-xl p-6">
+          <p class="field-label mb-3">Recommended Order &mdash; Dining Flow</p>
+          <ul id="result-courses" class="divide-y divide-hairline"></ul>
+          <div class="flex justify-between items-center mt-4 pt-4 border-t border-hairline">
+            <span class="font-semibold">Estimated Total</span>
+            <span id="result-total" class="font-display text-lg font-semibold text-terracotta-dark"></span>
+          </div>
+        </div>
+
+        <div id="result-backup" class="border border-hairline rounded-xl p-6 hidden">
+          <p class="field-label mb-2">Backup Restaurant</p>
+          <a id="result-backup-link" href="#" class="font-semibold text-terracotta-dark hover:underline"></a>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a id="result-view-link" href="#" class="btn-primary">View Restaurant</a>
+          <button type="button" id="result-share-btn" class="btn-secondary" data-action="share">Share Dining Plan</button>
+        </div>
+
+        <div class="flex items-center gap-3 text-sm pt-2">
+          <span class="text-stone">Was this recommendation useful?</span>
+          <button type="button" class="btn-icon !w-9 !h-9" data-action="feedback" data-value="up" data-context="dining-plan" aria-label="Yes, useful">👍</button>
+          <button type="button" class="btn-icon !w-9 !h-9" data-action="feedback" data-value="down" data-context="dining-plan" aria-label="Not useful">👎</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+{% block extra_js %}
+<script src="/static/js/planner.js" defer></script>
+{% endblock %}

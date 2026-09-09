@@ -1,0 +1,41 @@
+{# Server-rendered restaurant card. Expects `r` (Restaurant/RestaurantWithMenu). #}
+<article class="card-restaurant" data-restaurant-id="{{ r.id }}">
+  <a href="/restaurant/{{ r.slug }}" class="block relative aspect-[4/3] placeholder-art" data-cuisine="{{ (r.cuisine[0] if r.cuisine else 'default') | lower }}">
+    <span class="placeholder-mark" aria-hidden="true">{{ r.name[0] }}</span>
+    <span class="placeholder-icon" aria-hidden="true">
+      {%- if r.cuisine and r.cuisine[0] == 'Pakistani' %}🍛{% elif r.cuisine and r.cuisine[0] == 'Indian' %}🍚{% elif r.cuisine and r.cuisine[0] == 'Chinese' %}🥢{% elif r.cuisine and r.cuisine[0] == 'Japanese' %}🍣{% elif r.cuisine and r.cuisine[0] == 'Italian' %}🍝{% elif r.cuisine and r.cuisine[0] == 'Mexican' %}🌮{% elif r.cuisine and r.cuisine[0] == 'Thai' %}🍜{% elif r.cuisine and r.cuisine[0] == 'Turkish' %}🥙{% else %}🍽️{% endif -%}
+    </span>
+    <span class="absolute top-3 left-3 chip bg-paper/90 backdrop-blur-sm">{{ r.price_level }}</span>
+  </a>
+  <button type="button" class="btn-icon absolute top-3 right-3 bg-paper/90" data-action="save" data-id="{{ r.id }}" aria-pressed="false" aria-label="Save {{ r.name }}" style="position:absolute;">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 3h10a1 1 0 011 1v11l-6-3.5L3 15V4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div class="p-5 flex flex-col gap-2.5 flex-1">
+    <p class="text-eyebrow !text-terracotta-dark">{{ r.cuisine | join(' · ') }}</p>
+    <h3 class="font-display font-semibold text-lg leading-snug">
+      <a href="/restaurant/{{ r.slug }}" class="hover:text-terracotta-dark transition-colors">{{ r.name }}</a>
+    </h3>
+    <p class="text-sm text-inksoft line-clamp-2">{{ r.description }}</p>
+
+    <div class="flex items-center gap-3 text-sm mt-1">
+      <span class="rating-stars" aria-label="Rated {{ r.rating }} out of 5">
+        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+        <span class="rating-value">{{ r.rating }}</span>
+      </span>
+      <span class="text-stone">·</span>
+      <span class="text-inksoft">{{ r.currency }} {{ '{:,.0f}'.format(r.average_cost_per_person) }}/person</span>
+    </div>
+
+    <div class="flex flex-wrap gap-1.5 mt-1">
+      <span class="text-xs text-stone">{{ r.area }}, {{ r.city }}</span>
+    </div>
+
+    <div class="flex flex-wrap gap-1.5 mt-1">
+      {% for a in r.ambience[:2] %}<span class="chip chip--olive">{{ a }}</span>{% endfor %}
+      {% for d in r.dietary_options[:1] %}<span class="chip chip--amber">{{ d }}</span>{% endfor %}
+    </div>
+
+    <a href="/restaurant/{{ r.slug }}" class="btn-secondary w-full justify-center mt-auto pt-3">View Restaurant</a>
+  </div>
+</article>

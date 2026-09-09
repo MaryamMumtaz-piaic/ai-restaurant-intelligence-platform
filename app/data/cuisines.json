@@ -1,0 +1,93 @@
+[
+  {
+    "id": "pakistani",
+    "name": "Pakistani",
+    "slug": "pakistani",
+    "description": "Restaurants specializing in Pakistani cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🍛"
+  },
+  {
+    "id": "indian",
+    "name": "Indian",
+    "slug": "indian",
+    "description": "Restaurants specializing in Indian cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🍚"
+  },
+  {
+    "id": "chinese",
+    "name": "Chinese",
+    "slug": "chinese",
+    "description": "Restaurants specializing in Chinese cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🥢"
+  },
+  {
+    "id": "japanese",
+    "name": "Japanese",
+    "slug": "japanese",
+    "description": "Restaurants specializing in Japanese cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🍣"
+  },
+  {
+    "id": "korean",
+    "name": "Korean",
+    "slug": "korean",
+    "description": "Restaurants specializing in Korean cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🍢"
+  },
+  {
+    "id": "thai",
+    "name": "Thai",
+    "slug": "thai",
+    "description": "Restaurants specializing in Thai cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🌶️"
+  },
+  {
+    "id": "italian",
+    "name": "Italian",
+    "slug": "italian",
+    "description": "Restaurants specializing in Italian cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🍝"
+  },
+  {
+    "id": "mexican",
+    "name": "Mexican",
+    "slug": "mexican",
+    "description": "Restaurants specializing in Mexican cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🌮"
+  },
+  {
+    "id": "turkish",
+    "name": "Turkish",
+    "slug": "turkish",
+    "description": "Restaurants specializing in Turkish cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🥙"
+  },
+  {
+    "id": "middle-eastern",
+    "name": "Middle Eastern",
+    "slug": "middle-eastern",
+    "description": "Restaurants specializing in Middle Eastern cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🧆"
+  },
+  {
+    "id": "mediterranean",
+    "name": "Mediterranean",
+    "slug": "mediterranean",
+    "description": "Restaurants specializing in Mediterranean cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🫒"
+  },
+  {
+    "id": "american",
+    "name": "American",
+    "slug": "american",
+    "description": "Restaurants specializing in American cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🍔"
+  },
+  {
+    "id": "french",
+    "name": "French",
+    "slug": "french",
+    "description": "Restaurants specializing in French cuisine, curated for flavour, ambience, and quality.",
+    "icon": "🥐"
+  }
+]

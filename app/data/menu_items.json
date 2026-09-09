@@ -1,0 +1,5644 @@
+[
+  {
+    "id": "m0001",
+    "restaurant_id": "r001",
+    "name": "Chicken Seekh Kebab",
+    "category": "Starter",
+    "description": "Hand-minced chicken skewers grilled over charcoal.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "green chili",
+      "garam masala"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0002",
+    "restaurant_id": "r001",
+    "name": "Dahi Baray",
+    "category": "Starter",
+    "description": "Lentil dumplings soaked in spiced yogurt and tamarind chutney.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "lentils",
+      "yogurt",
+      "tamarind"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0003",
+    "restaurant_id": "r001",
+    "name": "Mutton Karahi",
+    "category": "Main Course",
+    "description": "Wok-tossed mutton in tomato and ginger gravy.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "mutton",
+      "tomato",
+      "ginger"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0004",
+    "restaurant_id": "r001",
+    "name": "Chicken Handi",
+    "category": "Main Course",
+    "description": "Creamy tomato-based chicken curry finished with cream.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "cream",
+      "tomato"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0005",
+    "restaurant_id": "r001",
+    "name": "Daal Mash",
+    "category": "Main Course",
+    "description": "Slow-cooked black lentils tempered with garlic.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "black lentils",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0006",
+    "restaurant_id": "r001",
+    "name": "Garlic Naan",
+    "category": "Side",
+    "description": "Tandoor-baked flatbread topped with garlic and coriander.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0007",
+    "restaurant_id": "r001",
+    "name": "Kheer",
+    "category": "Dessert",
+    "description": "Slow-cooked rice pudding with cardamom and pistachio.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "milk",
+      "cardamom"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0008",
+    "restaurant_id": "r001",
+    "name": "Lassi",
+    "category": "Drink",
+    "description": "Chilled sweet yogurt drink.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "yogurt",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0009",
+    "restaurant_id": "r002",
+    "name": "Chicken Seekh Kebab",
+    "category": "Starter",
+    "description": "Hand-minced chicken skewers grilled over charcoal.",
+    "price": 550,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "green chili",
+      "garam masala"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0010",
+    "restaurant_id": "r002",
+    "name": "Dahi Baray",
+    "category": "Starter",
+    "description": "Lentil dumplings soaked in spiced yogurt and tamarind chutney.",
+    "price": 550,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "lentils",
+      "yogurt",
+      "tamarind"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0011",
+    "restaurant_id": "r002",
+    "name": "Mutton Karahi",
+    "category": "Main Course",
+    "description": "Wok-tossed mutton in tomato and ginger gravy.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "mutton",
+      "tomato",
+      "ginger"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0012",
+    "restaurant_id": "r002",
+    "name": "Chicken Handi",
+    "category": "Main Course",
+    "description": "Creamy tomato-based chicken curry finished with cream.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "cream",
+      "tomato"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0013",
+    "restaurant_id": "r002",
+    "name": "Daal Mash",
+    "category": "Main Course",
+    "description": "Slow-cooked black lentils tempered with garlic.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "black lentils",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0014",
+    "restaurant_id": "r002",
+    "name": "Garlic Naan",
+    "category": "Side",
+    "description": "Tandoor-baked flatbread topped with garlic and coriander.",
+    "price": 350,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0015",
+    "restaurant_id": "r002",
+    "name": "Kheer",
+    "category": "Dessert",
+    "description": "Slow-cooked rice pudding with cardamom and pistachio.",
+    "price": 450,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "milk",
+      "cardamom"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0016",
+    "restaurant_id": "r002",
+    "name": "Lassi",
+    "category": "Drink",
+    "description": "Chilled sweet yogurt drink.",
+    "price": 300,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "yogurt",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0017",
+    "restaurant_id": "r003",
+    "name": "Chicken Seekh Kebab",
+    "category": "Starter",
+    "description": "Hand-minced chicken skewers grilled over charcoal.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "green chili",
+      "garam masala"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0018",
+    "restaurant_id": "r003",
+    "name": "Dahi Baray",
+    "category": "Starter",
+    "description": "Lentil dumplings soaked in spiced yogurt and tamarind chutney.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "lentils",
+      "yogurt",
+      "tamarind"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0019",
+    "restaurant_id": "r003",
+    "name": "Mutton Karahi",
+    "category": "Main Course",
+    "description": "Wok-tossed mutton in tomato and ginger gravy.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "mutton",
+      "tomato",
+      "ginger"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0020",
+    "restaurant_id": "r003",
+    "name": "Chicken Handi",
+    "category": "Main Course",
+    "description": "Creamy tomato-based chicken curry finished with cream.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "cream",
+      "tomato"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0021",
+    "restaurant_id": "r003",
+    "name": "Daal Mash",
+    "category": "Main Course",
+    "description": "Slow-cooked black lentils tempered with garlic.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "black lentils",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0022",
+    "restaurant_id": "r003",
+    "name": "Garlic Naan",
+    "category": "Side",
+    "description": "Tandoor-baked flatbread topped with garlic and coriander.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0023",
+    "restaurant_id": "r003",
+    "name": "Kheer",
+    "category": "Dessert",
+    "description": "Slow-cooked rice pudding with cardamom and pistachio.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "milk",
+      "cardamom"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0024",
+    "restaurant_id": "r003",
+    "name": "Lassi",
+    "category": "Drink",
+    "description": "Chilled sweet yogurt drink.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "yogurt",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0025",
+    "restaurant_id": "r004",
+    "name": "Chicken Seekh Kebab",
+    "category": "Starter",
+    "description": "Hand-minced chicken skewers grilled over charcoal.",
+    "price": 550,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "green chili",
+      "garam masala"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0026",
+    "restaurant_id": "r004",
+    "name": "Dahi Baray",
+    "category": "Starter",
+    "description": "Lentil dumplings soaked in spiced yogurt and tamarind chutney.",
+    "price": 550,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "lentils",
+      "yogurt",
+      "tamarind"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0027",
+    "restaurant_id": "r004",
+    "name": "Mutton Karahi",
+    "category": "Main Course",
+    "description": "Wok-tossed mutton in tomato and ginger gravy.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "mutton",
+      "tomato",
+      "ginger"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0028",
+    "restaurant_id": "r004",
+    "name": "Chicken Handi",
+    "category": "Main Course",
+    "description": "Creamy tomato-based chicken curry finished with cream.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "cream",
+      "tomato"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0029",
+    "restaurant_id": "r004",
+    "name": "Daal Mash",
+    "category": "Main Course",
+    "description": "Slow-cooked black lentils tempered with garlic.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "black lentils",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0030",
+    "restaurant_id": "r004",
+    "name": "Garlic Naan",
+    "category": "Side",
+    "description": "Tandoor-baked flatbread topped with garlic and coriander.",
+    "price": 350,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0031",
+    "restaurant_id": "r004",
+    "name": "Kheer",
+    "category": "Dessert",
+    "description": "Slow-cooked rice pudding with cardamom and pistachio.",
+    "price": 450,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "milk",
+      "cardamom"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0032",
+    "restaurant_id": "r004",
+    "name": "Lassi",
+    "category": "Drink",
+    "description": "Chilled sweet yogurt drink.",
+    "price": 300,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "yogurt",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0033",
+    "restaurant_id": "r005",
+    "name": "Chicken Seekh Kebab",
+    "category": "Starter",
+    "description": "Hand-minced chicken skewers grilled over charcoal.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "green chili",
+      "garam masala"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0034",
+    "restaurant_id": "r005",
+    "name": "Dahi Baray",
+    "category": "Starter",
+    "description": "Lentil dumplings soaked in spiced yogurt and tamarind chutney.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "lentils",
+      "yogurt",
+      "tamarind"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0035",
+    "restaurant_id": "r005",
+    "name": "Mutton Karahi",
+    "category": "Main Course",
+    "description": "Wok-tossed mutton in tomato and ginger gravy.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "mutton",
+      "tomato",
+      "ginger"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0036",
+    "restaurant_id": "r005",
+    "name": "Chicken Handi",
+    "category": "Main Course",
+    "description": "Creamy tomato-based chicken curry finished with cream.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "cream",
+      "tomato"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0037",
+    "restaurant_id": "r005",
+    "name": "Daal Mash",
+    "category": "Main Course",
+    "description": "Slow-cooked black lentils tempered with garlic.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "black lentils",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0038",
+    "restaurant_id": "r005",
+    "name": "Garlic Naan",
+    "category": "Side",
+    "description": "Tandoor-baked flatbread topped with garlic and coriander.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0039",
+    "restaurant_id": "r005",
+    "name": "Kheer",
+    "category": "Dessert",
+    "description": "Slow-cooked rice pudding with cardamom and pistachio.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "milk",
+      "cardamom"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0040",
+    "restaurant_id": "r005",
+    "name": "Lassi",
+    "category": "Drink",
+    "description": "Chilled sweet yogurt drink.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "yogurt",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0041",
+    "restaurant_id": "r006",
+    "name": "Chicken Seekh Kebab",
+    "category": "Starter",
+    "description": "Hand-minced chicken skewers grilled over charcoal.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "green chili",
+      "garam masala"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0042",
+    "restaurant_id": "r006",
+    "name": "Dahi Baray",
+    "category": "Starter",
+    "description": "Lentil dumplings soaked in spiced yogurt and tamarind chutney.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "lentils",
+      "yogurt",
+      "tamarind"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0043",
+    "restaurant_id": "r006",
+    "name": "Mutton Karahi",
+    "category": "Main Course",
+    "description": "Wok-tossed mutton in tomato and ginger gravy.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "mutton",
+      "tomato",
+      "ginger"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0044",
+    "restaurant_id": "r006",
+    "name": "Chicken Handi",
+    "category": "Main Course",
+    "description": "Creamy tomato-based chicken curry finished with cream.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "cream",
+      "tomato"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0045",
+    "restaurant_id": "r006",
+    "name": "Daal Mash",
+    "category": "Main Course",
+    "description": "Slow-cooked black lentils tempered with garlic.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "black lentils",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0046",
+    "restaurant_id": "r006",
+    "name": "Garlic Naan",
+    "category": "Side",
+    "description": "Tandoor-baked flatbread topped with garlic and coriander.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0047",
+    "restaurant_id": "r006",
+    "name": "Kheer",
+    "category": "Dessert",
+    "description": "Slow-cooked rice pudding with cardamom and pistachio.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "milk",
+      "cardamom"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0048",
+    "restaurant_id": "r006",
+    "name": "Lassi",
+    "category": "Drink",
+    "description": "Chilled sweet yogurt drink.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "yogurt",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0049",
+    "restaurant_id": "r007",
+    "name": "Chicken Seekh Kebab",
+    "category": "Starter",
+    "description": "Hand-minced chicken skewers grilled over charcoal.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "green chili",
+      "garam masala"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0050",
+    "restaurant_id": "r007",
+    "name": "Dahi Baray",
+    "category": "Starter",
+    "description": "Lentil dumplings soaked in spiced yogurt and tamarind chutney.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "lentils",
+      "yogurt",
+      "tamarind"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0051",
+    "restaurant_id": "r007",
+    "name": "Mutton Karahi",
+    "category": "Main Course",
+    "description": "Wok-tossed mutton in tomato and ginger gravy.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "mutton",
+      "tomato",
+      "ginger"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0052",
+    "restaurant_id": "r007",
+    "name": "Chicken Handi",
+    "category": "Main Course",
+    "description": "Creamy tomato-based chicken curry finished with cream.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "cream",
+      "tomato"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0053",
+    "restaurant_id": "r007",
+    "name": "Daal Mash",
+    "category": "Main Course",
+    "description": "Slow-cooked black lentils tempered with garlic.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "black lentils",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0054",
+    "restaurant_id": "r007",
+    "name": "Garlic Naan",
+    "category": "Side",
+    "description": "Tandoor-baked flatbread topped with garlic and coriander.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0055",
+    "restaurant_id": "r007",
+    "name": "Kheer",
+    "category": "Dessert",
+    "description": "Slow-cooked rice pudding with cardamom and pistachio.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "milk",
+      "cardamom"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0056",
+    "restaurant_id": "r007",
+    "name": "Lassi",
+    "category": "Drink",
+    "description": "Chilled sweet yogurt drink.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "yogurt",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0057",
+    "restaurant_id": "r008",
+    "name": "Vegetable Samosa",
+    "category": "Starter",
+    "description": "Crisp pastry filled with spiced potatoes and peas.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "potato",
+      "peas",
+      "cumin"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0058",
+    "restaurant_id": "r008",
+    "name": "Tandoori Chicken",
+    "category": "Starter",
+    "description": "Yogurt-marinated chicken roasted in the clay oven.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "paprika"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0059",
+    "restaurant_id": "r008",
+    "name": "Butter Chicken",
+    "category": "Main Course",
+    "description": "Tandoori chicken simmered in a velvety tomato-butter sauce.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0060",
+    "restaurant_id": "r008",
+    "name": "Palak Paneer",
+    "category": "Main Course",
+    "description": "Cottage cheese cubes in a silky spinach gravy.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "spinach",
+      "paneer",
+      "cream"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0061",
+    "restaurant_id": "r008",
+    "name": "Rogan Josh",
+    "category": "Main Course",
+    "description": "Kashmiri-style lamb curry with fennel and Kashmiri chili.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "lamb",
+      "fennel",
+      "yogurt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0062",
+    "restaurant_id": "r008",
+    "name": "Garlic Naan",
+    "category": "Side",
+    "description": "Buttery flatbread with roasted garlic.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "garlic"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0063",
+    "restaurant_id": "r008",
+    "name": "Gulab Jamun",
+    "category": "Dessert",
+    "description": "Milk dumplings soaked in cardamom syrup.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "milk solids",
+      "sugar syrup"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0064",
+    "restaurant_id": "r008",
+    "name": "Masala Chai",
+    "category": "Drink",
+    "description": "Spiced black tea simmered with milk.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "tea",
+      "milk",
+      "spices"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0065",
+    "restaurant_id": "r009",
+    "name": "Vegetable Samosa",
+    "category": "Starter",
+    "description": "Crisp pastry filled with spiced potatoes and peas.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "potato",
+      "peas",
+      "cumin"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0066",
+    "restaurant_id": "r009",
+    "name": "Tandoori Chicken",
+    "category": "Starter",
+    "description": "Yogurt-marinated chicken roasted in the clay oven.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "paprika"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0067",
+    "restaurant_id": "r009",
+    "name": "Butter Chicken",
+    "category": "Main Course",
+    "description": "Tandoori chicken simmered in a velvety tomato-butter sauce.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0068",
+    "restaurant_id": "r009",
+    "name": "Palak Paneer",
+    "category": "Main Course",
+    "description": "Cottage cheese cubes in a silky spinach gravy.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "spinach",
+      "paneer",
+      "cream"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0069",
+    "restaurant_id": "r009",
+    "name": "Rogan Josh",
+    "category": "Main Course",
+    "description": "Kashmiri-style lamb curry with fennel and Kashmiri chili.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "lamb",
+      "fennel",
+      "yogurt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0070",
+    "restaurant_id": "r009",
+    "name": "Garlic Naan",
+    "category": "Side",
+    "description": "Buttery flatbread with roasted garlic.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "garlic"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0071",
+    "restaurant_id": "r009",
+    "name": "Gulab Jamun",
+    "category": "Dessert",
+    "description": "Milk dumplings soaked in cardamom syrup.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "milk solids",
+      "sugar syrup"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0072",
+    "restaurant_id": "r009",
+    "name": "Masala Chai",
+    "category": "Drink",
+    "description": "Spiced black tea simmered with milk.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "tea",
+      "milk",
+      "spices"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0073",
+    "restaurant_id": "r010",
+    "name": "Vegetable Samosa",
+    "category": "Starter",
+    "description": "Crisp pastry filled with spiced potatoes and peas.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "potato",
+      "peas",
+      "cumin"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0074",
+    "restaurant_id": "r010",
+    "name": "Tandoori Chicken",
+    "category": "Starter",
+    "description": "Yogurt-marinated chicken roasted in the clay oven.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "paprika"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0075",
+    "restaurant_id": "r010",
+    "name": "Butter Chicken",
+    "category": "Main Course",
+    "description": "Tandoori chicken simmered in a velvety tomato-butter sauce.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0076",
+    "restaurant_id": "r010",
+    "name": "Palak Paneer",
+    "category": "Main Course",
+    "description": "Cottage cheese cubes in a silky spinach gravy.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "spinach",
+      "paneer",
+      "cream"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0077",
+    "restaurant_id": "r010",
+    "name": "Rogan Josh",
+    "category": "Main Course",
+    "description": "Kashmiri-style lamb curry with fennel and Kashmiri chili.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "lamb",
+      "fennel",
+      "yogurt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0078",
+    "restaurant_id": "r010",
+    "name": "Garlic Naan",
+    "category": "Side",
+    "description": "Buttery flatbread with roasted garlic.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "garlic"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0079",
+    "restaurant_id": "r010",
+    "name": "Gulab Jamun",
+    "category": "Dessert",
+    "description": "Milk dumplings soaked in cardamom syrup.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "milk solids",
+      "sugar syrup"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0080",
+    "restaurant_id": "r010",
+    "name": "Masala Chai",
+    "category": "Drink",
+    "description": "Spiced black tea simmered with milk.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "tea",
+      "milk",
+      "spices"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0081",
+    "restaurant_id": "r011",
+    "name": "Spring Rolls",
+    "category": "Starter",
+    "description": "Crispy rolls filled with cabbage and carrot.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "cabbage",
+      "carrot",
+      "wrapper"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0082",
+    "restaurant_id": "r011",
+    "name": "Chicken Corn Soup",
+    "category": "Starter",
+    "description": "Silky soup with shredded chicken and sweet corn.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chicken",
+      "corn",
+      "egg"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0083",
+    "restaurant_id": "r011",
+    "name": "Kung Pao Chicken",
+    "category": "Main Course",
+    "description": "Wok-fried chicken with peanuts and dried chilies.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "Nut-free"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "chicken",
+      "peanuts",
+      "chili"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0084",
+    "restaurant_id": "r011",
+    "name": "Beef with Black Bean Sauce",
+    "category": "Main Course",
+    "description": "Tender beef strips in a savoury fermented bean sauce.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "beef",
+      "black bean sauce",
+      "pepper"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0085",
+    "restaurant_id": "r011",
+    "name": "Vegetable Fried Rice",
+    "category": "Main Course",
+    "description": "Wok-tossed rice with seasonal vegetables.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0086",
+    "restaurant_id": "r011",
+    "name": "Chili Garlic Noodles",
+    "category": "Side",
+    "description": "Hand-pulled noodles tossed in chili garlic oil.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "noodles",
+      "garlic",
+      "chili oil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0087",
+    "restaurant_id": "r011",
+    "name": "Sesame Balls",
+    "category": "Dessert",
+    "description": "Fried glutinous rice balls with sweet lotus paste.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "glutinous rice",
+      "lotus paste",
+      "sesame"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0088",
+    "restaurant_id": "r011",
+    "name": "Iced Jasmine Tea",
+    "category": "Drink",
+    "description": "Chilled jasmine-scented green tea.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "jasmine tea"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0089",
+    "restaurant_id": "r012",
+    "name": "Spring Rolls",
+    "category": "Starter",
+    "description": "Crispy rolls filled with cabbage and carrot.",
+    "price": 550,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "cabbage",
+      "carrot",
+      "wrapper"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0090",
+    "restaurant_id": "r012",
+    "name": "Chicken Corn Soup",
+    "category": "Starter",
+    "description": "Silky soup with shredded chicken and sweet corn.",
+    "price": 550,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chicken",
+      "corn",
+      "egg"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0091",
+    "restaurant_id": "r012",
+    "name": "Kung Pao Chicken",
+    "category": "Main Course",
+    "description": "Wok-fried chicken with peanuts and dried chilies.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "Nut-free"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "chicken",
+      "peanuts",
+      "chili"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0092",
+    "restaurant_id": "r012",
+    "name": "Beef with Black Bean Sauce",
+    "category": "Main Course",
+    "description": "Tender beef strips in a savoury fermented bean sauce.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "beef",
+      "black bean sauce",
+      "pepper"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0093",
+    "restaurant_id": "r012",
+    "name": "Vegetable Fried Rice",
+    "category": "Main Course",
+    "description": "Wok-tossed rice with seasonal vegetables.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0094",
+    "restaurant_id": "r012",
+    "name": "Chili Garlic Noodles",
+    "category": "Side",
+    "description": "Hand-pulled noodles tossed in chili garlic oil.",
+    "price": 350,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "noodles",
+      "garlic",
+      "chili oil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0095",
+    "restaurant_id": "r012",
+    "name": "Sesame Balls",
+    "category": "Dessert",
+    "description": "Fried glutinous rice balls with sweet lotus paste.",
+    "price": 450,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "glutinous rice",
+      "lotus paste",
+      "sesame"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0096",
+    "restaurant_id": "r012",
+    "name": "Iced Jasmine Tea",
+    "category": "Drink",
+    "description": "Chilled jasmine-scented green tea.",
+    "price": 300,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "jasmine tea"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0097",
+    "restaurant_id": "r013",
+    "name": "Spring Rolls",
+    "category": "Starter",
+    "description": "Crispy rolls filled with cabbage and carrot.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "cabbage",
+      "carrot",
+      "wrapper"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0098",
+    "restaurant_id": "r013",
+    "name": "Chicken Corn Soup",
+    "category": "Starter",
+    "description": "Silky soup with shredded chicken and sweet corn.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chicken",
+      "corn",
+      "egg"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0099",
+    "restaurant_id": "r013",
+    "name": "Kung Pao Chicken",
+    "category": "Main Course",
+    "description": "Wok-fried chicken with peanuts and dried chilies.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "Nut-free"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "chicken",
+      "peanuts",
+      "chili"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0100",
+    "restaurant_id": "r013",
+    "name": "Beef with Black Bean Sauce",
+    "category": "Main Course",
+    "description": "Tender beef strips in a savoury fermented bean sauce.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "beef",
+      "black bean sauce",
+      "pepper"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0101",
+    "restaurant_id": "r013",
+    "name": "Vegetable Fried Rice",
+    "category": "Main Course",
+    "description": "Wok-tossed rice with seasonal vegetables.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0102",
+    "restaurant_id": "r013",
+    "name": "Chili Garlic Noodles",
+    "category": "Side",
+    "description": "Hand-pulled noodles tossed in chili garlic oil.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "noodles",
+      "garlic",
+      "chili oil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0103",
+    "restaurant_id": "r013",
+    "name": "Sesame Balls",
+    "category": "Dessert",
+    "description": "Fried glutinous rice balls with sweet lotus paste.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "glutinous rice",
+      "lotus paste",
+      "sesame"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0104",
+    "restaurant_id": "r013",
+    "name": "Iced Jasmine Tea",
+    "category": "Drink",
+    "description": "Chilled jasmine-scented green tea.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "jasmine tea"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0105",
+    "restaurant_id": "r014",
+    "name": "Edamame",
+    "category": "Starter",
+    "description": "Steamed soybeans finished with sea salt.",
+    "price": 1320,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "soybeans",
+      "sea salt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0106",
+    "restaurant_id": "r014",
+    "name": "Salmon Sashimi",
+    "category": "Starter",
+    "description": "Thinly sliced fresh salmon.",
+    "price": 1320,
+    "currency": "PKR",
+    "dietary_tags": [
+      "High-protein",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "salmon"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0107",
+    "restaurant_id": "r014",
+    "name": "California Roll",
+    "category": "Main Course",
+    "description": "Crab, avocado, and cucumber rolled in seasoned rice.",
+    "price": 2880,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Dairy-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "crab",
+      "avocado",
+      "rice"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0108",
+    "restaurant_id": "r014",
+    "name": "Chicken Katsu Curry",
+    "category": "Main Course",
+    "description": "Crispy breaded chicken cutlet with Japanese curry sauce.",
+    "price": 2880,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "panko",
+      "curry roux"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0109",
+    "restaurant_id": "r014",
+    "name": "Miso Ramen",
+    "category": "Main Course",
+    "description": "Rich miso broth with noodles, chashu, and soft egg.",
+    "price": 2880,
+    "currency": "PKR",
+    "dietary_tags": [],
+    "spice_level": "Medium",
+    "ingredients": [
+      "miso",
+      "noodles",
+      "pork or chicken"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0110",
+    "restaurant_id": "r014",
+    "name": "Gyoza",
+    "category": "Side",
+    "description": "Pan-fried dumplings filled with chicken and cabbage.",
+    "price": 840,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chicken",
+      "cabbage",
+      "wrapper"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0111",
+    "restaurant_id": "r014",
+    "name": "Matcha Cheesecake",
+    "category": "Dessert",
+    "description": "Creamy cheesecake infused with ceremonial matcha.",
+    "price": 1080,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "matcha",
+      "cream cheese"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0112",
+    "restaurant_id": "r014",
+    "name": "Iced Matcha Latte",
+    "category": "Drink",
+    "description": "Whisked matcha over milk and ice.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "matcha",
+      "milk"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0113",
+    "restaurant_id": "r015",
+    "name": "Edamame",
+    "category": "Starter",
+    "description": "Steamed soybeans finished with sea salt.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "soybeans",
+      "sea salt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0114",
+    "restaurant_id": "r015",
+    "name": "Salmon Sashimi",
+    "category": "Starter",
+    "description": "Thinly sliced fresh salmon.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "High-protein",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "salmon"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0115",
+    "restaurant_id": "r015",
+    "name": "California Roll",
+    "category": "Main Course",
+    "description": "Crab, avocado, and cucumber rolled in seasoned rice.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Dairy-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "crab",
+      "avocado",
+      "rice"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0116",
+    "restaurant_id": "r015",
+    "name": "Chicken Katsu Curry",
+    "category": "Main Course",
+    "description": "Crispy breaded chicken cutlet with Japanese curry sauce.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "panko",
+      "curry roux"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0117",
+    "restaurant_id": "r015",
+    "name": "Miso Ramen",
+    "category": "Main Course",
+    "description": "Rich miso broth with noodles, chashu, and soft egg.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [],
+    "spice_level": "Medium",
+    "ingredients": [
+      "miso",
+      "noodles",
+      "pork or chicken"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0118",
+    "restaurant_id": "r015",
+    "name": "Gyoza",
+    "category": "Side",
+    "description": "Pan-fried dumplings filled with chicken and cabbage.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chicken",
+      "cabbage",
+      "wrapper"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0119",
+    "restaurant_id": "r015",
+    "name": "Matcha Cheesecake",
+    "category": "Dessert",
+    "description": "Creamy cheesecake infused with ceremonial matcha.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "matcha",
+      "cream cheese"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0120",
+    "restaurant_id": "r015",
+    "name": "Iced Matcha Latte",
+    "category": "Drink",
+    "description": "Whisked matcha over milk and ice.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "matcha",
+      "milk"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0121",
+    "restaurant_id": "r016",
+    "name": "Edamame",
+    "category": "Starter",
+    "description": "Steamed soybeans finished with sea salt.",
+    "price": 1320,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "soybeans",
+      "sea salt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0122",
+    "restaurant_id": "r016",
+    "name": "Salmon Sashimi",
+    "category": "Starter",
+    "description": "Thinly sliced fresh salmon.",
+    "price": 1320,
+    "currency": "PKR",
+    "dietary_tags": [
+      "High-protein",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "salmon"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0123",
+    "restaurant_id": "r016",
+    "name": "California Roll",
+    "category": "Main Course",
+    "description": "Crab, avocado, and cucumber rolled in seasoned rice.",
+    "price": 2880,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Dairy-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "crab",
+      "avocado",
+      "rice"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0124",
+    "restaurant_id": "r016",
+    "name": "Chicken Katsu Curry",
+    "category": "Main Course",
+    "description": "Crispy breaded chicken cutlet with Japanese curry sauce.",
+    "price": 2880,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "panko",
+      "curry roux"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0125",
+    "restaurant_id": "r016",
+    "name": "Miso Ramen",
+    "category": "Main Course",
+    "description": "Rich miso broth with noodles, chashu, and soft egg.",
+    "price": 2880,
+    "currency": "PKR",
+    "dietary_tags": [],
+    "spice_level": "Medium",
+    "ingredients": [
+      "miso",
+      "noodles",
+      "pork or chicken"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0126",
+    "restaurant_id": "r016",
+    "name": "Gyoza",
+    "category": "Side",
+    "description": "Pan-fried dumplings filled with chicken and cabbage.",
+    "price": 840,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chicken",
+      "cabbage",
+      "wrapper"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0127",
+    "restaurant_id": "r016",
+    "name": "Matcha Cheesecake",
+    "category": "Dessert",
+    "description": "Creamy cheesecake infused with ceremonial matcha.",
+    "price": 1080,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "matcha",
+      "cream cheese"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0128",
+    "restaurant_id": "r016",
+    "name": "Iced Matcha Latte",
+    "category": "Drink",
+    "description": "Whisked matcha over milk and ice.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "matcha",
+      "milk"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0129",
+    "restaurant_id": "r017",
+    "name": "Kimchi Pancake",
+    "category": "Starter",
+    "description": "Savoury pancake studded with fermented kimchi.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "kimchi",
+      "flour",
+      "scallion"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0130",
+    "restaurant_id": "r017",
+    "name": "Japchae",
+    "category": "Starter",
+    "description": "Stir-fried glass noodles with vegetables and sesame.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Dairy-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "glass noodles",
+      "vegetables",
+      "sesame oil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0131",
+    "restaurant_id": "r017",
+    "name": "Bulgogi Beef",
+    "category": "Main Course",
+    "description": "Marinated grilled beef with a sweet soy glaze.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "beef",
+      "soy sauce",
+      "pear"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0132",
+    "restaurant_id": "r017",
+    "name": "Spicy Chicken Bibimbap",
+    "category": "Main Course",
+    "description": "Rice bowl topped with vegetables and gochujang chicken.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "rice",
+      "chicken",
+      "gochujang"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0133",
+    "restaurant_id": "r017",
+    "name": "Sundubu Jjigae",
+    "category": "Main Course",
+    "description": "Soft tofu stew in a fiery seafood broth.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian option"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "tofu",
+      "seafood",
+      "gochugaru"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0134",
+    "restaurant_id": "r017",
+    "name": "Steamed Rice",
+    "category": "Side",
+    "description": "Short-grain steamed rice.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0135",
+    "restaurant_id": "r017",
+    "name": "Hotteok",
+    "category": "Dessert",
+    "description": "Sweet stuffed pancake with brown sugar and nuts.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "brown sugar",
+      "walnuts"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0136",
+    "restaurant_id": "r017",
+    "name": "Sikhye",
+    "category": "Drink",
+    "description": "Traditional sweet rice punch.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "malt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0137",
+    "restaurant_id": "r018",
+    "name": "Kimchi Pancake",
+    "category": "Starter",
+    "description": "Savoury pancake studded with fermented kimchi.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "kimchi",
+      "flour",
+      "scallion"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0138",
+    "restaurant_id": "r018",
+    "name": "Japchae",
+    "category": "Starter",
+    "description": "Stir-fried glass noodles with vegetables and sesame.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Dairy-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "glass noodles",
+      "vegetables",
+      "sesame oil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0139",
+    "restaurant_id": "r018",
+    "name": "Bulgogi Beef",
+    "category": "Main Course",
+    "description": "Marinated grilled beef with a sweet soy glaze.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "beef",
+      "soy sauce",
+      "pear"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0140",
+    "restaurant_id": "r018",
+    "name": "Spicy Chicken Bibimbap",
+    "category": "Main Course",
+    "description": "Rice bowl topped with vegetables and gochujang chicken.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "rice",
+      "chicken",
+      "gochujang"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0141",
+    "restaurant_id": "r018",
+    "name": "Sundubu Jjigae",
+    "category": "Main Course",
+    "description": "Soft tofu stew in a fiery seafood broth.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian option"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "tofu",
+      "seafood",
+      "gochugaru"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0142",
+    "restaurant_id": "r018",
+    "name": "Steamed Rice",
+    "category": "Side",
+    "description": "Short-grain steamed rice.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0143",
+    "restaurant_id": "r018",
+    "name": "Hotteok",
+    "category": "Dessert",
+    "description": "Sweet stuffed pancake with brown sugar and nuts.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "brown sugar",
+      "walnuts"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0144",
+    "restaurant_id": "r018",
+    "name": "Sikhye",
+    "category": "Drink",
+    "description": "Traditional sweet rice punch.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "malt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0145",
+    "restaurant_id": "r019",
+    "name": "Tom Yum Soup",
+    "category": "Starter",
+    "description": "Hot and sour soup with lemongrass and shrimp.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Dairy-free",
+      "Gluten-free"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "shrimp",
+      "lemongrass",
+      "lime leaf"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0146",
+    "restaurant_id": "r019",
+    "name": "Chicken Satay",
+    "category": "Starter",
+    "description": "Grilled skewers with peanut dipping sauce.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "peanut",
+      "coconut milk"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0147",
+    "restaurant_id": "r019",
+    "name": "Green Curry Chicken",
+    "category": "Main Course",
+    "description": "Coconut curry simmered with Thai basil and chicken.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "Gluten-free"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "chicken",
+      "coconut milk",
+      "green chili"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0148",
+    "restaurant_id": "r019",
+    "name": "Pad Thai",
+    "category": "Main Course",
+    "description": "Stir-fried rice noodles with tamarind, egg, and peanuts.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [],
+    "spice_level": "Medium",
+    "ingredients": [
+      "rice noodles",
+      "egg",
+      "peanuts"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0149",
+    "restaurant_id": "r019",
+    "name": "Massaman Beef",
+    "category": "Main Course",
+    "description": "Slow-braised beef in a mild, nutty curry.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "Gluten-free"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "beef",
+      "potato",
+      "peanuts"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0150",
+    "restaurant_id": "r019",
+    "name": "Papaya Salad",
+    "category": "Side",
+    "description": "Shredded green papaya tossed in a spicy lime dressing.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "papaya",
+      "lime",
+      "chili"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0151",
+    "restaurant_id": "r019",
+    "name": "Mango Sticky Rice",
+    "category": "Dessert",
+    "description": "Sweet coconut sticky rice with fresh mango.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "mango",
+      "sticky rice",
+      "coconut milk"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0152",
+    "restaurant_id": "r019",
+    "name": "Thai Iced Tea",
+    "category": "Drink",
+    "description": "Sweetened black tea with condensed milk over ice.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "tea",
+      "condensed milk"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0153",
+    "restaurant_id": "r020",
+    "name": "Tom Yum Soup",
+    "category": "Starter",
+    "description": "Hot and sour soup with lemongrass and shrimp.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Dairy-free",
+      "Gluten-free"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "shrimp",
+      "lemongrass",
+      "lime leaf"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0154",
+    "restaurant_id": "r020",
+    "name": "Chicken Satay",
+    "category": "Starter",
+    "description": "Grilled skewers with peanut dipping sauce.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "peanut",
+      "coconut milk"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0155",
+    "restaurant_id": "r020",
+    "name": "Green Curry Chicken",
+    "category": "Main Course",
+    "description": "Coconut curry simmered with Thai basil and chicken.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "Gluten-free"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "chicken",
+      "coconut milk",
+      "green chili"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0156",
+    "restaurant_id": "r020",
+    "name": "Pad Thai",
+    "category": "Main Course",
+    "description": "Stir-fried rice noodles with tamarind, egg, and peanuts.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [],
+    "spice_level": "Medium",
+    "ingredients": [
+      "rice noodles",
+      "egg",
+      "peanuts"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0157",
+    "restaurant_id": "r020",
+    "name": "Massaman Beef",
+    "category": "Main Course",
+    "description": "Slow-braised beef in a mild, nutty curry.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "Gluten-free"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "beef",
+      "potato",
+      "peanuts"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0158",
+    "restaurant_id": "r020",
+    "name": "Papaya Salad",
+    "category": "Side",
+    "description": "Shredded green papaya tossed in a spicy lime dressing.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "papaya",
+      "lime",
+      "chili"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0159",
+    "restaurant_id": "r020",
+    "name": "Mango Sticky Rice",
+    "category": "Dessert",
+    "description": "Sweet coconut sticky rice with fresh mango.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "mango",
+      "sticky rice",
+      "coconut milk"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0160",
+    "restaurant_id": "r020",
+    "name": "Thai Iced Tea",
+    "category": "Drink",
+    "description": "Sweetened black tea with condensed milk over ice.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "tea",
+      "condensed milk"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0161",
+    "restaurant_id": "r021",
+    "name": "Bruschetta al Pomodoro",
+    "category": "Starter",
+    "description": "Toasted bread topped with tomato, basil, and olive oil.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "bread",
+      "tomato",
+      "basil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0162",
+    "restaurant_id": "r021",
+    "name": "Burrata Caprese",
+    "category": "Starter",
+    "description": "Creamy burrata with heirloom tomatoes and basil oil.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "burrata",
+      "tomato",
+      "basil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0163",
+    "restaurant_id": "r021",
+    "name": "Margherita Pizza",
+    "category": "Main Course",
+    "description": "Wood-fired pizza with San Marzano tomato and mozzarella.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0164",
+    "restaurant_id": "r021",
+    "name": "Fettuccine Alfredo",
+    "category": "Main Course",
+    "description": "Hand-rolled pasta in a butter-parmesan sauce.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "pasta",
+      "butter",
+      "parmesan"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0165",
+    "restaurant_id": "r021",
+    "name": "Osso Buco",
+    "category": "Main Course",
+    "description": "Braised veal shank in a rich white wine reduction.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "High-protein"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "veal",
+      "white wine",
+      "vegetables"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0166",
+    "restaurant_id": "r021",
+    "name": "Garlic Bread",
+    "category": "Side",
+    "description": "Oven-baked bread with roasted garlic butter.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "bread",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0167",
+    "restaurant_id": "r021",
+    "name": "Tiramisu",
+    "category": "Dessert",
+    "description": "Espresso-soaked ladyfingers layered with mascarpone.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "mascarpone",
+      "espresso",
+      "cocoa"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0168",
+    "restaurant_id": "r021",
+    "name": "Espresso",
+    "category": "Drink",
+    "description": "Double shot of Italian roast espresso.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "coffee"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0169",
+    "restaurant_id": "r022",
+    "name": "Bruschetta al Pomodoro",
+    "category": "Starter",
+    "description": "Toasted bread topped with tomato, basil, and olive oil.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "bread",
+      "tomato",
+      "basil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0170",
+    "restaurant_id": "r022",
+    "name": "Burrata Caprese",
+    "category": "Starter",
+    "description": "Creamy burrata with heirloom tomatoes and basil oil.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "burrata",
+      "tomato",
+      "basil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0171",
+    "restaurant_id": "r022",
+    "name": "Margherita Pizza",
+    "category": "Main Course",
+    "description": "Wood-fired pizza with San Marzano tomato and mozzarella.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0172",
+    "restaurant_id": "r022",
+    "name": "Fettuccine Alfredo",
+    "category": "Main Course",
+    "description": "Hand-rolled pasta in a butter-parmesan sauce.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "pasta",
+      "butter",
+      "parmesan"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0173",
+    "restaurant_id": "r022",
+    "name": "Osso Buco",
+    "category": "Main Course",
+    "description": "Braised veal shank in a rich white wine reduction.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "High-protein"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "veal",
+      "white wine",
+      "vegetables"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0174",
+    "restaurant_id": "r022",
+    "name": "Garlic Bread",
+    "category": "Side",
+    "description": "Oven-baked bread with roasted garlic butter.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "bread",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0175",
+    "restaurant_id": "r022",
+    "name": "Tiramisu",
+    "category": "Dessert",
+    "description": "Espresso-soaked ladyfingers layered with mascarpone.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "mascarpone",
+      "espresso",
+      "cocoa"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0176",
+    "restaurant_id": "r022",
+    "name": "Espresso",
+    "category": "Drink",
+    "description": "Double shot of Italian roast espresso.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "coffee"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0177",
+    "restaurant_id": "r023",
+    "name": "Bruschetta al Pomodoro",
+    "category": "Starter",
+    "description": "Toasted bread topped with tomato, basil, and olive oil.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "bread",
+      "tomato",
+      "basil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0178",
+    "restaurant_id": "r023",
+    "name": "Burrata Caprese",
+    "category": "Starter",
+    "description": "Creamy burrata with heirloom tomatoes and basil oil.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "burrata",
+      "tomato",
+      "basil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0179",
+    "restaurant_id": "r023",
+    "name": "Margherita Pizza",
+    "category": "Main Course",
+    "description": "Wood-fired pizza with San Marzano tomato and mozzarella.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0180",
+    "restaurant_id": "r023",
+    "name": "Fettuccine Alfredo",
+    "category": "Main Course",
+    "description": "Hand-rolled pasta in a butter-parmesan sauce.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "pasta",
+      "butter",
+      "parmesan"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0181",
+    "restaurant_id": "r023",
+    "name": "Osso Buco",
+    "category": "Main Course",
+    "description": "Braised veal shank in a rich white wine reduction.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "High-protein"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "veal",
+      "white wine",
+      "vegetables"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0182",
+    "restaurant_id": "r023",
+    "name": "Garlic Bread",
+    "category": "Side",
+    "description": "Oven-baked bread with roasted garlic butter.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "bread",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0183",
+    "restaurant_id": "r023",
+    "name": "Tiramisu",
+    "category": "Dessert",
+    "description": "Espresso-soaked ladyfingers layered with mascarpone.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "mascarpone",
+      "espresso",
+      "cocoa"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0184",
+    "restaurant_id": "r023",
+    "name": "Espresso",
+    "category": "Drink",
+    "description": "Double shot of Italian roast espresso.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "coffee"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0185",
+    "restaurant_id": "r024",
+    "name": "Guacamole & Chips",
+    "category": "Starter",
+    "description": "Fresh-mashed avocado with lime and tortilla chips.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "avocado",
+      "lime",
+      "corn tortilla"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0186",
+    "restaurant_id": "r024",
+    "name": "Chicken Quesadilla",
+    "category": "Starter",
+    "description": "Grilled tortilla filled with cheese and spiced chicken.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "tortilla"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0187",
+    "restaurant_id": "r024",
+    "name": "Beef Tacos",
+    "category": "Main Course",
+    "description": "Three soft tacos with seasoned beef and pico de gallo.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "beef",
+      "tortilla",
+      "pico de gallo"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0188",
+    "restaurant_id": "r024",
+    "name": "Chicken Enchiladas",
+    "category": "Main Course",
+    "description": "Rolled tortillas in a smoky red chili sauce.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "chili sauce",
+      "cheese"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0189",
+    "restaurant_id": "r024",
+    "name": "Vegetarian Burrito Bowl",
+    "category": "Main Course",
+    "description": "Rice, black beans, corn, and grilled peppers.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Vegan option"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "rice",
+      "black beans",
+      "peppers"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0190",
+    "restaurant_id": "r024",
+    "name": "Mexican Street Corn",
+    "category": "Side",
+    "description": "Grilled corn with lime, cheese, and chili powder.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "corn",
+      "cheese",
+      "chili powder"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0191",
+    "restaurant_id": "r024",
+    "name": "Churros",
+    "category": "Dessert",
+    "description": "Cinnamon-sugar fried dough with chocolate dip.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "cinnamon",
+      "chocolate"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0192",
+    "restaurant_id": "r024",
+    "name": "Horchata",
+    "category": "Drink",
+    "description": "Sweet rice and cinnamon milk drink.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "cinnamon",
+      "milk"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0193",
+    "restaurant_id": "r025",
+    "name": "Guacamole & Chips",
+    "category": "Starter",
+    "description": "Fresh-mashed avocado with lime and tortilla chips.",
+    "price": 550,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "avocado",
+      "lime",
+      "corn tortilla"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0194",
+    "restaurant_id": "r025",
+    "name": "Chicken Quesadilla",
+    "category": "Starter",
+    "description": "Grilled tortilla filled with cheese and spiced chicken.",
+    "price": 550,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "tortilla"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0195",
+    "restaurant_id": "r025",
+    "name": "Beef Tacos",
+    "category": "Main Course",
+    "description": "Three soft tacos with seasoned beef and pico de gallo.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "beef",
+      "tortilla",
+      "pico de gallo"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0196",
+    "restaurant_id": "r025",
+    "name": "Chicken Enchiladas",
+    "category": "Main Course",
+    "description": "Rolled tortillas in a smoky red chili sauce.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "chili sauce",
+      "cheese"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0197",
+    "restaurant_id": "r025",
+    "name": "Vegetarian Burrito Bowl",
+    "category": "Main Course",
+    "description": "Rice, black beans, corn, and grilled peppers.",
+    "price": 1200,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Vegan option"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "rice",
+      "black beans",
+      "peppers"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0198",
+    "restaurant_id": "r025",
+    "name": "Mexican Street Corn",
+    "category": "Side",
+    "description": "Grilled corn with lime, cheese, and chili powder.",
+    "price": 350,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "corn",
+      "cheese",
+      "chili powder"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0199",
+    "restaurant_id": "r025",
+    "name": "Churros",
+    "category": "Dessert",
+    "description": "Cinnamon-sugar fried dough with chocolate dip.",
+    "price": 450,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "flour",
+      "cinnamon",
+      "chocolate"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0200",
+    "restaurant_id": "r025",
+    "name": "Horchata",
+    "category": "Drink",
+    "description": "Sweet rice and cinnamon milk drink.",
+    "price": 300,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "cinnamon",
+      "milk"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0201",
+    "restaurant_id": "r026",
+    "name": "Hummus",
+    "category": "Starter",
+    "description": "Creamy chickpea puree with olive oil and paprika.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chickpeas",
+      "tahini",
+      "olive oil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0202",
+    "restaurant_id": "r026",
+    "name": "Sigara Boregi",
+    "category": "Starter",
+    "description": "Crispy pastry rolls filled with feta and herbs.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "feta",
+      "phyllo",
+      "parsley"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0203",
+    "restaurant_id": "r026",
+    "name": "Adana Kebab",
+    "category": "Main Course",
+    "description": "Hand-minced lamb skewers with sumac onions.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "lamb",
+      "sumac",
+      "onion"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0204",
+    "restaurant_id": "r026",
+    "name": "Chicken Shish",
+    "category": "Main Course",
+    "description": "Marinated grilled chicken skewers.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "paprika"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0205",
+    "restaurant_id": "r026",
+    "name": "Iskender Kebab",
+    "category": "Main Course",
+    "description": "Sliced doner over pita with tomato sauce and yogurt.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "beef",
+      "pita",
+      "yogurt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0206",
+    "restaurant_id": "r026",
+    "name": "Turkish Rice Pilaf",
+    "category": "Side",
+    "description": "Buttery rice with toasted vermicelli.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "vermicelli",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0207",
+    "restaurant_id": "r026",
+    "name": "Baklava",
+    "category": "Dessert",
+    "description": "Layered phyllo pastry with pistachio and honey syrup.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Nut-free option"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "phyllo",
+      "pistachio",
+      "honey"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0208",
+    "restaurant_id": "r026",
+    "name": "Turkish Coffee",
+    "category": "Drink",
+    "description": "Finely ground coffee brewed unfiltered.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "coffee"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0209",
+    "restaurant_id": "r027",
+    "name": "Hummus",
+    "category": "Starter",
+    "description": "Creamy chickpea puree with olive oil and paprika.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chickpeas",
+      "tahini",
+      "olive oil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0210",
+    "restaurant_id": "r027",
+    "name": "Sigara Boregi",
+    "category": "Starter",
+    "description": "Crispy pastry rolls filled with feta and herbs.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "feta",
+      "phyllo",
+      "parsley"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0211",
+    "restaurant_id": "r027",
+    "name": "Adana Kebab",
+    "category": "Main Course",
+    "description": "Hand-minced lamb skewers with sumac onions.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "lamb",
+      "sumac",
+      "onion"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0212",
+    "restaurant_id": "r027",
+    "name": "Chicken Shish",
+    "category": "Main Course",
+    "description": "Marinated grilled chicken skewers.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "paprika"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0213",
+    "restaurant_id": "r027",
+    "name": "Iskender Kebab",
+    "category": "Main Course",
+    "description": "Sliced doner over pita with tomato sauce and yogurt.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "beef",
+      "pita",
+      "yogurt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0214",
+    "restaurant_id": "r027",
+    "name": "Turkish Rice Pilaf",
+    "category": "Side",
+    "description": "Buttery rice with toasted vermicelli.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "rice",
+      "vermicelli",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0215",
+    "restaurant_id": "r027",
+    "name": "Baklava",
+    "category": "Dessert",
+    "description": "Layered phyllo pastry with pistachio and honey syrup.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Nut-free option"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "phyllo",
+      "pistachio",
+      "honey"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0216",
+    "restaurant_id": "r027",
+    "name": "Turkish Coffee",
+    "category": "Drink",
+    "description": "Finely ground coffee brewed unfiltered.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "coffee"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0217",
+    "restaurant_id": "r028",
+    "name": "Mezze Platter",
+    "category": "Starter",
+    "description": "Hummus, baba ganoush, and labneh with warm pita.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chickpeas",
+      "eggplant",
+      "yogurt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0218",
+    "restaurant_id": "r028",
+    "name": "Falafel",
+    "category": "Starter",
+    "description": "Crispy chickpea fritters with tahini sauce.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chickpeas",
+      "herbs",
+      "tahini"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0219",
+    "restaurant_id": "r028",
+    "name": "Chicken Shawarma",
+    "category": "Main Course",
+    "description": "Spit-roasted chicken wrapped with garlic sauce.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "garlic sauce",
+      "pita"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0220",
+    "restaurant_id": "r028",
+    "name": "Lamb Mandi",
+    "category": "Main Course",
+    "description": "Slow-roasted lamb over spiced rice.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "lamb",
+      "rice",
+      "saffron"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0221",
+    "restaurant_id": "r028",
+    "name": "Stuffed Vine Leaves",
+    "category": "Main Course",
+    "description": "Rice and herb-stuffed grape leaves.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "grape leaves",
+      "rice",
+      "herbs"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0222",
+    "restaurant_id": "r028",
+    "name": "Fattoush Salad",
+    "category": "Side",
+    "description": "Crisp greens with toasted pita and sumac dressing.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "lettuce",
+      "pita",
+      "sumac"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0223",
+    "restaurant_id": "r028",
+    "name": "Kunafa",
+    "category": "Dessert",
+    "description": "Shredded pastry with sweet cheese and syrup.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "phyllo",
+      "cheese",
+      "syrup"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0224",
+    "restaurant_id": "r028",
+    "name": "Mint Lemonade",
+    "category": "Drink",
+    "description": "Fresh lemon juice blended with mint.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "lemon",
+      "mint",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0225",
+    "restaurant_id": "r029",
+    "name": "Mezze Platter",
+    "category": "Starter",
+    "description": "Hummus, baba ganoush, and labneh with warm pita.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chickpeas",
+      "eggplant",
+      "yogurt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0226",
+    "restaurant_id": "r029",
+    "name": "Falafel",
+    "category": "Starter",
+    "description": "Crispy chickpea fritters with tahini sauce.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chickpeas",
+      "herbs",
+      "tahini"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0227",
+    "restaurant_id": "r029",
+    "name": "Chicken Shawarma",
+    "category": "Main Course",
+    "description": "Spit-roasted chicken wrapped with garlic sauce.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "garlic sauce",
+      "pita"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0228",
+    "restaurant_id": "r029",
+    "name": "Lamb Mandi",
+    "category": "Main Course",
+    "description": "Slow-roasted lamb over spiced rice.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "lamb",
+      "rice",
+      "saffron"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0229",
+    "restaurant_id": "r029",
+    "name": "Stuffed Vine Leaves",
+    "category": "Main Course",
+    "description": "Rice and herb-stuffed grape leaves.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "grape leaves",
+      "rice",
+      "herbs"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0230",
+    "restaurant_id": "r029",
+    "name": "Fattoush Salad",
+    "category": "Side",
+    "description": "Crisp greens with toasted pita and sumac dressing.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "lettuce",
+      "pita",
+      "sumac"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0231",
+    "restaurant_id": "r029",
+    "name": "Kunafa",
+    "category": "Dessert",
+    "description": "Shredded pastry with sweet cheese and syrup.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "phyllo",
+      "cheese",
+      "syrup"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0232",
+    "restaurant_id": "r029",
+    "name": "Mint Lemonade",
+    "category": "Drink",
+    "description": "Fresh lemon juice blended with mint.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "lemon",
+      "mint",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0233",
+    "restaurant_id": "r030",
+    "name": "Greek Salad",
+    "category": "Starter",
+    "description": "Tomato, cucumber, olive, and feta with oregano.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "tomato",
+      "cucumber",
+      "feta"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0234",
+    "restaurant_id": "r030",
+    "name": "Grilled Halloumi",
+    "category": "Starter",
+    "description": "Charred halloumi drizzled with honey.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "halloumi",
+      "honey"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0235",
+    "restaurant_id": "r030",
+    "name": "Grilled Sea Bass",
+    "category": "Main Course",
+    "description": "Whole sea bass with lemon and herbs.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "High-protein",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "sea bass",
+      "lemon",
+      "olive oil"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0236",
+    "restaurant_id": "r030",
+    "name": "Chicken Souvlaki",
+    "category": "Main Course",
+    "description": "Skewered marinated chicken with tzatziki.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "garlic"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0237",
+    "restaurant_id": "r030",
+    "name": "Falafel Bowl",
+    "category": "Main Course",
+    "description": "Falafel over grain salad with tahini dressing.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chickpeas",
+      "grains",
+      "tahini"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0238",
+    "restaurant_id": "r030",
+    "name": "Roasted Vegetables",
+    "category": "Side",
+    "description": "Seasonal vegetables roasted in olive oil.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "zucchini",
+      "pepper",
+      "olive oil"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0239",
+    "restaurant_id": "r030",
+    "name": "Baklava Bites",
+    "category": "Dessert",
+    "description": "Bite-sized honey pistachio pastry.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "phyllo",
+      "pistachio",
+      "honey"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0240",
+    "restaurant_id": "r030",
+    "name": "Fresh Orange Juice",
+    "category": "Drink",
+    "description": "Cold-pressed orange juice.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "orange"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0241",
+    "restaurant_id": "r031",
+    "name": "Loaded Nachos",
+    "category": "Starter",
+    "description": "Tortilla chips with cheese, jalapeno, and salsa.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "tortilla chips",
+      "cheese",
+      "jalapeno"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0242",
+    "restaurant_id": "r031",
+    "name": "Buffalo Wings",
+    "category": "Starter",
+    "description": "Crispy wings tossed in spicy buffalo sauce.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "chicken wings",
+      "hot sauce",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0243",
+    "restaurant_id": "r031",
+    "name": "Classic Cheeseburger",
+    "category": "Main Course",
+    "description": "Beef patty with cheddar, lettuce, and house sauce.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "beef",
+      "cheddar",
+      "brioche bun"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0244",
+    "restaurant_id": "r031",
+    "name": "BBQ Smoked Ribs",
+    "category": "Main Course",
+    "description": "Slow-smoked ribs glazed with house BBQ sauce.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal option",
+      "High-protein"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "pork or beef ribs",
+      "bbq sauce"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0245",
+    "restaurant_id": "r031",
+    "name": "Grilled Chicken Caesar",
+    "category": "Main Course",
+    "description": "Romaine, parmesan, and croutons with grilled chicken.",
+    "price": 1560,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chicken",
+      "romaine",
+      "parmesan"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0246",
+    "restaurant_id": "r031",
+    "name": "Loaded Fries",
+    "category": "Side",
+    "description": "Fries topped with cheese sauce and bacon bits.",
+    "price": 460,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian option"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "potato",
+      "cheese sauce",
+      "bacon"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0247",
+    "restaurant_id": "r031",
+    "name": "New York Cheesecake",
+    "category": "Dessert",
+    "description": "Classic baked cheesecake with berry compote.",
+    "price": 580,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "cream cheese",
+      "berries"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0248",
+    "restaurant_id": "r031",
+    "name": "Classic Milkshake",
+    "category": "Drink",
+    "description": "Thick vanilla or chocolate milkshake.",
+    "price": 390,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "milk",
+      "ice cream"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0249",
+    "restaurant_id": "r032",
+    "name": "Loaded Nachos",
+    "category": "Starter",
+    "description": "Tortilla chips with cheese, jalapeno, and salsa.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "tortilla chips",
+      "cheese",
+      "jalapeno"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0250",
+    "restaurant_id": "r032",
+    "name": "Buffalo Wings",
+    "category": "Starter",
+    "description": "Crispy wings tossed in spicy buffalo sauce.",
+    "price": 940,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Hot",
+    "ingredients": [
+      "chicken wings",
+      "hot sauce",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0251",
+    "restaurant_id": "r032",
+    "name": "Classic Cheeseburger",
+    "category": "Main Course",
+    "description": "Beef patty with cheddar, lettuce, and house sauce.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "beef",
+      "cheddar",
+      "brioche bun"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0252",
+    "restaurant_id": "r032",
+    "name": "BBQ Smoked Ribs",
+    "category": "Main Course",
+    "description": "Slow-smoked ribs glazed with house BBQ sauce.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal option",
+      "High-protein"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "pork or beef ribs",
+      "bbq sauce"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0253",
+    "restaurant_id": "r032",
+    "name": "Grilled Chicken Caesar",
+    "category": "Main Course",
+    "description": "Romaine, parmesan, and croutons with grilled chicken.",
+    "price": 2040,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chicken",
+      "romaine",
+      "parmesan"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0254",
+    "restaurant_id": "r032",
+    "name": "Loaded Fries",
+    "category": "Side",
+    "description": "Fries topped with cheese sauce and bacon bits.",
+    "price": 600,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian option"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "potato",
+      "cheese sauce",
+      "bacon"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0255",
+    "restaurant_id": "r032",
+    "name": "New York Cheesecake",
+    "category": "Dessert",
+    "description": "Classic baked cheesecake with berry compote.",
+    "price": 760,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "cream cheese",
+      "berries"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0256",
+    "restaurant_id": "r032",
+    "name": "Classic Milkshake",
+    "category": "Drink",
+    "description": "Thick vanilla or chocolate milkshake.",
+    "price": 510,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "milk",
+      "ice cream"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0257",
+    "restaurant_id": "r033",
+    "name": "French Onion Soup",
+    "category": "Starter",
+    "description": "Caramelized onion broth topped with gruyere crouton.",
+    "price": 1320,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian option"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "onion",
+      "beef broth",
+      "gruyere"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0258",
+    "restaurant_id": "r033",
+    "name": "Escargot",
+    "category": "Starter",
+    "description": "Snails baked in garlic herb butter.",
+    "price": 1320,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "snails",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0259",
+    "restaurant_id": "r033",
+    "name": "Coq au Vin",
+    "category": "Main Course",
+    "description": "Chicken braised in red wine with mushrooms.",
+    "price": 2880,
+    "currency": "PKR",
+    "dietary_tags": [
+      "High-protein"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chicken",
+      "red wine",
+      "mushroom"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0260",
+    "restaurant_id": "r033",
+    "name": "Beef Bourguignon",
+    "category": "Main Course",
+    "description": "Slow-braised beef in a burgundy wine sauce.",
+    "price": 2880,
+    "currency": "PKR",
+    "dietary_tags": [
+      "High-protein"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "beef",
+      "red wine",
+      "carrot"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0261",
+    "restaurant_id": "r033",
+    "name": "Ratatouille",
+    "category": "Main Course",
+    "description": "Provencal stewed vegetables with herbs.",
+    "price": 2880,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "eggplant",
+      "zucchini",
+      "tomato"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0262",
+    "restaurant_id": "r033",
+    "name": "Pommes Frites",
+    "category": "Side",
+    "description": "Thin-cut fries with sea salt.",
+    "price": 840,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "potato",
+      "sea salt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0263",
+    "restaurant_id": "r033",
+    "name": "Creme Brulee",
+    "category": "Dessert",
+    "description": "Vanilla custard with a caramelized sugar crust.",
+    "price": 1080,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "cream",
+      "vanilla",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0264",
+    "restaurant_id": "r033",
+    "name": "French Press Coffee",
+    "category": "Drink",
+    "description": "Slow-brewed dark roast coffee.",
+    "price": 720,
+    "currency": "PKR",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "coffee"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0265",
+    "restaurant_id": "r034",
+    "name": "Mezze Platter",
+    "category": "Starter",
+    "description": "Hummus, baba ganoush, and labneh with warm pita.",
+    "price": 29,
+    "currency": "AED",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chickpeas",
+      "eggplant",
+      "yogurt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0266",
+    "restaurant_id": "r034",
+    "name": "Falafel",
+    "category": "Starter",
+    "description": "Crispy chickpea fritters with tahini sauce.",
+    "price": 29,
+    "currency": "AED",
+    "dietary_tags": [
+      "Vegan"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "chickpeas",
+      "herbs",
+      "tahini"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0267",
+    "restaurant_id": "r034",
+    "name": "Chicken Shawarma",
+    "category": "Main Course",
+    "description": "Spit-roasted chicken wrapped with garlic sauce.",
+    "price": 63,
+    "currency": "AED",
+    "dietary_tags": [
+      "Halal"
+    ],
+    "spice_level": "Medium",
+    "ingredients": [
+      "chicken",
+      "garlic sauce",
+      "pita"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0268",
+    "restaurant_id": "r034",
+    "name": "Lamb Mandi",
+    "category": "Main Course",
+    "description": "Slow-roasted lamb over spiced rice.",
+    "price": 63,
+    "currency": "AED",
+    "dietary_tags": [
+      "Halal",
+      "High-protein"
+    ],
+    "spice_level": "Mild",
+    "ingredients": [
+      "lamb",
+      "rice",
+      "saffron"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0269",
+    "restaurant_id": "r034",
+    "name": "Stuffed Vine Leaves",
+    "category": "Main Course",
+    "description": "Rice and herb-stuffed grape leaves.",
+    "price": 63,
+    "currency": "AED",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "grape leaves",
+      "rice",
+      "herbs"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0270",
+    "restaurant_id": "r034",
+    "name": "Fattoush Salad",
+    "category": "Side",
+    "description": "Crisp greens with toasted pita and sumac dressing.",
+    "price": 18,
+    "currency": "AED",
+    "dietary_tags": [
+      "Vegan"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "lettuce",
+      "pita",
+      "sumac"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0271",
+    "restaurant_id": "r034",
+    "name": "Kunafa",
+    "category": "Dessert",
+    "description": "Shredded pastry with sweet cheese and syrup.",
+    "price": 24,
+    "currency": "AED",
+    "dietary_tags": [
+      "Vegetarian"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "phyllo",
+      "cheese",
+      "syrup"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0272",
+    "restaurant_id": "r034",
+    "name": "Mint Lemonade",
+    "category": "Drink",
+    "description": "Fresh lemon juice blended with mint.",
+    "price": 16,
+    "currency": "AED",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "lemon",
+      "mint",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0273",
+    "restaurant_id": "r035",
+    "name": "French Onion Soup",
+    "category": "Starter",
+    "description": "Caramelized onion broth topped with gruyere crouton.",
+    "price": 7,
+    "currency": "GBP",
+    "dietary_tags": [
+      "Vegetarian option"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "onion",
+      "beef broth",
+      "gruyere"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0274",
+    "restaurant_id": "r035",
+    "name": "Escargot",
+    "category": "Starter",
+    "description": "Snails baked in garlic herb butter.",
+    "price": 7,
+    "currency": "GBP",
+    "dietary_tags": [
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "snails",
+      "garlic",
+      "butter"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0275",
+    "restaurant_id": "r035",
+    "name": "Coq au Vin",
+    "category": "Main Course",
+    "description": "Chicken braised in red wine with mushrooms.",
+    "price": 16,
+    "currency": "GBP",
+    "dietary_tags": [
+      "High-protein"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "chicken",
+      "red wine",
+      "mushroom"
+    ],
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": "m0276",
+    "restaurant_id": "r035",
+    "name": "Beef Bourguignon",
+    "category": "Main Course",
+    "description": "Slow-braised beef in a burgundy wine sauce.",
+    "price": 16,
+    "currency": "GBP",
+    "dietary_tags": [
+      "High-protein"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "beef",
+      "red wine",
+      "carrot"
+    ],
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": "m0277",
+    "restaurant_id": "r035",
+    "name": "Ratatouille",
+    "category": "Main Course",
+    "description": "Provencal stewed vegetables with herbs.",
+    "price": 16,
+    "currency": "GBP",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "eggplant",
+      "zucchini",
+      "tomato"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0278",
+    "restaurant_id": "r035",
+    "name": "Pommes Frites",
+    "category": "Side",
+    "description": "Thin-cut fries with sea salt.",
+    "price": 5,
+    "currency": "GBP",
+    "dietary_tags": [
+      "Vegan"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "potato",
+      "sea salt"
+    ],
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": "m0279",
+    "restaurant_id": "r035",
+    "name": "Creme Brulee",
+    "category": "Dessert",
+    "description": "Vanilla custard with a caramelized sugar crust.",
+    "price": 6,
+    "currency": "GBP",
+    "dietary_tags": [
+      "Vegetarian",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "cream",
+      "vanilla",
+      "sugar"
+    ],
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": "m0280",
+    "restaurant_id": "r035",
+    "name": "French Press Coffee",
+    "category": "Drink",
+    "description": "Slow-brewed dark roast coffee.",
+    "price": 4,
+    "currency": "GBP",
+    "dietary_tags": [
+      "Vegan",
+      "Gluten-free"
+    ],
+    "spice_level": "None",
+    "ingredients": [
+      "coffee"
+    ],
+    "popular": false,
+    "recommended": false
+  }
+]

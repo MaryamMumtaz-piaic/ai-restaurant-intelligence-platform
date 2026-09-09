@@ -1,0 +1,86 @@
+[
+  {
+    "id": "cat-casual-meal",
+    "name": "Casual Meal",
+    "slug": "casual-meal",
+    "description": "Relaxed everyday dining spots."
+  },
+  {
+    "id": "cat-family-dinner",
+    "name": "Family Dinner",
+    "slug": "family-dinner",
+    "description": "Spacious, welcoming venues great for families."
+  },
+  {
+    "id": "cat-date-night",
+    "name": "Date Night",
+    "slug": "date-night",
+    "description": "Intimate, romantic settings for two."
+  },
+  {
+    "id": "cat-business-dinner",
+    "name": "Business Dinner",
+    "slug": "business-dinner",
+    "description": "Polished venues suited for professional meals."
+  },
+  {
+    "id": "cat-birthday",
+    "name": "Birthday",
+    "slug": "birthday",
+    "description": "Celebration-ready restaurants with festive energy."
+  },
+  {
+    "id": "cat-celebration",
+    "name": "Celebration",
+    "slug": "celebration",
+    "description": "Standout venues for marking special occasions."
+  },
+  {
+    "id": "cat-solo-dining",
+    "name": "Solo Dining",
+    "slug": "solo-dining",
+    "description": "Comfortable spots to enjoy a meal alone."
+  },
+  {
+    "id": "cat-brunch",
+    "name": "Brunch",
+    "slug": "brunch",
+    "description": "Great late-morning and weekend brunch spots."
+  },
+  {
+    "id": "cat-quick-lunch",
+    "name": "Quick Lunch",
+    "slug": "quick-lunch",
+    "description": "Fast, satisfying options for a midday break."
+  },
+  {
+    "id": "cat-late-night",
+    "name": "Late Night",
+    "slug": "late-night",
+    "description": "Kitchens open late for night owls."
+  },
+  {
+    "id": "cat-friends-gathering",
+    "name": "Friends Gathering",
+    "slug": "friends-gathering",
+    "description": "Lively venues built for group hangouts."
+  },
+  {
+    "id": "cat-best-for-dessert",
+    "name": "Best for Dessert",
+    "slug": "best-for-dessert",
+    "description": "Restaurants with standout dessert menus."
+  },
+  {
+    "id": "cat-great-value",
+    "name": "Great Value",
+    "slug": "great-value",
+    "description": "High quality dining at accessible prices."
+  },
+  {
+    "id": "cat-date-night-spots",
+    "name": "Date Night Spots",
+    "slug": "date-night-spots",
+    "description": "Curated romantic dining picks."
+  }
+]

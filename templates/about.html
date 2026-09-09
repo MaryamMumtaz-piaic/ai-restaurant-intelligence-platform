@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="border-b border-hairline bg-paper">
+  <div class="container-editorial py-14 max-w-3xl">
+    <p class="text-eyebrow mb-2">About</p>
+    <h1 class="font-display text-4xl sm:text-5xl font-semibold leading-tight">A dining decision platform, not another directory.</h1>
+    <p class="mt-5 text-lg text-inksoft leading-relaxed">AI Restaurant Intelligence helps you answer one question well: where should I eat, and why is this the best option for me? Instead of a long list of restaurants, you get a reasoned recommendation.</p>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container-editorial max-w-3xl space-y-14">
+
+    <div>
+      <h2 class="font-display text-2xl font-semibold mb-3">What the platform does</h2>
+      <p class="text-inksoft leading-relaxed">We combine a curated restaurant dataset with a set of specialized AI agents that reason about your preferences &mdash; cuisine, budget, diet, occasion, and atmosphere &mdash; to surface restaurants that actually fit, and explain exactly why.</p>
+    </div>
+
+    <div>
+      <h2 class="font-display text-2xl font-semibold mb-3">How restaurant intelligence works</h2>
+      <p class="text-inksoft leading-relaxed">A Restaurant Discovery Agent first narrows down candidates using local filtering &mdash; cuisine, location, price, diet, and occasion &mdash; before any AI reasoning happens. A Restaurant Intelligence Agent then evaluates the remaining candidates for atmosphere, budget fit, and occasion suitability, and produces a transparent match score alongside its reasoning.</p>
+    </div>
+
+    <div>
+      <h2 class="font-display text-2xl font-semibold mb-3">How AI agents analyze dining options</h2>
+      <p class="text-inksoft leading-relaxed">Each agent has a narrow responsibility: discovery, restaurant intelligence, menu analysis, dietary compatibility, comparison, and dining plan construction. An orchestrator calls only the agents needed for a given request, so we never send your entire query to every agent unnecessarily.</p>
+    </div>
+
+    <div>
+      <h2 class="font-display text-2xl font-semibold mb-3">How menu intelligence works</h2>
+      <p class="text-inksoft leading-relaxed">A Menu Analysis Agent reads each restaurant's actual menu data to identify best-value dishes, dietary-friendly options, popular items, and dishes that pair well together &mdash; so you know what to order before you arrive.</p>
+    </div>
+
+    <div>
+      <h2 class="font-display text-2xl font-semibold mb-3">How personalization works</h2>
+      <p class="text-inksoft leading-relaxed">Your preferences are remembered for the current session and, where you choose to save something, stored in your browser's local storage. We don't use accounts or cloud-based persistent memory &mdash; nothing is stored on a server tied to your identity.</p>
+    </div>
+
+    <div class="bg-cream/60 border border-hairline rounded-xl p-6">
+      <p class="text-sm text-inksoft leading-relaxed"><strong>A note on data:</strong> Restaurant listings, menus, and reviews in this product are realistic fictional sample data built for demonstration purposes. They are not verified real-world facts, and availability is not connected to any live booking system.</p>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

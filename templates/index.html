@@ -1,0 +1,242 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- ============================== HERO ============================== -->
+<section class="relative overflow-hidden border-b border-hairline">
+  <div class="absolute inset-0 bg-gradient-to-b from-cream/60 via-ivory to-ivory pointer-events-none"></div>
+  <div class="container-editorial relative section-space grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-eyebrow mb-5">AI-Powered Dining Intelligence</p>
+      <h1 class="font-display text-[2.75rem] sm:text-6xl leading-[1.02] font-semibold tracking-tight">
+        Find somewhere<br><span class="text-serif-italic text-terracotta-dark">worth eating.</span>
+      </h1>
+      <p class="mt-6 text-lg text-inksoft max-w-lg leading-relaxed">
+        AI-powered restaurant discovery that understands your taste, budget, diet, occasion, and what you actually want &mdash; then tells you exactly why it fits.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/discover" class="btn-primary text-base px-7 py-3.5">Find My Restaurant</a>
+        <a href="/discover" class="btn-secondary text-base px-7 py-3.5">Explore Restaurants</a>
+      </div>
+      <div class="mt-10 flex items-center gap-6 text-sm text-stone">
+        <span>30+ curated restaurants</span>
+        <span class="w-1 h-1 rounded-full bg-hairline-strong"></span>
+        <span>13 cuisines</span>
+        <span class="w-1 h-1 rounded-full bg-hairline-strong"></span>
+        <span>Menu-level intelligence</span>
+      </div>
+    </div>
+
+    <div class="relative hidden lg:block" aria-hidden="true">
+      <div class="relative w-full aspect-square max-w-md ml-auto">
+        <div class="absolute top-0 right-0 w-64 h-64 rounded-[28px] placeholder-art shadow-lift rotate-3" data-cuisine="pakistani">
+          <span class="placeholder-icon">🍛</span>
+        </div>
+        <div class="absolute bottom-4 left-0 w-52 h-52 rounded-[24px] placeholder-art shadow-lift -rotate-6" data-cuisine="japanese">
+          <span class="placeholder-icon">🍣</span>
+        </div>
+        <div class="absolute bottom-24 right-16 w-36 h-36 rounded-full placeholder-art shadow-lift" data-cuisine="italian">
+          <span class="placeholder-icon">🍝</span>
+        </div>
+        <div class="absolute top-16 left-6 match-badge match-badge--lg shadow-lift" style="--pct:94; background-image:none;">
+          <span class="match-badge__value">94%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SMART DINING SEARCH ======================= -->
+<section class="section-space !pt-14 !pb-14 bg-paper border-b border-hairline">
+  <div class="container-editorial">
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="text-eyebrow mb-3">Smart Dining Search</p>
+      <h2 class="font-display text-2xl sm:text-3xl font-semibold">What are you looking for?</h2>
+      <p class="mt-2 text-inksoft">Describe it in plain language &mdash; cuisine, budget, diet, occasion, atmosphere.</p>
+    </div>
+    <form id="smart-search-form" class="mt-7 max-w-2xl mx-auto" role="search">
+      <label for="smart-search-input" class="sr-only">Describe what you're looking for</label>
+      <div class="relative">
+        <input id="smart-search-input" name="q" type="text" required
+          placeholder="&quot;Quiet Pakistani restaurant for dinner under PKR 4,000&quot;"
+          class="field-input !min-h-[58px] !text-base pl-6 pr-32 rounded-full shadow-soft">
+        <button type="submit" class="btn-primary absolute right-1.5 top-1.5 bottom-1.5 !px-6">Search</button>
+      </div>
+      <div class="flex flex-wrap gap-2 justify-center mt-4">
+        <button type="button" class="chip hover:bg-cream transition-colors" data-example-query="Quiet halal dinner under PKR 5,000">Quiet halal dinner under PKR 5,000</button>
+        <button type="button" class="chip hover:bg-cream transition-colors" data-example-query="Vegetarian-friendly restaurant with good desserts">Vegetarian-friendly with good desserts</button>
+        <button type="button" class="chip hover:bg-cream transition-colors" data-example-query="Romantic date night spot">Romantic date night spot</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============================ POPULAR NEAR YOU ============================ -->
+<section class="section-space">
+  <div class="container-editorial">
+    <div class="flex items-end justify-between gap-4 mb-8">
+      <div>
+        <p class="text-eyebrow mb-2">Curated Selection</p>
+        <h2 class="font-display text-3xl font-semibold">Popular Near You</h2>
+      </div>
+      <a href="/discover" class="btn-ghost hidden sm:inline-flex">View all →</a>
+    </div>
+    <div id="popular-grid" data-section="popular" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {% for i in range(4) %}
+      <div class="card-restaurant skeleton-shimmer" style="min-height: 360px;" aria-hidden="true"></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================ EXPLORE CUISINES ============================ -->
+<section id="cuisines" class="section-space bg-cream/50 border-y border-hairline">
+  <div class="container-editorial">
+    <div class="text-center mb-10">
+      <p class="text-eyebrow mb-2">By Cuisine</p>
+      <h2 class="font-display text-3xl font-semibold">Explore Cuisines</h2>
+      <p class="mt-2 text-inksoft max-w-lg mx-auto">From smoky tandoor to delicate sushi &mdash; find the flavours you're craving.</p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+      {% for c in cuisines %}
+      <a href="/cuisine/{{ c.slug }}" class="group flex flex-col items-center gap-3 p-5 bg-paper border border-hairline rounded-xl hover:border-terracotta hover:shadow-soft transition-all text-center">
+        <span class="text-3xl" aria-hidden="true">{{ c.icon | default('🍽️') }}</span>
+        <span class="font-semibold text-sm group-hover:text-terracotta-dark transition-colors">{{ c.name }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================ AI DINING PLANNER TEASER ============================ -->
+<section class="section-space">
+  <div class="container-editorial grid lg:grid-cols-2 gap-10 items-center">
+    <div class="order-2 lg:order-1 relative">
+      <div class="bg-paper border border-hairline rounded-2xl shadow-soft p-7 max-w-md">
+        <p class="text-eyebrow mb-4">Sample Plan</p>
+        <h3 class="font-display text-xl font-semibold mb-1">Your Dinner Plan</h3>
+        <p class="text-sm text-stone mb-5">Family Dinner &middot; PKR 5,000 budget</p>
+        <ul class="space-y-3 text-sm">
+          <li class="flex justify-between border-b border-hairline pb-3"><span>Starter — Chicken Wings</span><span class="menu-item-price">PKR 650</span></li>
+          <li class="flex justify-between border-b border-hairline pb-3"><span>Main — Chicken Karahi</span><span class="menu-item-price">PKR 2,200</span></li>
+          <li class="flex justify-between border-b border-hairline pb-3"><span>Side — Garlic Naan</span><span class="menu-item-price">PKR 300</span></li>
+          <li class="flex justify-between"><span>Dessert — Kheer</span><span class="menu-item-price">PKR 400</span></li>
+        </ul>
+        <div class="flex justify-between items-center mt-5 pt-4 border-t border-hairline">
+          <span class="font-semibold">Estimated Total</span>
+          <span class="font-display text-lg font-semibold text-terracotta-dark">PKR 3,550</span>
+        </div>
+      </div>
+    </div>
+    <div class="order-1 lg:order-2">
+      <p class="text-eyebrow mb-3">AI Dining Planner</p>
+      <h2 class="font-display text-3xl font-semibold leading-tight">A complete plan, not just a place.</h2>
+      <p class="mt-4 text-inksoft leading-relaxed">Tell us who's dining, your budget, and the occasion. Our Dining Plan Agent builds a full recommended order, an estimated cost, and explains exactly why the plan works for you.</p>
+      <a href="/planner" class="btn-primary mt-6">Build a Dining Plan</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TRENDING ============================ -->
+<section class="section-space bg-cream/50 border-y border-hairline">
+  <div class="container-editorial">
+    <div class="flex items-end justify-between gap-4 mb-8">
+      <div>
+        <p class="text-eyebrow mb-2">Right Now</p>
+        <h2 class="font-display text-3xl font-semibold">Trending Restaurants</h2>
+      </div>
+      <a href="/discover" class="btn-ghost hidden sm:inline-flex">View all →</a>
+    </div>
+    <div id="trending-grid" data-section="trending" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {% for i in range(4) %}
+      <div class="card-restaurant skeleton-shimmer" style="min-height: 360px;" aria-hidden="true"></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================ DINING OCCASIONS ============================ -->
+<section class="section-space">
+  <div class="container-editorial">
+    <div class="text-center mb-10">
+      <p class="text-eyebrow mb-2">Whatever the Reason</p>
+      <h2 class="font-display text-3xl font-semibold">Dining Occasions</h2>
+    </div>
+    <div class="flex flex-wrap justify-center gap-3">
+      {% set occasions = ["Casual Meal", "Family Dinner", "Date Night", "Business Dinner", "Birthday", "Celebration", "Solo Dining", "Brunch", "Quick Lunch", "Late Night", "Friends Gathering"] %}
+      {% for o in occasions %}
+      <a href="/discover?occasion={{ o | urlencode }}" class="chip !text-sm !py-2.5 !px-4 hover:bg-cream transition-colors">{{ o }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================ HOW IT WORKS ============================ -->
+<section class="section-space bg-olive-dark text-ivory">
+  <div class="container-editorial">
+    <div class="text-center mb-14">
+      <p class="text-eyebrow !text-amber-light mb-2">The Intelligence Behind It</p>
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold">How It Works</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <span class="numbered-step !text-ivory/25">01</span>
+        <h3 class="font-display text-lg font-semibold mt-3 mb-2">Discovery Agent</h3>
+        <p class="text-sm text-ivory/70 leading-relaxed">Understands your cuisine, budget, diet, and occasion, then narrows down real candidates from our restaurant dataset.</p>
+      </div>
+      <div>
+        <span class="numbered-step !text-ivory/25">02</span>
+        <h3 class="font-display text-lg font-semibold mt-3 mb-2">Restaurant Intelligence</h3>
+        <p class="text-sm text-ivory/70 leading-relaxed">Evaluates atmosphere, cuisine identity, and dining suitability to explain strengths and things to consider.</p>
+      </div>
+      <div>
+        <span class="numbered-step !text-ivory/25">03</span>
+        <h3 class="font-display text-lg font-semibold mt-3 mb-2">Menu Analysis</h3>
+        <p class="text-sm text-ivory/70 leading-relaxed">Reads the actual menu to surface best value, dietary-friendly, and popular dishes worth ordering.</p>
+      </div>
+      <div>
+        <span class="numbered-step !text-ivory/25">04</span>
+        <h3 class="font-display text-lg font-semibold mt-3 mb-2">Recommendation</h3>
+        <p class="text-sm text-ivory/70 leading-relaxed">Compares top options and builds a complete, explained dining plan &mdash; not just a list of names.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FEATURED MENUS ============================ -->
+<section class="section-space">
+  <div class="container-editorial">
+    <div class="text-center mb-10">
+      <p class="text-eyebrow mb-2">Menu Intelligence</p>
+      <h2 class="font-display text-3xl font-semibold">Know what to order before you arrive</h2>
+      <p class="mt-2 text-inksoft max-w-lg mx-auto">Every menu is broken down by value, dietary fit, spice level, and what pairs well together.</p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="ai-insight-panel">
+        <p class="text-eyebrow mb-2">Best Value</p>
+        <p class="font-display text-lg font-semibold mb-1">Chicken Karahi</p>
+        <p class="text-sm text-inksoft">Generous portion, ideal for sharing, PKR 2,200.</p>
+      </div>
+      <div class="ai-insight-panel">
+        <p class="text-eyebrow mb-2">Vegetarian Pick</p>
+        <p class="font-display text-lg font-semibold mb-1">Paneer Tikka Masala</p>
+        <p class="text-sm text-inksoft">Rich, mildly spiced, consistently popular.</p>
+      </div>
+      <div class="ai-insight-panel">
+        <p class="text-eyebrow mb-2">Best Dessert</p>
+        <p class="font-display text-lg font-semibold mb-1">Kheer</p>
+        <p class="text-sm text-inksoft">A comforting classic to close out any dinner.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FINAL CTA ============================ -->
+<section class="section-space bg-cream border-t border-hairline">
+  <div class="container-editorial text-center">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold max-w-xl mx-auto">Stop scrolling. Start deciding.</h2>
+    <p class="mt-4 text-inksoft max-w-md mx-auto">Let AI Restaurant Intelligence do the thinking &mdash; from discovery to a complete dining plan.</p>
+    <a href="/discover" class="btn-primary text-base px-8 py-4 mt-7 inline-flex">Find My Restaurant</a>
+  </div>
+</section>
+
+{% endblock %}

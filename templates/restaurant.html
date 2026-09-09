@@ -1,0 +1,282 @@
+{% extends "base.html" %}
+{% block extra_head %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": {{ restaurant.name | tojson }},
+  "description": {{ restaurant.description | tojson }},
+  "servesCuisine": {{ restaurant.cuisine | tojson }},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ restaurant.address | tojson }},
+    "addressLocality": {{ restaurant.city | tojson }}
+  },
+  "priceRange": {{ restaurant.price_level | tojson }},
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": {{ restaurant.rating }},
+    "reviewCount": {{ restaurant.review_count }}
+  }
+}
+</script>
+{% endblock %}
+{% block content %}
+
+<div data-restaurant-id="{{ restaurant.id }}" data-restaurant-slug="{{ restaurant.slug }}" id="restaurant-page-root">
+
+<!-- ============================== HERO ============================== -->
+<section class="border-b border-hairline">
+  <div class="relative h-64 sm:h-80 placeholder-art" data-cuisine="{{ (restaurant.cuisine[0] if restaurant.cuisine else 'default') | lower }}">
+    <span class="placeholder-mark !text-6xl" aria-hidden="true">{{ restaurant.name[0] }}</span>
+    <div class="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent"></div>
+  </div>
+  <div class="container-editorial">
+    <div class="-mt-10 relative bg-paper border border-hairline rounded-2xl shadow-soft p-6 sm:p-8">
+      <div class="flex flex-wrap items-start justify-between gap-6">
+        <div>
+          <p class="text-eyebrow mb-2">{{ restaurant.cuisine | join(' · ') }}</p>
+          <h1 class="font-display text-3xl sm:text-4xl font-semibold">{{ restaurant.name }}</h1>
+          <div class="flex flex-wrap items-center gap-3 mt-3 text-sm">
+            <span class="rating-stars" aria-label="Rated {{ restaurant.rating }} out of 5">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+              <span class="rating-value">{{ restaurant.rating }}</span>
+            </span>
+            <span class="text-stone">({{ restaurant.review_count }} reviews)</span>
+            <span class="text-stone">·</span>
+            <span class="chip">{{ restaurant.price_level }}</span>
+            <span class="text-stone">·</span>
+            <span class="text-inksoft">{{ restaurant.currency }} {{ '{:,.0f}'.format(restaurant.average_cost_per_person) }}/person avg</span>
+            <span class="text-stone">·</span>
+            <span class="text-inksoft">{{ restaurant.area }}, {{ restaurant.city }}</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2.5">
+          <button type="button" id="ask-ai-btn" class="btn-primary">Ask AI About This Restaurant</button>
+          <a href="/planner?restaurant_id={{ restaurant.id }}" class="btn-secondary">Build Dining Plan</a>
+          <button type="button" class="btn-icon" data-action="save" data-id="{{ restaurant.id }}" aria-pressed="false" aria-label="Save {{ restaurant.name }}">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 3h10a1 1 0 011 1v11l-6-3.5L3 15V4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </button>
+          <button type="button" class="btn-icon" data-action="share" data-id="{{ restaurant.id }}" data-name="{{ restaurant.name }}" aria-label="Share {{ restaurant.name }}">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M13 6a2 2 0 100-4 2 2 0 000 4zM5 11a2 2 0 100-4 2 2 0 000 4zM13 16a2 2 0 100-4 2 2 0 000 4zM6.7 10l4.6-2.7M6.7 8l4.6 2.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container-editorial section-space !pt-10 grid lg:grid-cols-[1fr_360px] gap-10 items-start">
+  <div class="space-y-12">
+
+    <!-- ABOUT -->
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading" class="font-display text-2xl font-semibold mb-3">About</h2>
+      <p class="text-inksoft leading-relaxed prose-measure">{{ restaurant.description }}</p>
+
+      <div class="flex flex-wrap gap-2 mt-5">
+        {% for a in restaurant.ambience %}<span class="chip chip--olive">{{ a }}</span>{% endfor %}
+        {% for d in restaurant.dietary_options %}<span class="chip chip--amber">{{ d }}</span>{% endfor %}
+        {% for f in restaurant.features %}<span class="chip">{{ f }}</span>{% endfor %}
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section aria-labelledby="menu-heading">
+      <div class="flex items-center justify-between mb-4">
+        <h2 id="menu-heading" class="font-display text-2xl font-semibold">Menu</h2>
+        <span class="text-xs data-source-tag data-source-tag--dataset">Dataset Information</span>
+      </div>
+
+      <div class="mb-6">
+        <p class="field-label mb-2">What should I order?</p>
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Menu intelligence quick filters">
+          <button type="button" class="filter-pill-btn" data-menu-filter="best_value" aria-pressed="false">Best Value</button>
+          <button type="button" class="filter-pill-btn" data-menu-filter="high_protein" aria-pressed="false">High Protein</button>
+          <button type="button" class="filter-pill-btn" data-menu-filter="vegetarian" aria-pressed="false">Vegetarian</button>
+          <button type="button" class="filter-pill-btn" data-menu-filter="spicy" aria-pressed="false">Spicy</button>
+          <button type="button" class="filter-pill-btn" data-menu-filter="under_2000" aria-pressed="false">Under PKR 2,000</button>
+          <button type="button" class="filter-pill-btn" data-menu-filter="sharing" aria-pressed="false">Best for Sharing</button>
+          <button type="button" class="filter-pill-btn" data-menu-filter="dessert" aria-pressed="false">Best Dessert</button>
+        </div>
+        <p id="menu-filter-explanation" class="text-sm text-inksoft mt-3 leading-relaxed" aria-live="polite"></p>
+      </div>
+
+      <div id="menu-list" class="divide-y divide-hairline">
+        {% set ns = namespace(cat="") %}
+        {% for item in restaurant.menu %}
+          {% if item.category != ns.cat %}
+            {% set ns.cat = item.category %}
+            <h3 class="font-display text-lg font-semibold pt-6 pb-1 first:pt-0">{{ item.category }}</h3>
+          {% endif %}
+          <div class="menu-item-row" data-menu-item
+               data-item-id="{{ item.id }}"
+               data-category="{{ item.category | lower }}"
+               data-price="{{ item.price }}"
+               data-dietary="{{ item.dietary_tags | join(',') | lower }}"
+               data-spice="{{ item.spice_level | lower }}"
+               data-popular="{{ item.popular | lower }}"
+               data-recommended="{{ item.recommended | lower }}">
+            <div class="min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <p class="font-semibold">{{ item.name }}</p>
+                {% if item.popular %}<span class="chip chip--terracotta !text-[10px]">Popular</span>{% endif %}
+                {% if item.recommended %}<span class="chip chip--amber !text-[10px]">Recommended</span>{% endif %}
+              </div>
+              <p class="text-sm text-stone mt-1">{{ item.description }}</p>
+              <div class="flex flex-wrap gap-1.5 mt-2">
+                {% for t in item.dietary_tags %}<span class="chip !text-[10px]">{{ t }}</span>{% endfor %}
+                {% if item.spice_level and item.spice_level != 'None' %}<span class="chip !text-[10px]">🌶 {{ item.spice_level }}</span>{% endif %}
+              </div>
+            </div>
+            <span class="menu-item-price">{{ item.currency }} {{ '{:,.0f}'.format(item.price) }}</span>
+          </div>
+        {% endfor %}
+      </div>
+
+      <p id="menu-empty-state" class="text-sm text-stone italic py-6 hidden">No menu items match this filter right now.</p>
+    </section>
+
+    <!-- DIETARY CHECK -->
+    <section aria-labelledby="dietary-heading" class="bg-cream/50 border border-hairline rounded-xl p-6">
+      <h2 id="dietary-heading" class="font-display text-xl font-semibold mb-2">Check Dietary Compatibility</h2>
+      <p class="text-sm text-inksoft mb-4 max-w-lg">AI assessment is informational only. Always confirm ingredients and preparation directly with the restaurant for serious allergies or dietary restrictions.</p>
+      <div class="flex flex-wrap gap-2 items-center">
+        <select id="diet-check-select" multiple class="field-input !min-h-[44px] text-sm w-full sm:w-auto" aria-label="Select dietary requirements">
+          <option value="Halal">Halal</option>
+          <option value="Vegetarian">Vegetarian</option>
+          <option value="Vegan">Vegan</option>
+          <option value="Gluten-free">Gluten-free</option>
+          <option value="Dairy-free">Dairy-free</option>
+          <option value="Nut-free">Nut-free</option>
+        </select>
+        <input type="text" id="diet-check-custom" placeholder="Custom restriction (optional)" class="field-input text-sm w-full sm:w-64">
+        <button type="button" id="diet-check-btn" class="btn-primary">Check Menu</button>
+      </div>
+      <div id="diet-check-results" class="mt-5 space-y-2"></div>
+      <p class="text-xs text-stone mt-3">Availability not connected &mdash; please check with the restaurant directly for real-time confirmation.</p>
+    </section>
+
+    <!-- ASK AI CHAT -->
+    <section id="restaurant-chat-panel" aria-labelledby="chat-heading" class="border border-hairline rounded-xl p-6">
+      <h2 id="chat-heading" class="font-display text-xl font-semibold mb-1">Ask AI About This Restaurant</h2>
+      <p class="text-sm text-stone mb-4">An intelligent concierge for this restaurant's menu, atmosphere, and fit for your dining plans.</p>
+
+      <div class="flex flex-wrap gap-2 mb-4">
+        <button type="button" class="chip hover:bg-cream transition-colors" data-example-question="What's best for two people?">What's best for two people?</button>
+        <button type="button" class="chip hover:bg-cream transition-colors" data-example-question="Which dishes are mild?">Which dishes are mild?</button>
+        <button type="button" class="chip hover:bg-cream transition-colors" data-example-question="What can I order under PKR 3,000?">Under PKR 3,000?</button>
+        <button type="button" class="chip hover:bg-cream transition-colors" data-example-question="Build a dinner for four.">Build a dinner for four</button>
+      </div>
+
+      <div id="chat-message-list" class="space-y-3 mb-4 max-h-80 overflow-y-auto" role="log" aria-live="polite" aria-label="Conversation with restaurant AI"></div>
+
+      <form id="chat-form" class="flex gap-2">
+        <label for="chat-input" class="sr-only">Ask about this restaurant</label>
+        <input id="chat-input" type="text" required placeholder="Ask about this restaurant..." class="field-input flex-1">
+        <button type="submit" class="btn-primary">Ask</button>
+      </form>
+    </section>
+
+  </div>
+
+  <!-- ============================== SIDEBAR ============================== -->
+  <aside class="space-y-6 lg:sticky lg:top-24">
+
+    <!-- AI INSIGHTS -->
+    <div id="ai-insights-panel" class="ai-insight-panel">
+      <div class="flex items-center justify-between mb-3">
+        <p class="text-eyebrow">AI Insight</p>
+        <span class="data-source-tag data-source-tag--ai">AI Interpretation</span>
+      </div>
+      <div id="ai-insights-loading" class="py-2">
+        <ul class="loading-steps">
+          <li class="loading-step" data-state="active"><span class="loading-step__icon"></span> Analyzing restaurant profile…</li>
+        </ul>
+      </div>
+      <div id="ai-insights-content" class="hidden">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="match-badge" id="ai-match-badge" style="--pct:0;"><span class="match-badge__value">—</span></div>
+          <div>
+            <p class="font-display text-lg font-semibold">Why this restaurant may work for you</p>
+            <span id="ai-confidence-badge" class="confidence-badge confidence-badge--medium mt-1"><span class="dot"></span> Medium Confidence</span>
+          </div>
+        </div>
+        <ul id="ai-strengths-list" class="insight-list insight-list--strength mb-4"></ul>
+        <p class="field-label mb-1">Things to consider</p>
+        <ul id="ai-concerns-list" class="insight-list insight-list--concern"></ul>
+        <p id="ai-summary-text" class="text-sm text-inksoft mt-4 leading-relaxed"></p>
+      </div>
+      <div id="ai-insights-error" class="hidden text-sm text-inksoft">
+        <p>We couldn't complete your dining analysis right now.</p>
+        <button type="button" id="ai-insights-retry" class="btn-ghost mt-1">Try again</button>
+      </div>
+      <div class="mt-4 pt-4 border-t border-hairline-strong/60 flex items-center gap-3 text-sm">
+        <span class="text-stone">Was this useful?</span>
+        <button type="button" class="btn-icon !w-9 !h-9" data-action="feedback" data-value="up" data-context="analyze-restaurant" data-reference-id="{{ restaurant.id }}" aria-label="Yes, useful">👍</button>
+        <button type="button" class="btn-icon !w-9 !h-9" data-action="feedback" data-value="down" data-context="analyze-restaurant" data-reference-id="{{ restaurant.id }}" aria-label="Not useful">👎</button>
+      </div>
+    </div>
+
+    <!-- REVIEWS SUMMARY -->
+    <div class="border border-hairline rounded-xl p-6">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="font-display text-lg font-semibold">Reviews Summary</h2>
+        <span class="data-source-tag data-source-tag--dataset">Dataset Information</span>
+      </div>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="rating-stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><span class="rating-value">{{ restaurant.rating }}</span></span>
+        <span class="text-sm text-stone">{{ restaurant.review_count }} sample reviews</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5">
+        {% for theme in restaurant.review_themes %}<span class="chip">{{ theme }}</span>{% endfor %}
+      </div>
+      <p class="text-xs text-stone mt-3">Illustrative sample review data for demonstration purposes.</p>
+    </div>
+
+    <!-- OPENING HOURS -->
+    <div class="border border-hairline rounded-xl p-6">
+      <h2 class="font-display text-lg font-semibold mb-3">Opening Hours</h2>
+      <div class="table-scroll">
+        <table class="w-full text-sm">
+          <tbody>
+            {% for day in ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"] %}
+            <tr class="border-b border-hairline last:border-0">
+              <th scope="row" class="text-left py-2 font-medium capitalize">{{ day }}</th>
+              <td class="text-right py-2 text-inksoft">{{ restaurant.opening_hours|attr(day) }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-stone mt-3">Availability not connected. Check with the restaurant directly for real-time hours.</p>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="border border-hairline rounded-xl p-6">
+      <h2 class="font-display text-lg font-semibold mb-2">Location</h2>
+      <p class="text-sm text-inksoft">{{ restaurant.address }}</p>
+      <p class="text-sm text-stone mt-1">{{ restaurant.area }}, {{ restaurant.city }}, {{ restaurant.region }}</p>
+    </div>
+  </aside>
+</div>
+
+<!-- ============================== RELATED ============================== -->
+{% if related %}
+<section class="section-space !pt-4 bg-cream/50 border-t border-hairline">
+  <div class="container-editorial">
+    <h2 class="font-display text-2xl font-semibold mb-6">You may also like</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {% for r in related %}
+        {% include "_restaurant_card.html" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+</div>
+{% endblock %}
+{% block extra_js %}
+<script src="/static/js/restaurant.js" defer></script>
+{% endblock %}

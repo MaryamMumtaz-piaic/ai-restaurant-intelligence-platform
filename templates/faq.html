@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="border-b border-hairline bg-paper">
+  <div class="container-editorial py-14 max-w-3xl">
+    <p class="text-eyebrow mb-2">FAQ</p>
+    <h1 class="font-display text-4xl sm:text-5xl font-semibold">Frequently asked questions</h1>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container-editorial max-w-3xl">
+    <div class="divide-y divide-hairline" id="faq-accordion">
+
+      <details class="group py-5" name="faq">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-display text-lg font-semibold">
+          How does restaurant matching work?
+          <svg class="shrink-0 transition-transform group-open:rotate-45" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </summary>
+        <p class="text-inksoft leading-relaxed mt-3 pr-8">A Restaurant Discovery Agent applies local filters &mdash; cuisine, budget, diet, occasion, and location &mdash; to your dataset, then AI reasons over the strongest candidates using a transparent, weighted scoring model rather than arbitrary numbers.</p>
+      </details>
+
+      <details class="group py-5" name="faq">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-display text-lg font-semibold">
+          How does the AI analyze menus?
+          <svg class="shrink-0 transition-transform group-open:rotate-45" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </summary>
+        <p class="text-inksoft leading-relaxed mt-3 pr-8">A Menu Analysis Agent reads each restaurant's actual menu records to surface best-value dishes, dietary-friendly options, popular and premium items, and dishes suited to sharing &mdash; grounded in real dataset fields, not guesses.</p>
+      </details>
+
+      <details class="group py-5" name="faq">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-display text-lg font-semibold">
+          Can I specify dietary requirements?
+          <svg class="shrink-0 transition-transform group-open:rotate-45" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </summary>
+        <p class="text-inksoft leading-relaxed mt-3 pr-8">Yes. You can select common dietary needs or enter a custom restriction. A Dietary Compatibility Agent assesses menu items and labels each as Likely Compatible, Needs Verification, Not Suitable, or Unknown. This assessment is informational only &mdash; always confirm ingredients and preparation directly with the restaurant for serious allergies.</p>
+      </details>
+
+      <details class="group py-5" name="faq">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-display text-lg font-semibold">
+          Can I compare restaurants?
+          <svg class="shrink-0 transition-transform group-open:rotate-45" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </summary>
+        <p class="text-inksoft leading-relaxed mt-3 pr-8">Yes, up to three restaurants at once. A Comparison Agent scores each on cuisine, budget, dietary fit, atmosphere, occasion, value, and overall match, and provides a clear written verdict explaining why one option wins.</p>
+      </details>
+
+      <details class="group py-5" name="faq">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-display text-lg font-semibold">
+          Can I create a dining plan?
+          <svg class="shrink-0 transition-transform group-open:rotate-45" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </summary>
+        <p class="text-inksoft leading-relaxed mt-3 pr-8">Yes &mdash; the Dining Planner builds a complete plan with a recommended order across courses, an estimated total cost, and an explanation of why the plan fits your budget, party size, and occasion.</p>
+      </details>
+
+      <details class="group py-5" name="faq">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-display text-lg font-semibold">
+          Does the platform provide live restaurant availability?
+          <svg class="shrink-0 transition-transform group-open:rotate-45" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </summary>
+        <p class="text-inksoft leading-relaxed mt-3 pr-8">No. Availability is not connected to any real booking provider. Where a booking action might otherwise imply real-time availability, we show "Availability not connected" and recommend checking with the restaurant directly.</p>
+      </details>
+
+      <details class="group py-5" name="faq">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-display text-lg font-semibold">
+          How is my data stored?
+          <svg class="shrink-0 transition-transform group-open:rotate-45" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </summary>
+        <p class="text-inksoft leading-relaxed mt-3 pr-8">There is no login. Saved restaurants, recently viewed history, and session preferences live in your browser's local storage on your device. Feedback and contact submissions are stored server-side for product improvement, without creating a personal account.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<style>details[open] summary svg { transform: rotate(45deg); }</style>
+{% endblock %}

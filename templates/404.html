@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section-space min-h-[60vh] flex items-center">
+  <div class="container-editorial">
+    <div class="empty-state max-w-lg mx-auto">
+      <div class="empty-state__icon !w-20 !h-20" aria-hidden="true">
+        <span class="font-display text-3xl text-terracotta-dark">404</span>
+      </div>
+      <h1 class="font-display text-3xl sm:text-4xl font-semibold">This restaurant seems to have disappeared from the menu.</h1>
+      <p class="text-inksoft">The page you're looking for isn't here. Let's get you back to something worth eating.</p>
+      <div class="flex flex-wrap justify-center gap-3 mt-2">
+        <a href="/" class="btn-primary">Back Home</a>
+        <a href="/discover" class="btn-secondary">Discover Restaurants</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

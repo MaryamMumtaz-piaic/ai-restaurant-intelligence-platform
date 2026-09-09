@@ -1,0 +1,2190 @@
+[
+  {
+    "id": "r001",
+    "name": "Zaiqa Mahal",
+    "slug": "zaiqa-mahal",
+    "description": "A celebration of home-style spice and slow-cooked tradition, Zaiqa Mahal brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.",
+    "cuisine": [
+      "Pakistani"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "Clifton",
+    "address": "10 Clifton Main Boulevard, Karachi",
+    "price_level": "Moderate",
+    "average_cost_per_person": 3200,
+    "currency": "PKR",
+    "rating": 4.2,
+    "review_count": 80,
+    "review_themes": [
+      "Great service",
+      "Cozy ambience",
+      "Authentic flavours",
+      "Generous portions"
+    ],
+    "ambience": [
+      "Quiet",
+      "Romantic",
+      "Family-friendly"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Vegetarian",
+      "Vegan"
+    ],
+    "meal_types": [
+      "Breakfast",
+      "Brunch",
+      "Lunch"
+    ],
+    "occasions": [
+      "Casual Meal",
+      "Family Dinner",
+      "Date Night",
+      "Business Dinner"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Outdoor Seating",
+      "Live Music",
+      "Parking Available",
+      "WiFi"
+    ],
+    "image": "/static/images/restaurants/zaiqa-mahal.jpg"
+  },
+  {
+    "id": "r002",
+    "name": "Nihari House Old Town",
+    "slug": "nihari-house-old-town",
+    "description": "A celebration of home-style spice and slow-cooked tradition, Nihari House Old Town brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.",
+    "cuisine": [
+      "Pakistani"
+    ],
+    "region": "Punjab",
+    "city": "Lahore",
+    "area": "Old Anarkali",
+    "address": "11 Old Anarkali Main Boulevard, Lahore",
+    "price_level": "Budget",
+    "average_cost_per_person": 1400,
+    "currency": "PKR",
+    "rating": 4.0,
+    "review_count": 117,
+    "review_themes": [
+      "Cozy ambience",
+      "Authentic flavours",
+      "Generous portions",
+      "Perfect for celebrations"
+    ],
+    "ambience": [
+      "Romantic",
+      "Family-friendly",
+      "Casual"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Vegan",
+      "Gluten-free"
+    ],
+    "meal_types": [
+      "Brunch",
+      "Lunch",
+      "Dinner",
+      "Late Night"
+    ],
+    "occasions": [
+      "Family Dinner",
+      "Date Night",
+      "Business Dinner",
+      "Birthday",
+      "Celebration"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Live Music",
+      "Parking Available",
+      "WiFi",
+      "Card Payment"
+    ],
+    "image": "/static/images/restaurants/nihari-house-old-town.jpg"
+  },
+  {
+    "id": "r003",
+    "name": "Sindhi Chulha",
+    "slug": "sindhi-chulha",
+    "description": "A celebration of home-style spice and slow-cooked tradition, Sindhi Chulha brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.",
+    "cuisine": [
+      "Pakistani"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "DHA Phase 5",
+    "address": "12 DHA Phase 5 Main Boulevard, Karachi",
+    "price_level": "Moderate",
+    "average_cost_per_person": 2800,
+    "currency": "PKR",
+    "rating": 4.3,
+    "review_count": 154,
+    "review_themes": [
+      "Authentic flavours",
+      "Generous portions",
+      "Perfect for celebrations",
+      "Attentive staff"
+    ],
+    "ambience": [
+      "Family-friendly",
+      "Casual",
+      "Luxury"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Gluten-free",
+      "Dairy-free"
+    ],
+    "meal_types": [
+      "Lunch",
+      "Dinner",
+      "Late Night"
+    ],
+    "occasions": [
+      "Date Night",
+      "Business Dinner",
+      "Birthday",
+      "Celebration",
+      "Solo Dining",
+      "Brunch"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Parking Available",
+      "WiFi",
+      "Card Payment",
+      "Private Dining"
+    ],
+    "image": "/static/images/restaurants/sindhi-chulha.jpg"
+  },
+  {
+    "id": "r004",
+    "name": "Peshawar Tikka Junction",
+    "slug": "peshawar-tikka-junction",
+    "description": "A celebration of home-style spice and slow-cooked tradition, Peshawar Tikka Junction brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.",
+    "cuisine": [
+      "Pakistani"
+    ],
+    "region": "Federal",
+    "city": "Islamabad",
+    "area": "F-7 Markaz",
+    "address": "13 F-7 Markaz Main Boulevard, Islamabad",
+    "price_level": "Budget",
+    "average_cost_per_person": 1800,
+    "currency": "PKR",
+    "rating": 4.0,
+    "review_count": 191,
+    "review_themes": [
+      "Generous portions",
+      "Perfect for celebrations",
+      "Attentive staff",
+      "Consistent quality"
+    ],
+    "ambience": [
+      "Casual",
+      "Luxury",
+      "Outdoor"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Dairy-free",
+      "Nut-free"
+    ],
+    "meal_types": [
+      "Dinner",
+      "Late Night",
+      "Breakfast",
+      "Brunch"
+    ],
+    "occasions": [
+      "Business Dinner",
+      "Birthday",
+      "Celebration",
+      "Solo Dining"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "WiFi",
+      "Card Payment",
+      "Private Dining",
+      "Rooftop View"
+    ],
+    "image": "/static/images/restaurants/peshawar-tikka-junction.jpg"
+  },
+  {
+    "id": "r005",
+    "name": "Karahi Kings",
+    "slug": "karahi-kings",
+    "description": "A celebration of home-style spice and slow-cooked tradition, Karahi Kings brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.",
+    "cuisine": [
+      "Pakistani"
+    ],
+    "region": "Punjab",
+    "city": "Lahore",
+    "area": "Gulberg",
+    "address": "14 Gulberg Main Boulevard, Lahore",
+    "price_level": "Moderate",
+    "average_cost_per_person": 2600,
+    "currency": "PKR",
+    "rating": 4.4,
+    "review_count": 228,
+    "review_themes": [
+      "Perfect for celebrations",
+      "Attentive staff",
+      "Consistent quality",
+      "Great value for money"
+    ],
+    "ambience": [
+      "Luxury",
+      "Outdoor",
+      "Cozy"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Nut-free",
+      "Low-carb"
+    ],
+    "meal_types": [
+      "Late Night",
+      "Breakfast",
+      "Brunch"
+    ],
+    "occasions": [
+      "Birthday",
+      "Celebration",
+      "Solo Dining",
+      "Brunch",
+      "Quick Lunch"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Card Payment",
+      "Private Dining",
+      "Rooftop View",
+      "Kids Play Area"
+    ],
+    "image": "/static/images/restaurants/karahi-kings.jpg"
+  },
+  {
+    "id": "r006",
+    "name": "Mughal Dastarkhwan",
+    "slug": "mughal-dastarkhwan",
+    "description": "A celebration of home-style spice and slow-cooked tradition, Mughal Dastarkhwan brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.",
+    "cuisine": [
+      "Pakistani",
+      "Indian"
+    ],
+    "region": "Federal",
+    "city": "Islamabad",
+    "area": "Bahria Town",
+    "address": "15 Bahria Town Main Boulevard, Islamabad",
+    "price_level": "Premium",
+    "average_cost_per_person": 4500,
+    "currency": "PKR",
+    "rating": 4.5,
+    "review_count": 265,
+    "review_themes": [
+      "Attentive staff",
+      "Consistent quality",
+      "Great value for money",
+      "Romantic setting"
+    ],
+    "ambience": [
+      "Outdoor",
+      "Cozy",
+      "Modern"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Low-carb",
+      "High-protein"
+    ],
+    "meal_types": [
+      "Breakfast",
+      "Brunch",
+      "Lunch",
+      "Dinner"
+    ],
+    "occasions": [
+      "Celebration",
+      "Solo Dining",
+      "Brunch",
+      "Quick Lunch",
+      "Late Night",
+      "Friends Gathering"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Private Dining",
+      "Rooftop View",
+      "Kids Play Area",
+      "Delivery Available"
+    ],
+    "image": "/static/images/restaurants/mughal-dastarkhwan.jpg"
+  },
+  {
+    "id": "r007",
+    "name": "Darbar-e-Karachi",
+    "slug": "darbar-e-karachi",
+    "description": "A celebration of home-style spice and slow-cooked tradition, Darbar-e-Karachi brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.",
+    "cuisine": [
+      "Pakistani"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "Bahadurabad",
+    "address": "16 Bahadurabad Main Boulevard, Karachi",
+    "price_level": "Moderate",
+    "average_cost_per_person": 2400,
+    "currency": "PKR",
+    "rating": 4.2,
+    "review_count": 302,
+    "review_themes": [
+      "Consistent quality",
+      "Great value for money",
+      "Romantic setting",
+      "Family-friendly vibe"
+    ],
+    "ambience": [
+      "Cozy",
+      "Modern",
+      "Traditional"
+    ],
+    "dietary_options": [
+      "Halal",
+      "High-protein",
+      "Vegetarian"
+    ],
+    "meal_types": [
+      "Brunch",
+      "Lunch",
+      "Dinner"
+    ],
+    "occasions": [
+      "Solo Dining",
+      "Brunch",
+      "Quick Lunch",
+      "Late Night"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Rooftop View",
+      "Kids Play Area",
+      "Delivery Available",
+      "Valet Parking"
+    ],
+    "image": "/static/images/restaurants/darbar-e-karachi.jpg"
+  },
+  {
+    "id": "r008",
+    "name": "Curry Leaf Kitchen",
+    "slug": "curry-leaf-kitchen",
+    "description": "Curry Leaf Kitchen reimagines the subcontinent's classic curry house with layered spice blends and tandoor-fired breads. Expect a menu that balances comfort with quiet culinary ambition.",
+    "cuisine": [
+      "Indian"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "Clifton",
+    "address": "17 Clifton Main Boulevard, Karachi",
+    "price_level": "Premium",
+    "average_cost_per_person": 4200,
+    "currency": "PKR",
+    "rating": 4.6,
+    "review_count": 339,
+    "review_themes": [
+      "Great value for money",
+      "Romantic setting",
+      "Family-friendly vibe",
+      "Excellent presentation"
+    ],
+    "ambience": [
+      "Modern",
+      "Traditional",
+      "Lively"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Vegetarian",
+      "Vegan"
+    ],
+    "meal_types": [
+      "Lunch",
+      "Dinner",
+      "Late Night",
+      "Breakfast"
+    ],
+    "occasions": [
+      "Brunch",
+      "Quick Lunch",
+      "Late Night",
+      "Friends Gathering",
+      "Casual Meal"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Kids Play Area",
+      "Delivery Available",
+      "Valet Parking",
+      "Buffet"
+    ],
+    "image": "/static/images/restaurants/curry-leaf-kitchen.jpg"
+  },
+  {
+    "id": "r009",
+    "name": "Spice Route Delhi",
+    "slug": "spice-route-delhi",
+    "description": "Spice Route Delhi reimagines the subcontinent's classic curry house with layered spice blends and tandoor-fired breads. Expect a menu that balances comfort with quiet culinary ambition.",
+    "cuisine": [
+      "Indian"
+    ],
+    "region": "Punjab",
+    "city": "Lahore",
+    "area": "DHA Phase 6",
+    "address": "18 DHA Phase 6 Main Boulevard, Lahore",
+    "price_level": "Moderate",
+    "average_cost_per_person": 3000,
+    "currency": "PKR",
+    "rating": 4.3,
+    "review_count": 376,
+    "review_themes": [
+      "Romantic setting",
+      "Family-friendly vibe",
+      "Excellent presentation",
+      "Fresh ingredients"
+    ],
+    "ambience": [
+      "Traditional",
+      "Lively",
+      "Work-friendly"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Vegan",
+      "Gluten-free"
+    ],
+    "meal_types": [
+      "Dinner",
+      "Late Night",
+      "Breakfast"
+    ],
+    "occasions": [
+      "Quick Lunch",
+      "Late Night",
+      "Friends Gathering",
+      "Casual Meal",
+      "Family Dinner",
+      "Date Night"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Delivery Available",
+      "Valet Parking",
+      "Buffet",
+      "Shisha Lounge"
+    ],
+    "image": "/static/images/restaurants/spice-route-delhi.jpg"
+  },
+  {
+    "id": "r010",
+    "name": "Taj Tandoor",
+    "slug": "taj-tandoor",
+    "description": "Taj Tandoor reimagines the subcontinent's classic curry house with layered spice blends and tandoor-fired breads. Expect a menu that balances comfort with quiet culinary ambition.",
+    "cuisine": [
+      "Indian"
+    ],
+    "region": "Federal",
+    "city": "Islamabad",
+    "area": "Blue Area",
+    "address": "19 Blue Area Main Boulevard, Islamabad",
+    "price_level": "Premium",
+    "average_cost_per_person": 4800,
+    "currency": "PKR",
+    "rating": 4.7,
+    "review_count": 413,
+    "review_themes": [
+      "Family-friendly vibe",
+      "Excellent presentation",
+      "Fresh ingredients",
+      "Quick service"
+    ],
+    "ambience": [
+      "Lively",
+      "Work-friendly",
+      "Quiet"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Gluten-free",
+      "Dairy-free"
+    ],
+    "meal_types": [
+      "Late Night",
+      "Breakfast",
+      "Brunch",
+      "Lunch"
+    ],
+    "occasions": [
+      "Late Night",
+      "Friends Gathering",
+      "Casual Meal",
+      "Family Dinner"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Valet Parking",
+      "Buffet",
+      "Shisha Lounge",
+      "Outdoor Seating"
+    ],
+    "image": "/static/images/restaurants/taj-tandoor.jpg"
+  },
+  {
+    "id": "r011",
+    "name": "Golden Dragon Wok",
+    "slug": "golden-dragon-wok",
+    "description": "Golden Dragon Wok pairs wok-fired classics with a contemporary dining room, favouring bold aromatics over heavy sauces. A go-to for a polished take on familiar Chinese comfort food.",
+    "cuisine": [
+      "Chinese"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "PECHS",
+    "address": "20 PECHS Main Boulevard, Karachi",
+    "price_level": "Moderate",
+    "average_cost_per_person": 2900,
+    "currency": "PKR",
+    "rating": 4.2,
+    "review_count": 450,
+    "review_themes": [
+      "Excellent presentation",
+      "Fresh ingredients",
+      "Quick service",
+      "Great for groups"
+    ],
+    "ambience": [
+      "Work-friendly",
+      "Quiet",
+      "Romantic"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Dairy-free",
+      "Nut-free"
+    ],
+    "meal_types": [
+      "Breakfast",
+      "Brunch",
+      "Lunch"
+    ],
+    "occasions": [
+      "Friends Gathering",
+      "Casual Meal",
+      "Family Dinner",
+      "Date Night",
+      "Business Dinner"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Buffet",
+      "Shisha Lounge",
+      "Outdoor Seating",
+      "Live Music"
+    ],
+    "image": "/static/images/restaurants/golden-dragon-wok.jpg"
+  },
+  {
+    "id": "r012",
+    "name": "Panda House Express",
+    "slug": "panda-house-express",
+    "description": "Panda House Express pairs wok-fired classics with a contemporary dining room, favouring bold aromatics over heavy sauces. A go-to for a polished take on familiar Chinese comfort food.",
+    "cuisine": [
+      "Chinese"
+    ],
+    "region": "Punjab",
+    "city": "Lahore",
+    "area": "Model Town",
+    "address": "21 Model Town Main Boulevard, Lahore",
+    "price_level": "Budget",
+    "average_cost_per_person": 1900,
+    "currency": "PKR",
+    "rating": 4.0,
+    "review_count": 487,
+    "review_themes": [
+      "Fresh ingredients",
+      "Quick service",
+      "Great for groups",
+      "Signature dish worth the visit"
+    ],
+    "ambience": [
+      "Quiet",
+      "Romantic",
+      "Family-friendly"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Nut-free",
+      "Low-carb"
+    ],
+    "meal_types": [
+      "Brunch",
+      "Lunch",
+      "Dinner",
+      "Late Night"
+    ],
+    "occasions": [
+      "Casual Meal",
+      "Family Dinner",
+      "Date Night",
+      "Business Dinner",
+      "Birthday",
+      "Celebration"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Shisha Lounge",
+      "Outdoor Seating",
+      "Live Music",
+      "Parking Available"
+    ],
+    "image": "/static/images/restaurants/panda-house-express.jpg"
+  },
+  {
+    "id": "r013",
+    "name": "Sichuan Fire Pot",
+    "slug": "sichuan-fire-pot",
+    "description": "Sichuan Fire Pot pairs wok-fired classics with a contemporary dining room, favouring bold aromatics over heavy sauces. A go-to for a polished take on familiar Chinese comfort food.",
+    "cuisine": [
+      "Chinese"
+    ],
+    "region": "Federal",
+    "city": "Islamabad",
+    "area": "F-6",
+    "address": "22 F-6 Main Boulevard, Islamabad",
+    "price_level": "Premium",
+    "average_cost_per_person": 5200,
+    "currency": "PKR",
+    "rating": 4.6,
+    "review_count": 524,
+    "review_themes": [
+      "Quick service",
+      "Great for groups",
+      "Signature dish worth the visit",
+      "Great service"
+    ],
+    "ambience": [
+      "Romantic",
+      "Family-friendly",
+      "Casual"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Low-carb",
+      "High-protein"
+    ],
+    "meal_types": [
+      "Lunch",
+      "Dinner",
+      "Late Night"
+    ],
+    "occasions": [
+      "Family Dinner",
+      "Date Night",
+      "Business Dinner",
+      "Birthday"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Outdoor Seating",
+      "Live Music",
+      "Parking Available",
+      "WiFi"
+    ],
+    "image": "/static/images/restaurants/sichuan-fire-pot.jpg"
+  },
+  {
+    "id": "r014",
+    "name": "Sakura Sushi Bar",
+    "slug": "sakura-sushi-bar",
+    "description": "Precision and restraint define Sakura Sushi Bar, where knife-work and seasonal ingredients take center stage. The room is calm, the plating minimal, the flavours exact.",
+    "cuisine": [
+      "Japanese"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "Clifton",
+    "address": "23 Clifton Main Boulevard, Karachi",
+    "price_level": "Luxury",
+    "average_cost_per_person": 7500,
+    "currency": "PKR",
+    "rating": 4.8,
+    "review_count": 561,
+    "review_themes": [
+      "Great for groups",
+      "Signature dish worth the visit",
+      "Great service",
+      "Cozy ambience"
+    ],
+    "ambience": [
+      "Family-friendly",
+      "Casual",
+      "Luxury"
+    ],
+    "dietary_options": [
+      "Halal",
+      "High-protein",
+      "Vegetarian"
+    ],
+    "meal_types": [
+      "Dinner",
+      "Late Night",
+      "Breakfast",
+      "Brunch"
+    ],
+    "occasions": [
+      "Date Night",
+      "Business Dinner",
+      "Birthday",
+      "Celebration",
+      "Solo Dining"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Live Music",
+      "Parking Available",
+      "WiFi",
+      "Card Payment"
+    ],
+    "image": "/static/images/restaurants/sakura-sushi-bar.jpg"
+  },
+  {
+    "id": "r015",
+    "name": "Tokyo Ramen Co.",
+    "slug": "tokyo-ramen-co",
+    "description": "Precision and restraint define Tokyo Ramen Co., where knife-work and seasonal ingredients take center stage. The room is calm, the plating minimal, the flavours exact.",
+    "cuisine": [
+      "Japanese"
+    ],
+    "region": "Punjab",
+    "city": "Lahore",
+    "area": "Gulberg",
+    "address": "24 Gulberg Main Boulevard, Lahore",
+    "price_level": "Premium",
+    "average_cost_per_person": 4600,
+    "currency": "PKR",
+    "rating": 4.7,
+    "review_count": 598,
+    "review_themes": [
+      "Signature dish worth the visit",
+      "Great service",
+      "Cozy ambience",
+      "Authentic flavours"
+    ],
+    "ambience": [
+      "Casual",
+      "Luxury",
+      "Outdoor"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Vegetarian",
+      "Vegan"
+    ],
+    "meal_types": [
+      "Late Night",
+      "Breakfast",
+      "Brunch"
+    ],
+    "occasions": [
+      "Business Dinner",
+      "Birthday",
+      "Celebration",
+      "Solo Dining",
+      "Brunch",
+      "Quick Lunch"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Parking Available",
+      "WiFi",
+      "Card Payment",
+      "Private Dining"
+    ],
+    "image": "/static/images/restaurants/tokyo-ramen-co.jpg"
+  },
+  {
+    "id": "r016",
+    "name": "Kyoto Grill House",
+    "slug": "kyoto-grill-house",
+    "description": "Precision and restraint define Kyoto Grill House, where knife-work and seasonal ingredients take center stage. The room is calm, the plating minimal, the flavours exact.",
+    "cuisine": [
+      "Japanese"
+    ],
+    "region": "Federal",
+    "city": "Islamabad",
+    "area": "Diplomatic Enclave",
+    "address": "25 Diplomatic Enclave Main Boulevard, Islamabad",
+    "price_level": "Luxury",
+    "average_cost_per_person": 8200,
+    "currency": "PKR",
+    "rating": 4.7,
+    "review_count": 635,
+    "review_themes": [
+      "Great service",
+      "Cozy ambience",
+      "Authentic flavours",
+      "Generous portions"
+    ],
+    "ambience": [
+      "Luxury",
+      "Outdoor",
+      "Cozy"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Vegan",
+      "Gluten-free"
+    ],
+    "meal_types": [
+      "Breakfast",
+      "Brunch",
+      "Lunch",
+      "Dinner"
+    ],
+    "occasions": [
+      "Birthday",
+      "Celebration",
+      "Solo Dining",
+      "Brunch"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "WiFi",
+      "Card Payment",
+      "Private Dining",
+      "Rooftop View"
+    ],
+    "image": "/static/images/restaurants/kyoto-grill-house.jpg"
+  },
+  {
+    "id": "r017",
+    "name": "Seoul Garden BBQ",
+    "slug": "seoul-garden-bbq",
+    "description": "Seoul Garden BBQ channels the smoky theatre of Korean tabletop grilling alongside a well-stocked banchan spread, drawing a lively crowd for shared plates and cold beer.",
+    "cuisine": [
+      "Korean"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "DHA Phase 2",
+    "address": "26 DHA Phase 2 Main Boulevard, Karachi",
+    "price_level": "Premium",
+    "average_cost_per_person": 5000,
+    "currency": "PKR",
+    "rating": 4.5,
+    "review_count": 672,
+    "review_themes": [
+      "Cozy ambience",
+      "Authentic flavours",
+      "Generous portions",
+      "Perfect for celebrations"
+    ],
+    "ambience": [
+      "Outdoor",
+      "Cozy",
+      "Modern"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Gluten-free",
+      "Dairy-free"
+    ],
+    "meal_types": [
+      "Brunch",
+      "Lunch",
+      "Dinner"
+    ],
+    "occasions": [
+      "Celebration",
+      "Solo Dining",
+      "Brunch",
+      "Quick Lunch",
+      "Late Night"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Card Payment",
+      "Private Dining",
+      "Rooftop View",
+      "Kids Play Area"
+    ],
+    "image": "/static/images/restaurants/seoul-garden-bbq.jpg"
+  },
+  {
+    "id": "r018",
+    "name": "Kimchi & Co.",
+    "slug": "kimchi-co",
+    "description": "Kimchi & Co. channels the smoky theatre of Korean tabletop grilling alongside a well-stocked banchan spread, drawing a lively crowd for shared plates and cold beer.",
+    "cuisine": [
+      "Korean"
+    ],
+    "region": "Punjab",
+    "city": "Lahore",
+    "area": "Johar Town",
+    "address": "27 Johar Town Main Boulevard, Lahore",
+    "price_level": "Moderate",
+    "average_cost_per_person": 3100,
+    "currency": "PKR",
+    "rating": 4.3,
+    "review_count": 709,
+    "review_themes": [
+      "Authentic flavours",
+      "Generous portions",
+      "Perfect for celebrations",
+      "Attentive staff"
+    ],
+    "ambience": [
+      "Cozy",
+      "Modern",
+      "Traditional"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Dairy-free",
+      "Nut-free"
+    ],
+    "meal_types": [
+      "Lunch",
+      "Dinner",
+      "Late Night",
+      "Breakfast"
+    ],
+    "occasions": [
+      "Solo Dining",
+      "Brunch",
+      "Quick Lunch",
+      "Late Night",
+      "Friends Gathering",
+      "Casual Meal"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Private Dining",
+      "Rooftop View",
+      "Kids Play Area",
+      "Delivery Available"
+    ],
+    "image": "/static/images/restaurants/kimchi-co.jpg"
+  },
+  {
+    "id": "r019",
+    "name": "Bangkok Basil Kitchen",
+    "slug": "bangkok-basil-kitchen",
+    "description": "Bright, herbal, and confidently spiced, Bangkok Basil Kitchen brings Bangkok street-food energy into a considered dining setting without losing its edge.",
+    "cuisine": [
+      "Thai"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "Boat Basin",
+    "address": "28 Boat Basin Main Boulevard, Karachi",
+    "price_level": "Moderate",
+    "average_cost_per_person": 3300,
+    "currency": "PKR",
+    "rating": 4.3,
+    "review_count": 746,
+    "review_themes": [
+      "Generous portions",
+      "Perfect for celebrations",
+      "Attentive staff",
+      "Consistent quality"
+    ],
+    "ambience": [
+      "Modern",
+      "Traditional",
+      "Lively"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Nut-free",
+      "Low-carb"
+    ],
+    "meal_types": [
+      "Dinner",
+      "Late Night",
+      "Breakfast"
+    ],
+    "occasions": [
+      "Brunch",
+      "Quick Lunch",
+      "Late Night",
+      "Friends Gathering"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Rooftop View",
+      "Kids Play Area",
+      "Delivery Available",
+      "Valet Parking"
+    ],
+    "image": "/static/images/restaurants/bangkok-basil-kitchen.jpg"
+  },
+  {
+    "id": "r020",
+    "name": "Thai Orchid Lounge",
+    "slug": "thai-orchid-lounge",
+    "description": "Bright, herbal, and confidently spiced, Thai Orchid Lounge brings Bangkok street-food energy into a considered dining setting without losing its edge.",
+    "cuisine": [
+      "Thai"
+    ],
+    "region": "Federal",
+    "city": "Islamabad",
+    "area": "E-11",
+    "address": "29 E-11 Main Boulevard, Islamabad",
+    "price_level": "Premium",
+    "average_cost_per_person": 4700,
+    "currency": "PKR",
+    "rating": 4.7,
+    "review_count": 783,
+    "review_themes": [
+      "Perfect for celebrations",
+      "Attentive staff",
+      "Consistent quality",
+      "Great value for money"
+    ],
+    "ambience": [
+      "Traditional",
+      "Lively",
+      "Work-friendly"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Low-carb",
+      "High-protein"
+    ],
+    "meal_types": [
+      "Late Night",
+      "Breakfast",
+      "Brunch",
+      "Lunch"
+    ],
+    "occasions": [
+      "Quick Lunch",
+      "Late Night",
+      "Friends Gathering",
+      "Casual Meal",
+      "Family Dinner"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Kids Play Area",
+      "Delivery Available",
+      "Valet Parking",
+      "Buffet"
+    ],
+    "image": "/static/images/restaurants/thai-orchid-lounge.jpg"
+  },
+  {
+    "id": "r021",
+    "name": "Trattoria Bella Vita",
+    "slug": "trattoria-bella-vita",
+    "description": "Trattoria Bella Vita leans on slow sauces, hand-rolled pasta, and a wood-fired oven to deliver an Italian menu built for lingering evenings and good conversation.",
+    "cuisine": [
+      "Italian"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "Clifton",
+    "address": "30 Clifton Main Boulevard, Karachi",
+    "price_level": "Premium",
+    "average_cost_per_person": 5500,
+    "currency": "PKR",
+    "rating": 4.5,
+    "review_count": 820,
+    "review_themes": [
+      "Attentive staff",
+      "Consistent quality",
+      "Great value for money",
+      "Romantic setting"
+    ],
+    "ambience": [
+      "Lively",
+      "Work-friendly",
+      "Quiet"
+    ],
+    "dietary_options": [
+      "Halal",
+      "High-protein",
+      "Vegetarian"
+    ],
+    "meal_types": [
+      "Breakfast",
+      "Brunch",
+      "Lunch"
+    ],
+    "occasions": [
+      "Late Night",
+      "Friends Gathering",
+      "Casual Meal",
+      "Family Dinner",
+      "Date Night",
+      "Business Dinner"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Delivery Available",
+      "Valet Parking",
+      "Buffet",
+      "Shisha Lounge"
+    ],
+    "image": "/static/images/restaurants/trattoria-bella-vita.jpg"
+  },
+  {
+    "id": "r022",
+    "name": "Roma Pasta Studio",
+    "slug": "roma-pasta-studio",
+    "description": "Roma Pasta Studio leans on slow sauces, hand-rolled pasta, and a wood-fired oven to deliver an Italian menu built for lingering evenings and good conversation.",
+    "cuisine": [
+      "Italian"
+    ],
+    "region": "Punjab",
+    "city": "Lahore",
+    "area": "MM Alam Road",
+    "address": "31 MM Alam Road Main Boulevard, Lahore",
+    "price_level": "Premium",
+    "average_cost_per_person": 4900,
+    "currency": "PKR",
+    "rating": 4.5,
+    "review_count": 857,
+    "review_themes": [
+      "Consistent quality",
+      "Great value for money",
+      "Romantic setting",
+      "Family-friendly vibe"
+    ],
+    "ambience": [
+      "Work-friendly",
+      "Quiet",
+      "Romantic"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Vegetarian",
+      "Vegan"
+    ],
+    "meal_types": [
+      "Brunch",
+      "Lunch",
+      "Dinner",
+      "Late Night"
+    ],
+    "occasions": [
+      "Friends Gathering",
+      "Casual Meal",
+      "Family Dinner",
+      "Date Night"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Valet Parking",
+      "Buffet",
+      "Shisha Lounge",
+      "Outdoor Seating"
+    ],
+    "image": "/static/images/restaurants/roma-pasta-studio.jpg"
+  },
+  {
+    "id": "r023",
+    "name": "Napoli Pizzeria",
+    "slug": "napoli-pizzeria",
+    "description": "Napoli Pizzeria leans on slow sauces, hand-rolled pasta, and a wood-fired oven to deliver an Italian menu built for lingering evenings and good conversation.",
+    "cuisine": [
+      "Italian"
+    ],
+    "region": "Federal",
+    "city": "Islamabad",
+    "area": "F-7 Markaz",
+    "address": "32 F-7 Markaz Main Boulevard, Islamabad",
+    "price_level": "Moderate",
+    "average_cost_per_person": 3400,
+    "currency": "PKR",
+    "rating": 4.3,
+    "review_count": 894,
+    "review_themes": [
+      "Great value for money",
+      "Romantic setting",
+      "Family-friendly vibe",
+      "Excellent presentation"
+    ],
+    "ambience": [
+      "Quiet",
+      "Romantic",
+      "Family-friendly"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Vegan",
+      "Gluten-free"
+    ],
+    "meal_types": [
+      "Lunch",
+      "Dinner",
+      "Late Night"
+    ],
+    "occasions": [
+      "Casual Meal",
+      "Family Dinner",
+      "Date Night",
+      "Business Dinner",
+      "Birthday"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Buffet",
+      "Shisha Lounge",
+      "Outdoor Seating",
+      "Live Music"
+    ],
+    "image": "/static/images/restaurants/napoli-pizzeria.jpg"
+  },
+  {
+    "id": "r024",
+    "name": "El Mariachi Cantina",
+    "slug": "el-mariachi-cantina",
+    "description": "Vibrant and unapologetically bold, El Mariachi Cantina serves up char-grilled classics and fresh salsas in a room designed for celebration.",
+    "cuisine": [
+      "Mexican"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "DHA Phase 8",
+    "address": "33 DHA Phase 8 Main Boulevard, Karachi",
+    "price_level": "Moderate",
+    "average_cost_per_person": 3200,
+    "currency": "PKR",
+    "rating": 4.3,
+    "review_count": 931,
+    "review_themes": [
+      "Romantic setting",
+      "Family-friendly vibe",
+      "Excellent presentation",
+      "Fresh ingredients"
+    ],
+    "ambience": [
+      "Romantic",
+      "Family-friendly",
+      "Casual"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Gluten-free",
+      "Dairy-free"
+    ],
+    "meal_types": [
+      "Dinner",
+      "Late Night",
+      "Breakfast",
+      "Brunch"
+    ],
+    "occasions": [
+      "Family Dinner",
+      "Date Night",
+      "Business Dinner",
+      "Birthday",
+      "Celebration",
+      "Solo Dining"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Shisha Lounge",
+      "Outdoor Seating",
+      "Live Music",
+      "Parking Available"
+    ],
+    "image": "/static/images/restaurants/el-mariachi-cantina.jpg"
+  },
+  {
+    "id": "r025",
+    "name": "Casa Taco Loco",
+    "slug": "casa-taco-loco",
+    "description": "Vibrant and unapologetically bold, Casa Taco Loco serves up char-grilled classics and fresh salsas in a room designed for celebration.",
+    "cuisine": [
+      "Mexican"
+    ],
+    "region": "Punjab",
+    "city": "Lahore",
+    "area": "Gulberg",
+    "address": "34 Gulberg Main Boulevard, Lahore",
+    "price_level": "Budget",
+    "average_cost_per_person": 2200,
+    "currency": "PKR",
+    "rating": 4.1,
+    "review_count": 968,
+    "review_themes": [
+      "Family-friendly vibe",
+      "Excellent presentation",
+      "Fresh ingredients",
+      "Quick service"
+    ],
+    "ambience": [
+      "Family-friendly",
+      "Casual",
+      "Luxury"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Dairy-free",
+      "Nut-free"
+    ],
+    "meal_types": [
+      "Late Night",
+      "Breakfast",
+      "Brunch"
+    ],
+    "occasions": [
+      "Date Night",
+      "Business Dinner",
+      "Birthday",
+      "Celebration"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Outdoor Seating",
+      "Live Music",
+      "Parking Available",
+      "WiFi"
+    ],
+    "image": "/static/images/restaurants/casa-taco-loco.jpg"
+  },
+  {
+    "id": "r026",
+    "name": "Istanbul Kebab House",
+    "slug": "istanbul-kebab-house",
+    "description": "Istanbul Kebab House draws on Anatolian grill traditions, its charcoal ovens producing kebabs and mezze built for sharing across a long table.",
+    "cuisine": [
+      "Turkish"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "Clifton",
+    "address": "35 Clifton Main Boulevard, Karachi",
+    "price_level": "Premium",
+    "average_cost_per_person": 4400,
+    "currency": "PKR",
+    "rating": 4.5,
+    "review_count": 105,
+    "review_themes": [
+      "Excellent presentation",
+      "Fresh ingredients",
+      "Quick service",
+      "Great for groups"
+    ],
+    "ambience": [
+      "Casual",
+      "Luxury",
+      "Outdoor"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Nut-free",
+      "Low-carb"
+    ],
+    "meal_types": [
+      "Breakfast",
+      "Brunch",
+      "Lunch",
+      "Dinner"
+    ],
+    "occasions": [
+      "Business Dinner",
+      "Birthday",
+      "Celebration",
+      "Solo Dining",
+      "Brunch"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Live Music",
+      "Parking Available",
+      "WiFi",
+      "Card Payment"
+    ],
+    "image": "/static/images/restaurants/istanbul-kebab-house.jpg"
+  },
+  {
+    "id": "r027",
+    "name": "Anatolia Grill",
+    "slug": "anatolia-grill",
+    "description": "Anatolia Grill draws on Anatolian grill traditions, its charcoal ovens producing kebabs and mezze built for sharing across a long table.",
+    "cuisine": [
+      "Turkish"
+    ],
+    "region": "Federal",
+    "city": "Islamabad",
+    "area": "Blue Area",
+    "address": "36 Blue Area Main Boulevard, Islamabad",
+    "price_level": "Premium",
+    "average_cost_per_person": 4600,
+    "currency": "PKR",
+    "rating": 4.5,
+    "review_count": 142,
+    "review_themes": [
+      "Fresh ingredients",
+      "Quick service",
+      "Great for groups",
+      "Signature dish worth the visit"
+    ],
+    "ambience": [
+      "Luxury",
+      "Outdoor",
+      "Cozy"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Low-carb",
+      "High-protein"
+    ],
+    "meal_types": [
+      "Brunch",
+      "Lunch",
+      "Dinner"
+    ],
+    "occasions": [
+      "Birthday",
+      "Celebration",
+      "Solo Dining",
+      "Brunch",
+      "Quick Lunch",
+      "Late Night"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Parking Available",
+      "WiFi",
+      "Card Payment",
+      "Private Dining"
+    ],
+    "image": "/static/images/restaurants/anatolia-grill.jpg"
+  },
+  {
+    "id": "r028",
+    "name": "Beirut Nights",
+    "slug": "beirut-nights",
+    "description": "Beirut Nights offers a generous mezze-forward menu rooted in Levantine tradition, served in a warm, softly lit room built for long, unhurried meals.",
+    "cuisine": [
+      "Middle Eastern"
+    ],
+    "region": "Punjab",
+    "city": "Lahore",
+    "area": "DHA Phase 5",
+    "address": "37 DHA Phase 5 Main Boulevard, Lahore",
+    "price_level": "Premium",
+    "average_cost_per_person": 4300,
+    "currency": "PKR",
+    "rating": 4.6,
+    "review_count": 179,
+    "review_themes": [
+      "Quick service",
+      "Great for groups",
+      "Signature dish worth the visit",
+      "Great service"
+    ],
+    "ambience": [
+      "Outdoor",
+      "Cozy",
+      "Modern"
+    ],
+    "dietary_options": [
+      "Halal",
+      "High-protein",
+      "Vegetarian"
+    ],
+    "meal_types": [
+      "Lunch",
+      "Dinner",
+      "Late Night",
+      "Breakfast"
+    ],
+    "occasions": [
+      "Celebration",
+      "Solo Dining",
+      "Brunch",
+      "Quick Lunch"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "WiFi",
+      "Card Payment",
+      "Private Dining",
+      "Rooftop View"
+    ],
+    "image": "/static/images/restaurants/beirut-nights.jpg"
+  },
+  {
+    "id": "r029",
+    "name": "Levant Table",
+    "slug": "levant-table",
+    "description": "Levant Table offers a generous mezze-forward menu rooted in Levantine tradition, served in a warm, softly lit room built for long, unhurried meals.",
+    "cuisine": [
+      "Middle Eastern",
+      "Mediterranean"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "Boat Basin",
+    "address": "38 Boat Basin Main Boulevard, Karachi",
+    "price_level": "Moderate",
+    "average_cost_per_person": 3600,
+    "currency": "PKR",
+    "rating": 4.3,
+    "review_count": 216,
+    "review_themes": [
+      "Great for groups",
+      "Signature dish worth the visit",
+      "Great service",
+      "Cozy ambience"
+    ],
+    "ambience": [
+      "Cozy",
+      "Modern",
+      "Traditional"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Vegetarian",
+      "Vegan"
+    ],
+    "meal_types": [
+      "Dinner",
+      "Late Night",
+      "Breakfast"
+    ],
+    "occasions": [
+      "Solo Dining",
+      "Brunch",
+      "Quick Lunch",
+      "Late Night",
+      "Friends Gathering"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Card Payment",
+      "Private Dining",
+      "Rooftop View",
+      "Kids Play Area"
+    ],
+    "image": "/static/images/restaurants/levant-table.jpg"
+  },
+  {
+    "id": "r030",
+    "name": "Olive & Vine",
+    "slug": "olive-vine",
+    "description": "Sun-drenched and ingredient-led, Olive & Vine keeps its menu simple and seasonal, favouring olive oil, citrus, and open-flame cooking.",
+    "cuisine": [
+      "Mediterranean"
+    ],
+    "region": "Federal",
+    "city": "Islamabad",
+    "area": "F-8",
+    "address": "39 F-8 Main Boulevard, Islamabad",
+    "price_level": "Premium",
+    "average_cost_per_person": 4500,
+    "currency": "PKR",
+    "rating": 4.7,
+    "review_count": 253,
+    "review_themes": [
+      "Signature dish worth the visit",
+      "Great service",
+      "Cozy ambience",
+      "Authentic flavours"
+    ],
+    "ambience": [
+      "Modern",
+      "Traditional",
+      "Lively"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Vegan",
+      "Gluten-free"
+    ],
+    "meal_types": [
+      "Late Night",
+      "Breakfast",
+      "Brunch",
+      "Lunch"
+    ],
+    "occasions": [
+      "Brunch",
+      "Quick Lunch",
+      "Late Night",
+      "Friends Gathering",
+      "Casual Meal",
+      "Family Dinner"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Private Dining",
+      "Rooftop View",
+      "Kids Play Area",
+      "Delivery Available"
+    ],
+    "image": "/static/images/restaurants/olive-vine.jpg"
+  },
+  {
+    "id": "r031",
+    "name": "The Liberty Diner",
+    "slug": "the-liberty-diner",
+    "description": "The Liberty Diner is a confident modern diner serving elevated comfort classics, from smokehouse plates to towering desserts, in a room built for good company.",
+    "cuisine": [
+      "American"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "Zamzama",
+    "address": "40 Zamzama Main Boulevard, Karachi",
+    "price_level": "Moderate",
+    "average_cost_per_person": 3100,
+    "currency": "PKR",
+    "rating": 4.2,
+    "review_count": 290,
+    "review_themes": [
+      "Great service",
+      "Cozy ambience",
+      "Authentic flavours",
+      "Generous portions"
+    ],
+    "ambience": [
+      "Traditional",
+      "Lively",
+      "Work-friendly"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Gluten-free",
+      "Dairy-free"
+    ],
+    "meal_types": [
+      "Breakfast",
+      "Brunch",
+      "Lunch"
+    ],
+    "occasions": [
+      "Quick Lunch",
+      "Late Night",
+      "Friends Gathering",
+      "Casual Meal"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Rooftop View",
+      "Kids Play Area",
+      "Delivery Available",
+      "Valet Parking"
+    ],
+    "image": "/static/images/restaurants/the-liberty-diner.jpg"
+  },
+  {
+    "id": "r032",
+    "name": "Route 66 Smokehouse",
+    "slug": "route-66-smokehouse",
+    "description": "Route 66 Smokehouse is a confident modern diner serving elevated comfort classics, from smokehouse plates to towering desserts, in a room built for good company.",
+    "cuisine": [
+      "American"
+    ],
+    "region": "Punjab",
+    "city": "Lahore",
+    "area": "Cavalry Ground",
+    "address": "41 Cavalry Ground Main Boulevard, Lahore",
+    "price_level": "Premium",
+    "average_cost_per_person": 4400,
+    "currency": "PKR",
+    "rating": 4.5,
+    "review_count": 327,
+    "review_themes": [
+      "Cozy ambience",
+      "Authentic flavours",
+      "Generous portions",
+      "Perfect for celebrations"
+    ],
+    "ambience": [
+      "Lively",
+      "Work-friendly",
+      "Quiet"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Dairy-free",
+      "Nut-free"
+    ],
+    "meal_types": [
+      "Brunch",
+      "Lunch",
+      "Dinner",
+      "Late Night"
+    ],
+    "occasions": [
+      "Late Night",
+      "Friends Gathering",
+      "Casual Meal",
+      "Family Dinner",
+      "Date Night"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Kids Play Area",
+      "Delivery Available",
+      "Valet Parking",
+      "Buffet"
+    ],
+    "image": "/static/images/restaurants/route-66-smokehouse.jpg"
+  },
+  {
+    "id": "r033",
+    "name": "Le Petit Bistro",
+    "slug": "le-petit-bistro",
+    "description": "Le Petit Bistro brings classic French technique to a refined, intimate room, its menu built around rich sauces, buttery pastry, and quiet ceremony.",
+    "cuisine": [
+      "French"
+    ],
+    "region": "Sindh",
+    "city": "Karachi",
+    "area": "Clifton",
+    "address": "42 Clifton Main Boulevard, Karachi",
+    "price_level": "Luxury",
+    "average_cost_per_person": 8800,
+    "currency": "PKR",
+    "rating": 4.8,
+    "review_count": 364,
+    "review_themes": [
+      "Authentic flavours",
+      "Generous portions",
+      "Perfect for celebrations",
+      "Attentive staff"
+    ],
+    "ambience": [
+      "Work-friendly",
+      "Quiet",
+      "Romantic"
+    ],
+    "dietary_options": [
+      "Halal",
+      "Nut-free",
+      "Low-carb"
+    ],
+    "meal_types": [
+      "Lunch",
+      "Dinner",
+      "Late Night"
+    ],
+    "occasions": [
+      "Friends Gathering",
+      "Casual Meal",
+      "Family Dinner",
+      "Date Night",
+      "Business Dinner",
+      "Birthday"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Delivery Available",
+      "Valet Parking",
+      "Buffet",
+      "Shisha Lounge"
+    ],
+    "image": "/static/images/restaurants/le-petit-bistro.jpg"
+  },
+  {
+    "id": "r034",
+    "name": "Dubai Marina Grill",
+    "slug": "dubai-marina-grill",
+    "description": "Dubai Marina Grill offers a generous mezze-forward menu rooted in Levantine tradition, served in a warm, softly lit room built for long, unhurried meals.",
+    "cuisine": [
+      "Middle Eastern",
+      "Mediterranean"
+    ],
+    "region": "UAE",
+    "city": "Dubai",
+    "area": "Dubai Marina",
+    "address": "43 Dubai Marina Main Boulevard, Dubai",
+    "price_level": "Luxury",
+    "average_cost_per_person": 220,
+    "currency": "AED",
+    "rating": 4.8,
+    "review_count": 401,
+    "review_themes": [
+      "Generous portions",
+      "Perfect for celebrations",
+      "Attentive staff",
+      "Consistent quality"
+    ],
+    "ambience": [
+      "Quiet",
+      "Romantic",
+      "Family-friendly"
+    ],
+    "dietary_options": [
+      "Low-carb",
+      "High-protein"
+    ],
+    "meal_types": [
+      "Dinner",
+      "Late Night",
+      "Breakfast",
+      "Brunch"
+    ],
+    "occasions": [
+      "Casual Meal",
+      "Family Dinner",
+      "Date Night",
+      "Business Dinner"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Valet Parking",
+      "Buffet",
+      "Shisha Lounge",
+      "Outdoor Seating"
+    ],
+    "image": "/static/images/restaurants/dubai-marina-grill.jpg"
+  },
+  {
+    "id": "r035",
+    "name": "Covent Garden Kitchen",
+    "slug": "covent-garden-kitchen",
+    "description": "Covent Garden Kitchen brings classic French technique to a refined, intimate room, its menu built around rich sauces, buttery pastry, and quiet ceremony.",
+    "cuisine": [
+      "French",
+      "Mediterranean"
+    ],
+    "region": "England",
+    "city": "London",
+    "area": "Covent Garden",
+    "address": "44 Covent Garden Main Boulevard, London",
+    "price_level": "Luxury",
+    "average_cost_per_person": 65,
+    "currency": "GBP",
+    "rating": 4.9,
+    "review_count": 438,
+    "review_themes": [
+      "Perfect for celebrations",
+      "Attentive staff",
+      "Consistent quality",
+      "Great value for money"
+    ],
+    "ambience": [
+      "Romantic",
+      "Family-friendly",
+      "Casual"
+    ],
+    "dietary_options": [
+      "High-protein",
+      "Vegetarian"
+    ],
+    "meal_types": [
+      "Late Night",
+      "Breakfast",
+      "Brunch"
+    ],
+    "occasions": [
+      "Family Dinner",
+      "Date Night",
+      "Business Dinner",
+      "Birthday",
+      "Celebration"
+    ],
+    "opening_hours": {
+      "monday": "12:00 PM - 11:00 PM",
+      "tuesday": "12:00 PM - 11:00 PM",
+      "wednesday": "12:00 PM - 11:00 PM",
+      "thursday": "12:00 PM - 11:00 PM",
+      "friday": "12:00 PM - 11:59 PM",
+      "saturday": "12:00 PM - 11:59 PM",
+      "sunday": "12:00 PM - 11:00 PM"
+    },
+    "features": [
+      "Buffet",
+      "Shisha Lounge",
+      "Outdoor Seating",
+      "Live Music"
+    ],
+    "image": "/static/images/restaurants/covent-garden-kitchen.jpg"
+  }
+]

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="border-b border-hairline bg-paper">
+  <div class="container-editorial py-10">
+    <p class="text-eyebrow mb-2">Your Dining List</p>
+    <h1 class="font-display text-4xl font-semibold">Saved Restaurants</h1>
+    <p class="mt-2 text-inksoft max-w-lg">Restaurants you save are stored on this device, so they're here whenever you come back.</p>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container-editorial">
+    <div id="saved-loading" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for i in range(3) %}
+      <div class="card-restaurant skeleton-shimmer" style="min-height: 360px;" aria-hidden="true"></div>
+      {% endfor %}
+    </div>
+
+    <div id="saved-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 hidden"></div>
+
+    <div id="saved-empty" class="empty-state hidden">
+      <div class="empty-state__icon" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M8 5h14a1.5 1.5 0 011.5 1.5v18l-8.5-5-8.5 5v-18A1.5 1.5 0 018 5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </div>
+      <h2 class="font-display text-2xl font-semibold">Your dining list is empty.</h2>
+      <p class="text-inksoft max-w-sm">Discover restaurants you'll want to come back to.</p>
+      <a href="/discover" class="btn-primary mt-2">Explore Restaurants</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-space !pt-4 bg-cream/50 border-t border-hairline">
+  <div class="container-editorial">
+    <div class="flex items-end justify-between gap-4 mb-8">
+      <div>
+        <p class="text-eyebrow mb-2">Continue Exploring</p>
+        <h2 class="font-display text-2xl font-semibold">Recently Viewed</h2>
+      </div>
+    </div>
+    <div id="recently-viewed-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    <p id="recently-viewed-empty" class="text-sm text-stone hidden">Restaurants you view will appear here.</p>
+  </div>
+</section>
+
+<template id="saved-card-template">
+  <article class="card-restaurant" data-restaurant-id="">
+    <a href="#" class="card-link block relative aspect-[4/3] placeholder-art" data-cuisine="default">
+      <span class="placeholder-mark" aria-hidden="true"></span>
+      <span class="placeholder-icon" aria-hidden="true">🍽️</span>
+    </a>
+    <button type="button" class="save-btn btn-icon absolute top-3 right-3 bg-paper/90" data-action="save" data-id="" aria-pressed="true" aria-label="Remove from saved" style="position:absolute;">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M4 3h10a1 1 0 011 1v11l-6-3.5L3 15V4a1 1 0 011-1z"/></svg>
+    </button>
+    <div class="p-5 flex flex-col gap-2.5 flex-1">
+      <p class="cuisine-label text-eyebrow !text-terracotta-dark"></p>
+      <h3 class="font-display font-semibold text-lg leading-snug"><a href="#" class="name-link hover:text-terracotta-dark transition-colors"></a></h3>
+      <div class="flex items-center gap-3 text-sm mt-1">
+        <span class="rating-stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><span class="rating-value"></span></span>
+        <span class="text-stone">·</span>
+        <span class="cost-text text-inksoft"></span>
+      </div>
+      <span class="area-text text-xs text-stone"></span>
+      <a href="#" class="view-link btn-secondary w-full justify-center mt-auto pt-3">View Restaurant</a>
+    </div>
+  </article>
+</template>
+
+{% endblock %}
+{% block extra_js %}
+<script src="/static/js/saved.js" defer></script>
+{% endblock %}

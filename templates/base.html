@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}{{ page_title | default("AI Restaurant Intelligence | Find Somewhere Worth Eating") }}{% endblock %}</title>
+<meta name="description" content="{% block meta_description %}{{ meta_description | default('AI-powered restaurant discovery that understands your taste, budget, diet, occasion, and what you actually want.') }}{% endblock %}">
+<link rel="canonical" href="{{ request.url.scheme }}://{{ request.url.netloc }}{{ canonical_path | default('/') }}">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Restaurant Intelligence">
+<meta property="og:title" content="{% block og_title %}{{ page_title | default('AI Restaurant Intelligence') }}{% endblock %}">
+<meta property="og:description" content="{% block og_description %}{{ meta_description | default('AI-powered restaurant discovery, menu intelligence, and dining planning.') }}{% endblock %}">
+<meta property="og:url" content="{{ request.url.scheme }}://{{ request.url.netloc }}{{ canonical_path | default('/') }}">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍽️</text></svg>">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ivory: '#FBF7EF',
+          cream: '#F4ECDC',
+          beige: '#EADFC7',
+          paper: '#FFFDF8',
+          ink: '#2B2620',
+          inksoft: '#52493C',
+          stone: '#8A8172',
+          hairline: '#E3D8C2',
+          olive: { DEFAULT: '#565F3F', dark: '#3B4230', light: '#7B8560' },
+          terracotta: { DEFAULT: '#BF5B39', dark: '#9C4429', light: '#E0895F' },
+          amber: { DEFAULT: '#D2992E', light: '#EBC26D' },
+          burgundy: { DEFAULT: '#7A2E3A', light: '#9C4C56' },
+        },
+        fontFamily: {
+          display: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+          body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        },
+        borderRadius: { xl: '18px', '2xl': '28px' },
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="/static/css/styles.css">
+{% block extra_head %}{% endblock %}
+</head>
+<body class="bg-ivory text-ink font-body antialiased">
+<a href="#main-content" class="sr-only-focusable fixed top-2 left-2 z-[100] bg-ink text-ivory px-4 py-2 rounded-md">Skip to main content</a>
+
+<!-- ============================== NAVBAR ============================== -->
+<header id="site-navbar">
+  <div class="container-editorial flex items-center justify-between gap-4 py-4">
+    <a href="/" class="flex items-center gap-2 shrink-0" aria-label="AI Restaurant Intelligence home">
+      <span class="w-9 h-9 rounded-full bg-olive text-ivory flex items-center justify-center font-display font-semibold text-lg" aria-hidden="true">A</span>
+      <span class="font-display font-semibold text-lg leading-none hidden sm:inline">AI Restaurant<br><span class="text-terracotta-dark text-sm">Intelligence</span></span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-7" aria-label="Primary">
+      <a href="/discover" class="nav-link" {% if canonical_path == '/discover' %}aria-current="page"{% endif %}>Discover</a>
+      <a href="/discover" class="nav-link">Restaurants</a>
+      <div class="relative group">
+        <button type="button" class="nav-link flex items-center gap-1" id="cuisines-menu-trigger" aria-haspopup="true" aria-expanded="false">
+          Explore Cuisines
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div id="cuisines-menu" class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 absolute left-1/2 -translate-x-1/2 top-full mt-2 w-72 bg-paper border border-hairline rounded-xl shadow-lift p-3 grid grid-cols-2 gap-1 transition-opacity duration-200 z-50" role="menu">
+          {% for c in (cuisines | default([]))[:10] %}
+          <a href="/cuisine/{{ c.slug }}" class="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-inksoft hover:bg-cream hover:text-ink" role="menuitem">
+            <span aria-hidden="true">{{ c.icon | default('🍽️') }}</span> {{ c.name }}
+          </a>
+          {% endfor %}
+          <a href="/discover#cuisines" class="col-span-2 mt-1 px-3 py-2 rounded-lg text-sm font-semibold text-terracotta-dark hover:bg-cream" role="menuitem">View all cuisines →</a>
+        </div>
+      </div>
+      <a href="/planner" class="nav-link" {% if canonical_path == '/planner' %}aria-current="page"{% endif %}>Dining Planner</a>
+      <a href="/saved" class="nav-link" {% if canonical_path == '/saved' %}aria-current="page"{% endif %}>Saved</a>
+    </nav>
+
+    <div class="hidden lg:flex items-center gap-3">
+      <form action="/discover" method="get" role="search" class="relative">
+        <label for="nav-search-input" class="sr-only">Search restaurants</label>
+        <input id="nav-search-input" name="q" type="search" placeholder="Search restaurants, cuisines..."
+          class="field-input w-56 xl:w-64 pl-9 !min-h-[42px] !py-2 text-sm">
+        <svg class="absolute left-3 top-1/2 -translate-y-1/2 text-stone" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </form>
+      <a href="/discover" class="btn-primary">Find My Restaurant</a>
+    </div>
+
+    <button type="button" id="mobile-menu-toggle" class="lg:hidden btn-icon" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-hairline bg-paper">
+    <div class="container-editorial py-5 flex flex-col gap-1">
+      <form action="/discover" method="get" role="search" class="relative mb-3">
+        <label for="mobile-search-input" class="sr-only">Search restaurants</label>
+        <input id="mobile-search-input" name="q" type="search" placeholder="Search restaurants, cuisines..." class="field-input pl-9">
+        <svg class="absolute left-3 top-1/2 -translate-y-1/2 text-stone" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </form>
+      <a href="/discover" class="nav-link py-3 border-b border-hairline">Discover</a>
+      <a href="/discover" class="nav-link py-3 border-b border-hairline">Restaurants</a>
+      <a href="/discover#cuisines" class="nav-link py-3 border-b border-hairline">Explore Cuisines</a>
+      <a href="/planner" class="nav-link py-3 border-b border-hairline">Dining Planner</a>
+      <a href="/saved" class="nav-link py-3 border-b border-hairline">Saved</a>
+      <a href="/about" class="nav-link py-3 border-b border-hairline">About</a>
+      <a href="/faq" class="nav-link py-3 border-b border-hairline">FAQ</a>
+      <a href="/contact" class="nav-link py-3">Contact</a>
+      <a href="/discover" class="btn-primary mt-4 w-full">Find My Restaurant</a>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+{% block content %}{% endblock %}
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="bg-olive-dark text-ivory/90 mt-16">
+  <div class="container-editorial py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-8 h-8 rounded-full bg-ivory/15 flex items-center justify-center font-display font-semibold" aria-hidden="true">A</span>
+        <span class="font-display font-semibold text-lg text-ivory">AI Restaurant Intelligence</span>
+      </div>
+      <p class="text-sm text-ivory/70 max-w-xs">Discover smarter. Dine better.</p>
+    </div>
+    <div>
+      <h3 class="text-eyebrow text-amber-light mb-4">Explore</h3>
+      <ul class="space-y-2.5 text-sm text-ivory/75">
+        <li><a href="/discover" class="hover:text-ivory transition-colors">Discover</a></li>
+        <li><a href="/discover" class="hover:text-ivory transition-colors">Restaurants</a></li>
+        <li><a href="/discover#cuisines" class="hover:text-ivory transition-colors">Cuisines</a></li>
+        <li><a href="/planner" class="hover:text-ivory transition-colors">Dining Planner</a></li>
+        <li><a href="/saved" class="hover:text-ivory transition-colors">Saved</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-eyebrow text-amber-light mb-4">AI Tools</h3>
+      <ul class="space-y-2.5 text-sm text-ivory/75">
+        <li><a href="/discover" class="hover:text-ivory transition-colors">Restaurant Intelligence</a></li>
+        <li><a href="/discover" class="hover:text-ivory transition-colors">Menu Analysis</a></li>
+        <li><a href="/planner" class="hover:text-ivory transition-colors">Dining Planner</a></li>
+        <li><a href="/discover" class="hover:text-ivory transition-colors">Compare Restaurants</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-eyebrow text-amber-light mb-4">Company</h3>
+      <ul class="space-y-2.5 text-sm text-ivory/75">
+        <li><a href="/about" class="hover:text-ivory transition-colors">About</a></li>
+        <li><a href="/faq" class="hover:text-ivory transition-colors">FAQ</a></li>
+        <li><a href="/contact" class="hover:text-ivory transition-colors">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-ivory/10">
+    <div class="container-editorial py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-ivory/60">
+      <p>&copy; 2026 AI Restaurant Intelligence. All rights reserved.</p>
+      <p>Restaurant data is illustrative sample data for demonstration purposes.</p>
+    </div>
+  </div>
+</footer>
+
+<div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+<script src="/static/js/main.js" defer></script>
+{% block extra_js %}{% endblock %}
+</body>
+</html>
