@@ -54,6 +54,15 @@
     if (!grid) return;
     grid.setAttribute("aria-busy", isLoading ? "true" : "false");
     grid.classList.toggle("is-loading", isLoading);
+    var skeleton = document.getElementById("results-loading");
+    var resultsCount = document.getElementById("results-count");
+    if (isLoading) {
+      if (skeleton) skeleton.classList.remove("hidden");
+      grid.classList.add("hidden");
+      if (resultsCount) resultsCount.textContent = "Loading restaurants…";
+    } else if (skeleton) {
+      skeleton.classList.add("hidden");
+    }
   }
 
   function toggleEmptyState(show) {
@@ -66,15 +75,26 @@
     if (errorState) errorState.classList.toggle("hidden", !show);
   }
 
+  function updateResultsCount(count) {
+    var resultsCount = document.getElementById("results-count");
+    if (!resultsCount) return;
+    resultsCount.textContent =
+      count === 0 ? "No restaurants found" : count === 1 ? "1 restaurant found" : count + " restaurants found";
+  }
+
   function renderResults(grid, items) {
     if (!grid) return;
     toggleErrorState(false);
     grid.innerHTML = "";
     if (!items || !items.length) {
+      grid.classList.add("hidden");
       toggleEmptyState(true);
+      updateResultsCount(0);
       return;
     }
     toggleEmptyState(false);
+    grid.classList.remove("hidden");
+    updateResultsCount(items.length);
     var frag = document.createDocumentFragment();
     items.forEach(function (restaurant) {
       var card = window.ARI && window.ARI.renderRestaurantCard(restaurant);
@@ -391,6 +411,20 @@
 
       var retryBtn = document.getElementById("results-error-retry");
       if (retryBtn) retryBtn.addEventListener("click", refresh);
+
+      var resetBtn = document.getElementById("results-empty-reset");
+      if (resetBtn) {
+        resetBtn.addEventListener("click", function () {
+          qsa("[data-filter]").forEach(function (el) {
+            if (el.tagName === "SELECT") el.selectedIndex = -1;
+            else el.checked = false;
+          });
+          var url = new URL(window.location.href);
+          url.searchParams.delete("q");
+          window.history.replaceState({}, "", url.pathname);
+          runDefaultSearch(grid, sortSelect);
+        });
+      }
 
       if (initialQuery) {
         runAiDiscover(grid, initialQuery);
