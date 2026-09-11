@@ -28,8 +28,9 @@
 <!-- ============================== HERO ============================== -->
 <section class="border-b border-hairline">
   <div class="relative h-64 sm:h-80 placeholder-art" data-cuisine="{{ (restaurant.cuisine[0] if restaurant.cuisine else 'default') | lower }}">
+    {% if restaurant.image %}<img src="{{ restaurant.image }}" alt="{{ restaurant.name }}" class="absolute inset-0 w-full h-full object-cover z-[2]" loading="lazy" onerror="this.remove()">{% endif %}
     <span class="placeholder-mark !text-6xl" aria-hidden="true">{{ restaurant.name[0] }}</span>
-    <div class="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent z-[3]"></div>
   </div>
   <div class="container-editorial">
     <div class="-mt-10 relative bg-paper border border-hairline rounded-2xl shadow-soft p-6 sm:p-8">

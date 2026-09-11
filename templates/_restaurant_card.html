@@ -1,6 +1,7 @@
 {# Server-rendered restaurant card. Expects `r` (Restaurant/RestaurantWithMenu). #}
 <article class="card-restaurant" data-restaurant-id="{{ r.id }}">
   <a href="/restaurant/{{ r.slug }}" class="block relative aspect-[4/3] placeholder-art" data-cuisine="{{ (r.cuisine[0] if r.cuisine else 'default') | lower }}">
+    {% if r.image %}<img src="{{ r.image }}" alt="{{ r.name }}" class="absolute inset-0 w-full h-full object-cover z-[2]" loading="lazy" onerror="this.remove()">{% endif %}
     <span class="placeholder-mark" aria-hidden="true">{{ r.name[0] }}</span>
     <span class="placeholder-icon" aria-hidden="true">
       {%- if r.cuisine and r.cuisine[0] == 'Pakistani' %}🍛{% elif r.cuisine and r.cuisine[0] == 'Indian' %}🍚{% elif r.cuisine and r.cuisine[0] == 'Chinese' %}🥢{% elif r.cuisine and r.cuisine[0] == 'Japanese' %}🍣{% elif r.cuisine and r.cuisine[0] == 'Italian' %}🍝{% elif r.cuisine and r.cuisine[0] == 'Mexican' %}🌮{% elif r.cuisine and r.cuisine[0] == 'Thai' %}🍜{% elif r.cuisine and r.cuisine[0] == 'Turkish' %}🥙{% else %}🍽️{% endif -%}

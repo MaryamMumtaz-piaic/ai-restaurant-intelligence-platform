@@ -1,0 +1,1151 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "AI Restaurant Intelligence home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=e6]: A
+        - generic [ref=e7]: AI RestaurantIntelligence
+      - navigation "Primary" [ref=e8]:
+        - link "Discover" [ref=e9] [cursor=pointer]:
+          - /url: /discover
+        - link "Restaurants" [ref=e10] [cursor=pointer]:
+          - /url: /discover
+        - button "Explore Cuisines" [ref=e12] [cursor=pointer]
+        - link "Dining Planner" [ref=e15] [cursor=pointer]:
+          - /url: /planner
+        - link "Saved" [ref=e16] [cursor=pointer]:
+          - /url: /saved
+      - generic [ref=e17]:
+        - search [ref=e18]:
+          - generic [ref=e19]: Search restaurants
+          - searchbox "Search restaurants" [ref=e20]
+        - link "Find My Restaurant" [ref=e24] [cursor=pointer]:
+          - /url: /discover
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - paragraph [ref=e28]: Discover
+      - heading "Find your next great meal" [level=1] [ref=e29]
+      - paragraph [ref=e30]: Search naturally, or filter precisely. Results are ranked by how well they match what you're looking for.
+      - search [ref=e31]:
+        - generic [ref=e32]: Describe what you're looking for
+        - generic [ref=e33]:
+          - textbox "Describe what you're looking for" [ref=e34]:
+            - /placeholder: "\"Quiet halal dinner for a family under PKR 5,000 near Clifton\""
+          - button "Search" [ref=e35] [cursor=pointer]
+    - generic [ref=e37]:
+      - complementary [ref=e38]:
+        - generic [ref=e39]:
+          - heading "Filters" [level=2] [ref=e40]
+          - button "Clear all" [ref=e41] [cursor=pointer]
+        - generic [ref=e42]:
+          - group "Cuisine" [ref=e43]:
+            - generic [ref=e45]:
+              - generic [ref=e46] [cursor=pointer]:
+                - checkbox "Pakistani" [ref=e47]
+                - text: Pakistani
+              - generic [ref=e48] [cursor=pointer]:
+                - checkbox "Indian" [ref=e49]
+                - text: Indian
+              - generic [ref=e50] [cursor=pointer]:
+                - checkbox "Chinese" [ref=e51]
+                - text: Chinese
+              - generic [ref=e52] [cursor=pointer]:
+                - checkbox "Japanese" [ref=e53]
+                - text: Japanese
+              - generic [ref=e54] [cursor=pointer]:
+                - checkbox "Korean" [ref=e55]
+                - text: Korean
+              - generic [ref=e56] [cursor=pointer]:
+                - checkbox "Thai" [ref=e57]
+                - text: Thai
+              - generic [ref=e58] [cursor=pointer]:
+                - checkbox "Italian" [ref=e59]
+                - text: Italian
+              - generic [ref=e60] [cursor=pointer]:
+                - checkbox "Mexican" [ref=e61]
+                - text: Mexican
+              - generic [ref=e62] [cursor=pointer]:
+                - checkbox "Turkish" [ref=e63]
+                - text: Turkish
+              - generic [ref=e64] [cursor=pointer]:
+                - checkbox "Middle Eastern" [ref=e65]
+                - text: Middle Eastern
+              - generic [ref=e66] [cursor=pointer]:
+                - checkbox "Mediterranean" [ref=e67]
+                - text: Mediterranean
+              - generic [ref=e68] [cursor=pointer]:
+                - checkbox "American" [ref=e69]
+                - text: American
+              - generic [ref=e70] [cursor=pointer]:
+                - checkbox "French" [ref=e71]
+                - text: French
+          - group "Diet" [ref=e72]:
+            - generic [ref=e74]:
+              - generic [ref=e75] [cursor=pointer]:
+                - checkbox "Halal" [ref=e76]
+                - text: Halal
+              - generic [ref=e77] [cursor=pointer]:
+                - checkbox "Vegetarian" [ref=e78]
+                - text: Vegetarian
+              - generic [ref=e79] [cursor=pointer]:
+                - checkbox "Vegan" [ref=e80]
+                - text: Vegan
+              - generic [ref=e81] [cursor=pointer]:
+                - checkbox "Gluten-free" [ref=e82]
+                - text: Gluten-free
+              - generic [ref=e83] [cursor=pointer]:
+                - checkbox "Dairy-free" [ref=e84]
+                - text: Dairy-free
+              - generic [ref=e85] [cursor=pointer]:
+                - checkbox "Nut-free" [ref=e86]
+                - text: Nut-free
+              - generic [ref=e87] [cursor=pointer]:
+                - checkbox "Low-carb" [ref=e88]
+                - text: Low-carb
+              - generic [ref=e89] [cursor=pointer]:
+                - checkbox "High-protein" [ref=e90]
+                - text: High-protein
+          - group "Price Level" [ref=e91]:
+            - generic [ref=e93]:
+              - generic [ref=e94] [cursor=pointer]:
+                - checkbox "Budget"
+                - text: Budget
+              - generic [ref=e95] [cursor=pointer]:
+                - checkbox "Moderate"
+                - text: Moderate
+              - generic [ref=e96] [cursor=pointer]:
+                - checkbox "Premium"
+                - text: Premium
+              - generic [ref=e97] [cursor=pointer]:
+                - checkbox "Luxury"
+                - text: Luxury
+          - group "Occasion" [ref=e98]:
+            - combobox [ref=e100]:
+              - option "Any occasion" [selected]
+              - option "Casual Meal"
+              - option "Family Dinner"
+              - option "Date Night"
+              - option "Business Dinner"
+              - option "Birthday"
+              - option "Celebration"
+              - option "Solo Dining"
+              - option "Brunch"
+              - option "Quick Lunch"
+              - option "Late Night"
+              - option "Friends Gathering"
+          - group "Atmosphere" [ref=e101]:
+            - generic [ref=e103]:
+              - generic [ref=e104] [cursor=pointer]:
+                - checkbox "Quiet"
+                - text: Quiet
+              - generic [ref=e105] [cursor=pointer]:
+                - checkbox "Romantic"
+                - text: Romantic
+              - generic [ref=e106] [cursor=pointer]:
+                - checkbox "Family-friendly"
+                - text: Family-friendly
+              - generic [ref=e107] [cursor=pointer]:
+                - checkbox "Casual"
+                - text: Casual
+              - generic [ref=e108] [cursor=pointer]:
+                - checkbox "Luxury"
+                - text: Luxury
+              - generic [ref=e109] [cursor=pointer]:
+                - checkbox "Outdoor"
+                - text: Outdoor
+              - generic [ref=e110] [cursor=pointer]:
+                - checkbox "Cozy"
+                - text: Cozy
+              - generic [ref=e111] [cursor=pointer]:
+                - checkbox "Modern"
+                - text: Modern
+              - generic [ref=e112] [cursor=pointer]:
+                - checkbox "Traditional"
+                - text: Traditional
+              - generic [ref=e113] [cursor=pointer]:
+                - checkbox "Lively"
+                - text: Lively
+              - generic [ref=e114] [cursor=pointer]:
+                - checkbox "Work-friendly"
+                - text: Work-friendly
+          - group "Minimum Rating" [ref=e115]:
+            - combobox [ref=e117]:
+              - option "Any rating" [selected]
+              - option "4.5+"
+              - option "4.0+"
+              - option "3.5+"
+          - group "Meal Type" [ref=e118]:
+            - combobox [ref=e120]:
+              - option "Any meal" [selected]
+              - option "Breakfast"
+              - option "Brunch"
+              - option "Lunch"
+              - option "Dinner"
+              - option "Late Night"
+          - group "City" [ref=e121]:
+            - textbox "e.g. Karachi" [ref=e123]
+          - group "Features" [ref=e124]:
+            - generic [ref=e126]:
+              - generic [ref=e127] [cursor=pointer]:
+                - checkbox "Outdoor Seating"
+                - text: Outdoor Seating
+              - generic [ref=e128] [cursor=pointer]:
+                - checkbox "Live Music"
+                - text: Live Music
+              - generic [ref=e129] [cursor=pointer]:
+                - checkbox "Parking"
+                - text: Parking
+              - generic [ref=e130] [cursor=pointer]:
+                - checkbox "Private Dining"
+                - text: Private Dining
+              - generic [ref=e131] [cursor=pointer]:
+                - checkbox "Kids Menu"
+                - text: Kids Menu
+              - generic [ref=e132] [cursor=pointer]:
+                - checkbox "Delivery"
+                - text: Delivery
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - status [ref=e135]: 35 restaurants found
+          - generic [ref=e136]:
+            - generic [ref=e137]: Sort by
+            - combobox "Sort by" [ref=e138]:
+              - option "Best Match" [selected]
+              - option "Highest Rated"
+              - option "Lowest Price"
+              - option "Highest Value"
+              - option "Most Popular"
+              - option "Newest"
+        - generic [ref=e139]:
+          - article [ref=e140]:
+            - link "Zaiqa Mahal Moderate" [ref=e141] [cursor=pointer]:
+              - /url: /restaurant/zaiqa-mahal
+              - img "Zaiqa Mahal" [ref=e142]
+              - text: Z 🍽️
+              - generic [ref=e143]: Moderate
+            - button "Save restaurant" [ref=e144] [cursor=pointer]
+            - generic [ref=e147]:
+              - paragraph [ref=e148]: Pakistani
+              - heading [level=3] [ref=e149]:
+                - link "Zaiqa Mahal" [ref=e150] [cursor=pointer]:
+                  - /url: /restaurant/zaiqa-mahal
+              - paragraph [ref=e151]: A celebration of home-style spice and slow-cooked tradition, Zaiqa Mahal brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.
+              - generic [ref=e152]:
+                - generic "Rating" [ref=e153]: "4.2"
+                - generic [ref=e157]: ·
+                - generic [ref=e158]: PKR 3200/person
+              - generic [ref=e159]: Clifton
+              - generic [ref=e161]: Halal · Vegetarian · Vegan · Casual Meal
+              - generic [ref=e162]:
+                - link "View Restaurant" [ref=e163] [cursor=pointer]:
+                  - /url: /restaurant/zaiqa-mahal
+                - generic "Add to comparison" [ref=e164] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e165]:
+            - link "Nihari House Old Town Budget" [ref=e166] [cursor=pointer]:
+              - /url: /restaurant/nihari-house-old-town
+              - img "Nihari House Old Town" [ref=e167]
+              - text: N 🍽️
+              - generic [ref=e168]: Budget
+            - button "Save restaurant" [ref=e169] [cursor=pointer]
+            - generic [ref=e172]:
+              - paragraph [ref=e173]: Pakistani
+              - heading [level=3] [ref=e174]:
+                - link "Nihari House Old Town" [ref=e175] [cursor=pointer]:
+                  - /url: /restaurant/nihari-house-old-town
+              - paragraph [ref=e176]: A celebration of home-style spice and slow-cooked tradition, Nihari House Old Town brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.
+              - generic [ref=e177]:
+                - generic "Rating" [ref=e178]: "4"
+                - generic [ref=e182]: ·
+                - generic [ref=e183]: PKR 1400/person
+              - generic [ref=e184]: Old Anarkali
+              - generic [ref=e186]: Halal · Vegan · Gluten-free · Family Dinner
+              - generic [ref=e187]:
+                - link "View Restaurant" [ref=e188] [cursor=pointer]:
+                  - /url: /restaurant/nihari-house-old-town
+                - generic "Add to comparison" [ref=e189] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e190]:
+            - link "Sindhi Chulha Moderate" [ref=e191] [cursor=pointer]:
+              - /url: /restaurant/sindhi-chulha
+              - img "Sindhi Chulha" [ref=e192]
+              - text: S 🍽️
+              - generic [ref=e193]: Moderate
+            - button "Save restaurant" [ref=e194] [cursor=pointer]
+            - generic [ref=e197]:
+              - paragraph [ref=e198]: Pakistani
+              - heading [level=3] [ref=e199]:
+                - link "Sindhi Chulha" [ref=e200] [cursor=pointer]:
+                  - /url: /restaurant/sindhi-chulha
+              - paragraph [ref=e201]: A celebration of home-style spice and slow-cooked tradition, Sindhi Chulha brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.
+              - generic [ref=e202]:
+                - generic "Rating" [ref=e203]: "4.3"
+                - generic [ref=e207]: ·
+                - generic [ref=e208]: PKR 2800/person
+              - generic [ref=e209]: DHA Phase 5
+              - generic [ref=e211]: Halal · Gluten-free · Dairy-free · Date Night
+              - generic [ref=e212]:
+                - link "View Restaurant" [ref=e213] [cursor=pointer]:
+                  - /url: /restaurant/sindhi-chulha
+                - generic "Add to comparison" [ref=e214] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e215]:
+            - link "Peshawar Tikka Junction Budget" [ref=e216] [cursor=pointer]:
+              - /url: /restaurant/peshawar-tikka-junction
+              - img "Peshawar Tikka Junction" [ref=e217]
+              - text: P 🍽️
+              - generic [ref=e218]: Budget
+            - button "Save restaurant" [ref=e219] [cursor=pointer]
+            - generic [ref=e222]:
+              - paragraph [ref=e223]: Pakistani
+              - heading [level=3] [ref=e224]:
+                - link "Peshawar Tikka Junction" [ref=e225] [cursor=pointer]:
+                  - /url: /restaurant/peshawar-tikka-junction
+              - paragraph [ref=e226]: A celebration of home-style spice and slow-cooked tradition, Peshawar Tikka Junction brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.
+              - generic [ref=e227]:
+                - generic "Rating" [ref=e228]: "4"
+                - generic [ref=e232]: ·
+                - generic [ref=e233]: PKR 1800/person
+              - generic [ref=e234]: F-7 Markaz
+              - generic [ref=e236]: Halal · Dairy-free · Nut-free · Business Dinner
+              - generic [ref=e237]:
+                - link "View Restaurant" [ref=e238] [cursor=pointer]:
+                  - /url: /restaurant/peshawar-tikka-junction
+                - generic "Add to comparison" [ref=e239] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e240]:
+            - link "Karahi Kings Moderate" [ref=e241] [cursor=pointer]:
+              - /url: /restaurant/karahi-kings
+              - img "Karahi Kings" [ref=e242]
+              - text: K 🍽️
+              - generic [ref=e243]: Moderate
+            - button "Save restaurant" [ref=e244] [cursor=pointer]
+            - generic [ref=e247]:
+              - paragraph [ref=e248]: Pakistani
+              - heading [level=3] [ref=e249]:
+                - link "Karahi Kings" [ref=e250] [cursor=pointer]:
+                  - /url: /restaurant/karahi-kings
+              - paragraph [ref=e251]: A celebration of home-style spice and slow-cooked tradition, Karahi Kings brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.
+              - generic [ref=e252]:
+                - generic "Rating" [ref=e253]: "4.4"
+                - generic [ref=e257]: ·
+                - generic [ref=e258]: PKR 2600/person
+              - generic [ref=e259]: Gulberg
+              - generic [ref=e261]: Halal · Nut-free · Low-carb · Birthday
+              - generic [ref=e262]:
+                - link "View Restaurant" [ref=e263] [cursor=pointer]:
+                  - /url: /restaurant/karahi-kings
+                - generic "Add to comparison" [ref=e264] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e265]:
+            - link "Mughal Dastarkhwan Premium" [ref=e266] [cursor=pointer]:
+              - /url: /restaurant/mughal-dastarkhwan
+              - img "Mughal Dastarkhwan" [ref=e267]
+              - text: M 🍽️
+              - generic [ref=e268]: Premium
+            - button "Save restaurant" [ref=e269] [cursor=pointer]
+            - generic [ref=e272]:
+              - paragraph [ref=e273]: Pakistani, Indian
+              - heading [level=3] [ref=e274]:
+                - link "Mughal Dastarkhwan" [ref=e275] [cursor=pointer]:
+                  - /url: /restaurant/mughal-dastarkhwan
+              - paragraph [ref=e276]: A celebration of home-style spice and slow-cooked tradition, Mughal Dastarkhwan brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.
+              - generic [ref=e277]:
+                - generic "Rating" [ref=e278]: "4.5"
+                - generic [ref=e282]: ·
+                - generic [ref=e283]: PKR 4500/person
+              - generic [ref=e284]: Bahria Town
+              - generic [ref=e286]: Halal · Low-carb · High-protein · Celebration
+              - generic [ref=e287]:
+                - link "View Restaurant" [ref=e288] [cursor=pointer]:
+                  - /url: /restaurant/mughal-dastarkhwan
+                - generic "Add to comparison" [ref=e289] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e290]:
+            - link "Darbar-e-Karachi Moderate" [ref=e291] [cursor=pointer]:
+              - /url: /restaurant/darbar-e-karachi
+              - img "Darbar-e-Karachi" [ref=e292]
+              - text: D 🍽️
+              - generic [ref=e293]: Moderate
+            - button "Save restaurant" [ref=e294] [cursor=pointer]
+            - generic [ref=e297]:
+              - paragraph [ref=e298]: Pakistani
+              - heading [level=3] [ref=e299]:
+                - link "Darbar-e-Karachi" [ref=e300] [cursor=pointer]:
+                  - /url: /restaurant/darbar-e-karachi
+              - paragraph [ref=e301]: A celebration of home-style spice and slow-cooked tradition, Darbar-e-Karachi brings the warmth of a family dastarkhwan to a refined dining room. Signature karahis and smoky tandoor fare are prepared with an editorial eye for presentation.
+              - generic [ref=e302]:
+                - generic "Rating" [ref=e303]: "4.2"
+                - generic [ref=e307]: ·
+                - generic [ref=e308]: PKR 2400/person
+              - generic [ref=e309]: Bahadurabad
+              - generic [ref=e311]: Halal · High-protein · Vegetarian · Solo Dining
+              - generic [ref=e312]:
+                - link "View Restaurant" [ref=e313] [cursor=pointer]:
+                  - /url: /restaurant/darbar-e-karachi
+                - generic "Add to comparison" [ref=e314] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e315]:
+            - link "Curry Leaf Kitchen Premium" [ref=e316] [cursor=pointer]:
+              - /url: /restaurant/curry-leaf-kitchen
+              - img "Curry Leaf Kitchen" [ref=e317]
+              - text: C 🍽️
+              - generic [ref=e318]: Premium
+            - button "Save restaurant" [ref=e319] [cursor=pointer]
+            - generic [ref=e322]:
+              - paragraph [ref=e323]: Indian
+              - heading [level=3] [ref=e324]:
+                - link "Curry Leaf Kitchen" [ref=e325] [cursor=pointer]:
+                  - /url: /restaurant/curry-leaf-kitchen
+              - paragraph [ref=e326]: Curry Leaf Kitchen reimagines the subcontinent's classic curry house with layered spice blends and tandoor-fired breads. Expect a menu that balances comfort with quiet culinary ambition.
+              - generic [ref=e327]:
+                - generic "Rating" [ref=e328]: "4.6"
+                - generic [ref=e332]: ·
+                - generic [ref=e333]: PKR 4200/person
+              - generic [ref=e334]: Clifton
+              - generic [ref=e336]: Halal · Vegetarian · Vegan · Brunch
+              - generic [ref=e337]:
+                - link "View Restaurant" [ref=e338] [cursor=pointer]:
+                  - /url: /restaurant/curry-leaf-kitchen
+                - generic "Add to comparison" [ref=e339] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e340]:
+            - link "Spice Route Delhi Moderate" [ref=e341] [cursor=pointer]:
+              - /url: /restaurant/spice-route-delhi
+              - img "Spice Route Delhi" [ref=e342]
+              - text: S 🍽️
+              - generic [ref=e343]: Moderate
+            - button "Save restaurant" [ref=e344] [cursor=pointer]
+            - generic [ref=e347]:
+              - paragraph [ref=e348]: Indian
+              - heading [level=3] [ref=e349]:
+                - link "Spice Route Delhi" [ref=e350] [cursor=pointer]:
+                  - /url: /restaurant/spice-route-delhi
+              - paragraph [ref=e351]: Spice Route Delhi reimagines the subcontinent's classic curry house with layered spice blends and tandoor-fired breads. Expect a menu that balances comfort with quiet culinary ambition.
+              - generic [ref=e352]:
+                - generic "Rating" [ref=e353]: "4.3"
+                - generic [ref=e357]: ·
+                - generic [ref=e358]: PKR 3000/person
+              - generic [ref=e359]: DHA Phase 6
+              - generic [ref=e361]: Halal · Vegan · Gluten-free · Quick Lunch
+              - generic [ref=e362]:
+                - link "View Restaurant" [ref=e363] [cursor=pointer]:
+                  - /url: /restaurant/spice-route-delhi
+                - generic "Add to comparison" [ref=e364] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e365]:
+            - link "Taj Tandoor Premium" [ref=e366] [cursor=pointer]:
+              - /url: /restaurant/taj-tandoor
+              - img "Taj Tandoor" [ref=e367]
+              - text: T 🍽️
+              - generic [ref=e368]: Premium
+            - button "Save restaurant" [ref=e369] [cursor=pointer]
+            - generic [ref=e372]:
+              - paragraph [ref=e373]: Indian
+              - heading [level=3] [ref=e374]:
+                - link "Taj Tandoor" [ref=e375] [cursor=pointer]:
+                  - /url: /restaurant/taj-tandoor
+              - paragraph [ref=e376]: Taj Tandoor reimagines the subcontinent's classic curry house with layered spice blends and tandoor-fired breads. Expect a menu that balances comfort with quiet culinary ambition.
+              - generic [ref=e377]:
+                - generic "Rating" [ref=e378]: "4.7"
+                - generic [ref=e382]: ·
+                - generic [ref=e383]: PKR 4800/person
+              - generic [ref=e384]: Blue Area
+              - generic [ref=e386]: Halal · Gluten-free · Dairy-free · Late Night
+              - generic [ref=e387]:
+                - link "View Restaurant" [ref=e388] [cursor=pointer]:
+                  - /url: /restaurant/taj-tandoor
+                - generic "Add to comparison" [ref=e389] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e390]:
+            - link "Golden Dragon Wok Moderate" [ref=e391] [cursor=pointer]:
+              - /url: /restaurant/golden-dragon-wok
+              - img "Golden Dragon Wok" [ref=e392]
+              - text: G 🍽️
+              - generic [ref=e393]: Moderate
+            - button "Save restaurant" [ref=e394] [cursor=pointer]
+            - generic [ref=e397]:
+              - paragraph [ref=e398]: Chinese
+              - heading [level=3] [ref=e399]:
+                - link "Golden Dragon Wok" [ref=e400] [cursor=pointer]:
+                  - /url: /restaurant/golden-dragon-wok
+              - paragraph [ref=e401]: Golden Dragon Wok pairs wok-fired classics with a contemporary dining room, favouring bold aromatics over heavy sauces. A go-to for a polished take on familiar Chinese comfort food.
+              - generic [ref=e402]:
+                - generic "Rating" [ref=e403]: "4.2"
+                - generic [ref=e407]: ·
+                - generic [ref=e408]: PKR 2900/person
+              - generic [ref=e409]: PECHS
+              - generic [ref=e411]: Halal · Dairy-free · Nut-free · Friends Gathering
+              - generic [ref=e412]:
+                - link "View Restaurant" [ref=e413] [cursor=pointer]:
+                  - /url: /restaurant/golden-dragon-wok
+                - generic "Add to comparison" [ref=e414] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e415]:
+            - link "Panda House Express Budget" [ref=e416] [cursor=pointer]:
+              - /url: /restaurant/panda-house-express
+              - img "Panda House Express" [ref=e417]
+              - text: P 🍽️
+              - generic [ref=e418]: Budget
+            - button "Save restaurant" [ref=e419] [cursor=pointer]
+            - generic [ref=e422]:
+              - paragraph [ref=e423]: Chinese
+              - heading [level=3] [ref=e424]:
+                - link "Panda House Express" [ref=e425] [cursor=pointer]:
+                  - /url: /restaurant/panda-house-express
+              - paragraph [ref=e426]: Panda House Express pairs wok-fired classics with a contemporary dining room, favouring bold aromatics over heavy sauces. A go-to for a polished take on familiar Chinese comfort food.
+              - generic [ref=e427]:
+                - generic "Rating" [ref=e428]: "4"
+                - generic [ref=e432]: ·
+                - generic [ref=e433]: PKR 1900/person
+              - generic [ref=e434]: Model Town
+              - generic [ref=e436]: Halal · Nut-free · Low-carb · Casual Meal
+              - generic [ref=e437]:
+                - link "View Restaurant" [ref=e438] [cursor=pointer]:
+                  - /url: /restaurant/panda-house-express
+                - generic "Add to comparison" [ref=e439] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e440]:
+            - link "Sichuan Fire Pot Premium" [ref=e441] [cursor=pointer]:
+              - /url: /restaurant/sichuan-fire-pot
+              - img "Sichuan Fire Pot" [ref=e442]
+              - text: S 🍽️
+              - generic [ref=e443]: Premium
+            - button "Save restaurant" [ref=e444] [cursor=pointer]
+            - generic [ref=e447]:
+              - paragraph [ref=e448]: Chinese
+              - heading [level=3] [ref=e449]:
+                - link "Sichuan Fire Pot" [ref=e450] [cursor=pointer]:
+                  - /url: /restaurant/sichuan-fire-pot
+              - paragraph [ref=e451]: Sichuan Fire Pot pairs wok-fired classics with a contemporary dining room, favouring bold aromatics over heavy sauces. A go-to for a polished take on familiar Chinese comfort food.
+              - generic [ref=e452]:
+                - generic "Rating" [ref=e453]: "4.6"
+                - generic [ref=e457]: ·
+                - generic [ref=e458]: PKR 5200/person
+              - generic [ref=e459]: F-6
+              - generic [ref=e461]: Halal · Low-carb · High-protein · Family Dinner
+              - generic [ref=e462]:
+                - link "View Restaurant" [ref=e463] [cursor=pointer]:
+                  - /url: /restaurant/sichuan-fire-pot
+                - generic "Add to comparison" [ref=e464] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e465]:
+            - link "Sakura Sushi Bar Luxury" [ref=e466] [cursor=pointer]:
+              - /url: /restaurant/sakura-sushi-bar
+              - img "Sakura Sushi Bar" [ref=e467]
+              - text: S 🍽️
+              - generic [ref=e468]: Luxury
+            - button "Save restaurant" [ref=e469] [cursor=pointer]
+            - generic [ref=e472]:
+              - paragraph [ref=e473]: Japanese
+              - heading [level=3] [ref=e474]:
+                - link "Sakura Sushi Bar" [ref=e475] [cursor=pointer]:
+                  - /url: /restaurant/sakura-sushi-bar
+              - paragraph [ref=e476]: Precision and restraint define Sakura Sushi Bar, where knife-work and seasonal ingredients take center stage. The room is calm, the plating minimal, the flavours exact.
+              - generic [ref=e477]:
+                - generic "Rating" [ref=e478]: "4.8"
+                - generic [ref=e482]: ·
+                - generic [ref=e483]: PKR 7500/person
+              - generic [ref=e484]: Clifton
+              - generic [ref=e486]: Halal · High-protein · Vegetarian · Date Night
+              - generic [ref=e487]:
+                - link "View Restaurant" [ref=e488] [cursor=pointer]:
+                  - /url: /restaurant/sakura-sushi-bar
+                - generic "Add to comparison" [ref=e489] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e490]:
+            - link "Tokyo Ramen Co. Premium" [ref=e491] [cursor=pointer]:
+              - /url: /restaurant/tokyo-ramen-co
+              - img "Tokyo Ramen Co." [ref=e492]
+              - text: T 🍽️
+              - generic [ref=e493]: Premium
+            - button "Save restaurant" [ref=e494] [cursor=pointer]
+            - generic [ref=e497]:
+              - paragraph [ref=e498]: Japanese
+              - heading [level=3] [ref=e499]:
+                - link "Tokyo Ramen Co." [ref=e500] [cursor=pointer]:
+                  - /url: /restaurant/tokyo-ramen-co
+              - paragraph [ref=e501]: Precision and restraint define Tokyo Ramen Co., where knife-work and seasonal ingredients take center stage. The room is calm, the plating minimal, the flavours exact.
+              - generic [ref=e502]:
+                - generic "Rating" [ref=e503]: "4.7"
+                - generic [ref=e507]: ·
+                - generic [ref=e508]: PKR 4600/person
+              - generic [ref=e509]: Gulberg
+              - generic [ref=e511]: Halal · Vegetarian · Vegan · Business Dinner
+              - generic [ref=e512]:
+                - link "View Restaurant" [ref=e513] [cursor=pointer]:
+                  - /url: /restaurant/tokyo-ramen-co
+                - generic "Add to comparison" [ref=e514] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e515]:
+            - link "Kyoto Grill House Luxury" [ref=e516] [cursor=pointer]:
+              - /url: /restaurant/kyoto-grill-house
+              - img "Kyoto Grill House" [ref=e517]
+              - text: K 🍽️
+              - generic [ref=e518]: Luxury
+            - button "Save restaurant" [ref=e519] [cursor=pointer]
+            - generic [ref=e522]:
+              - paragraph [ref=e523]: Japanese
+              - heading [level=3] [ref=e524]:
+                - link "Kyoto Grill House" [ref=e525] [cursor=pointer]:
+                  - /url: /restaurant/kyoto-grill-house
+              - paragraph [ref=e526]: Precision and restraint define Kyoto Grill House, where knife-work and seasonal ingredients take center stage. The room is calm, the plating minimal, the flavours exact.
+              - generic [ref=e527]:
+                - generic "Rating" [ref=e528]: "4.7"
+                - generic [ref=e532]: ·
+                - generic [ref=e533]: PKR 8200/person
+              - generic [ref=e534]: Diplomatic Enclave
+              - generic [ref=e536]: Halal · Vegan · Gluten-free · Birthday
+              - generic [ref=e537]:
+                - link "View Restaurant" [ref=e538] [cursor=pointer]:
+                  - /url: /restaurant/kyoto-grill-house
+                - generic "Add to comparison" [ref=e539] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e540]:
+            - link "Seoul Garden BBQ Premium" [ref=e541] [cursor=pointer]:
+              - /url: /restaurant/seoul-garden-bbq
+              - img "Seoul Garden BBQ" [ref=e542]
+              - text: S 🍽️
+              - generic [ref=e543]: Premium
+            - button "Save restaurant" [ref=e544] [cursor=pointer]
+            - generic [ref=e547]:
+              - paragraph [ref=e548]: Korean
+              - heading [level=3] [ref=e549]:
+                - link "Seoul Garden BBQ" [ref=e550] [cursor=pointer]:
+                  - /url: /restaurant/seoul-garden-bbq
+              - paragraph [ref=e551]: Seoul Garden BBQ channels the smoky theatre of Korean tabletop grilling alongside a well-stocked banchan spread, drawing a lively crowd for shared plates and cold beer.
+              - generic [ref=e552]:
+                - generic "Rating" [ref=e553]: "4.5"
+                - generic [ref=e557]: ·
+                - generic [ref=e558]: PKR 5000/person
+              - generic [ref=e559]: DHA Phase 2
+              - generic [ref=e561]: Halal · Gluten-free · Dairy-free · Celebration
+              - generic [ref=e562]:
+                - link "View Restaurant" [ref=e563] [cursor=pointer]:
+                  - /url: /restaurant/seoul-garden-bbq
+                - generic "Add to comparison" [ref=e564] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e565]:
+            - link "Kimchi & Co. Moderate" [ref=e566] [cursor=pointer]:
+              - /url: /restaurant/kimchi-co
+              - img "Kimchi & Co." [ref=e567]
+              - text: K 🍽️
+              - generic [ref=e568]: Moderate
+            - button "Save restaurant" [ref=e569] [cursor=pointer]
+            - generic [ref=e572]:
+              - paragraph [ref=e573]: Korean
+              - heading [level=3] [ref=e574]:
+                - link "Kimchi & Co." [ref=e575] [cursor=pointer]:
+                  - /url: /restaurant/kimchi-co
+              - paragraph [ref=e576]: Kimchi & Co. channels the smoky theatre of Korean tabletop grilling alongside a well-stocked banchan spread, drawing a lively crowd for shared plates and cold beer.
+              - generic [ref=e577]:
+                - generic "Rating" [ref=e578]: "4.3"
+                - generic [ref=e582]: ·
+                - generic [ref=e583]: PKR 3100/person
+              - generic [ref=e584]: Johar Town
+              - generic [ref=e586]: Halal · Dairy-free · Nut-free · Solo Dining
+              - generic [ref=e587]:
+                - link "View Restaurant" [ref=e588] [cursor=pointer]:
+                  - /url: /restaurant/kimchi-co
+                - generic "Add to comparison" [ref=e589] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e590]:
+            - link "Bangkok Basil Kitchen Moderate" [ref=e591] [cursor=pointer]:
+              - /url: /restaurant/bangkok-basil-kitchen
+              - img "Bangkok Basil Kitchen" [ref=e592]
+              - text: B 🍽️
+              - generic [ref=e593]: Moderate
+            - button "Save restaurant" [ref=e594] [cursor=pointer]
+            - generic [ref=e597]:
+              - paragraph [ref=e598]: Thai
+              - heading [level=3] [ref=e599]:
+                - link "Bangkok Basil Kitchen" [ref=e600] [cursor=pointer]:
+                  - /url: /restaurant/bangkok-basil-kitchen
+              - paragraph [ref=e601]: Bright, herbal, and confidently spiced, Bangkok Basil Kitchen brings Bangkok street-food energy into a considered dining setting without losing its edge.
+              - generic [ref=e602]:
+                - generic "Rating" [ref=e603]: "4.3"
+                - generic [ref=e607]: ·
+                - generic [ref=e608]: PKR 3300/person
+              - generic [ref=e609]: Boat Basin
+              - generic [ref=e611]: Halal · Nut-free · Low-carb · Brunch
+              - generic [ref=e612]:
+                - link "View Restaurant" [ref=e613] [cursor=pointer]:
+                  - /url: /restaurant/bangkok-basil-kitchen
+                - generic "Add to comparison" [ref=e614] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e615]:
+            - link "Thai Orchid Lounge Premium" [ref=e616] [cursor=pointer]:
+              - /url: /restaurant/thai-orchid-lounge
+              - img "Thai Orchid Lounge" [ref=e617]
+              - text: T 🍽️
+              - generic [ref=e618]: Premium
+            - button "Save restaurant" [ref=e619] [cursor=pointer]
+            - generic [ref=e622]:
+              - paragraph [ref=e623]: Thai
+              - heading [level=3] [ref=e624]:
+                - link "Thai Orchid Lounge" [ref=e625] [cursor=pointer]:
+                  - /url: /restaurant/thai-orchid-lounge
+              - paragraph [ref=e626]: Bright, herbal, and confidently spiced, Thai Orchid Lounge brings Bangkok street-food energy into a considered dining setting without losing its edge.
+              - generic [ref=e627]:
+                - generic "Rating" [ref=e628]: "4.7"
+                - generic [ref=e632]: ·
+                - generic [ref=e633]: PKR 4700/person
+              - generic [ref=e634]: E-11
+              - generic [ref=e636]: Halal · Low-carb · High-protein · Quick Lunch
+              - generic [ref=e637]:
+                - link "View Restaurant" [ref=e638] [cursor=pointer]:
+                  - /url: /restaurant/thai-orchid-lounge
+                - generic "Add to comparison" [ref=e639] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e640]:
+            - link "Trattoria Bella Vita Premium" [ref=e641] [cursor=pointer]:
+              - /url: /restaurant/trattoria-bella-vita
+              - img "Trattoria Bella Vita" [ref=e642]
+              - text: T 🍽️
+              - generic [ref=e643]: Premium
+            - button "Save restaurant" [ref=e644] [cursor=pointer]
+            - generic [ref=e647]:
+              - paragraph [ref=e648]: Italian
+              - heading [level=3] [ref=e649]:
+                - link "Trattoria Bella Vita" [ref=e650] [cursor=pointer]:
+                  - /url: /restaurant/trattoria-bella-vita
+              - paragraph [ref=e651]: Trattoria Bella Vita leans on slow sauces, hand-rolled pasta, and a wood-fired oven to deliver an Italian menu built for lingering evenings and good conversation.
+              - generic [ref=e652]:
+                - generic "Rating" [ref=e653]: "4.5"
+                - generic [ref=e657]: ·
+                - generic [ref=e658]: PKR 5500/person
+              - generic [ref=e659]: Clifton
+              - generic [ref=e661]: Halal · High-protein · Vegetarian · Late Night
+              - generic [ref=e662]:
+                - link "View Restaurant" [ref=e663] [cursor=pointer]:
+                  - /url: /restaurant/trattoria-bella-vita
+                - generic "Add to comparison" [ref=e664] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e665]:
+            - link "Roma Pasta Studio Premium" [ref=e666] [cursor=pointer]:
+              - /url: /restaurant/roma-pasta-studio
+              - img "Roma Pasta Studio" [ref=e667]
+              - text: R 🍽️
+              - generic [ref=e668]: Premium
+            - button "Save restaurant" [ref=e669] [cursor=pointer]
+            - generic [ref=e672]:
+              - paragraph [ref=e673]: Italian
+              - heading [level=3] [ref=e674]:
+                - link "Roma Pasta Studio" [ref=e675] [cursor=pointer]:
+                  - /url: /restaurant/roma-pasta-studio
+              - paragraph [ref=e676]: Roma Pasta Studio leans on slow sauces, hand-rolled pasta, and a wood-fired oven to deliver an Italian menu built for lingering evenings and good conversation.
+              - generic [ref=e677]:
+                - generic "Rating" [ref=e678]: "4.5"
+                - generic [ref=e682]: ·
+                - generic [ref=e683]: PKR 4900/person
+              - generic [ref=e684]: MM Alam Road
+              - generic [ref=e686]: Halal · Vegetarian · Vegan · Friends Gathering
+              - generic [ref=e687]:
+                - link "View Restaurant" [ref=e688] [cursor=pointer]:
+                  - /url: /restaurant/roma-pasta-studio
+                - generic "Add to comparison" [ref=e689] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e690]:
+            - link "Napoli Pizzeria Moderate" [ref=e691] [cursor=pointer]:
+              - /url: /restaurant/napoli-pizzeria
+              - img "Napoli Pizzeria" [ref=e692]
+              - text: N 🍽️
+              - generic [ref=e693]: Moderate
+            - button "Save restaurant" [ref=e694] [cursor=pointer]
+            - generic [ref=e697]:
+              - paragraph [ref=e698]: Italian
+              - heading [level=3] [ref=e699]:
+                - link "Napoli Pizzeria" [ref=e700] [cursor=pointer]:
+                  - /url: /restaurant/napoli-pizzeria
+              - paragraph [ref=e701]: Napoli Pizzeria leans on slow sauces, hand-rolled pasta, and a wood-fired oven to deliver an Italian menu built for lingering evenings and good conversation.
+              - generic [ref=e702]:
+                - generic "Rating" [ref=e703]: "4.3"
+                - generic [ref=e707]: ·
+                - generic [ref=e708]: PKR 3400/person
+              - generic [ref=e709]: F-7 Markaz
+              - generic [ref=e711]: Halal · Vegan · Gluten-free · Casual Meal
+              - generic [ref=e712]:
+                - link "View Restaurant" [ref=e713] [cursor=pointer]:
+                  - /url: /restaurant/napoli-pizzeria
+                - generic "Add to comparison" [ref=e714] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e715]:
+            - link "El Mariachi Cantina Moderate" [ref=e716] [cursor=pointer]:
+              - /url: /restaurant/el-mariachi-cantina
+              - img "El Mariachi Cantina" [ref=e717]
+              - text: E 🍽️
+              - generic [ref=e718]: Moderate
+            - button "Save restaurant" [ref=e719] [cursor=pointer]
+            - generic [ref=e722]:
+              - paragraph [ref=e723]: Mexican
+              - heading [level=3] [ref=e724]:
+                - link "El Mariachi Cantina" [ref=e725] [cursor=pointer]:
+                  - /url: /restaurant/el-mariachi-cantina
+              - paragraph [ref=e726]: Vibrant and unapologetically bold, El Mariachi Cantina serves up char-grilled classics and fresh salsas in a room designed for celebration.
+              - generic [ref=e727]:
+                - generic "Rating" [ref=e728]: "4.3"
+                - generic [ref=e732]: ·
+                - generic [ref=e733]: PKR 3200/person
+              - generic [ref=e734]: DHA Phase 8
+              - generic [ref=e736]: Halal · Gluten-free · Dairy-free · Family Dinner
+              - generic [ref=e737]:
+                - link "View Restaurant" [ref=e738] [cursor=pointer]:
+                  - /url: /restaurant/el-mariachi-cantina
+                - generic "Add to comparison" [ref=e739] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e740]:
+            - link "Casa Taco Loco Budget" [ref=e741] [cursor=pointer]:
+              - /url: /restaurant/casa-taco-loco
+              - img "Casa Taco Loco" [ref=e742]
+              - text: C 🍽️
+              - generic [ref=e743]: Budget
+            - button "Save restaurant" [ref=e744] [cursor=pointer]
+            - generic [ref=e747]:
+              - paragraph [ref=e748]: Mexican
+              - heading [level=3] [ref=e749]:
+                - link "Casa Taco Loco" [ref=e750] [cursor=pointer]:
+                  - /url: /restaurant/casa-taco-loco
+              - paragraph [ref=e751]: Vibrant and unapologetically bold, Casa Taco Loco serves up char-grilled classics and fresh salsas in a room designed for celebration.
+              - generic [ref=e752]:
+                - generic "Rating" [ref=e753]: "4.1"
+                - generic [ref=e757]: ·
+                - generic [ref=e758]: PKR 2200/person
+              - generic [ref=e759]: Gulberg
+              - generic [ref=e761]: Halal · Dairy-free · Nut-free · Date Night
+              - generic [ref=e762]:
+                - link "View Restaurant" [ref=e763] [cursor=pointer]:
+                  - /url: /restaurant/casa-taco-loco
+                - generic "Add to comparison" [ref=e764] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e765]:
+            - link "Istanbul Kebab House Premium" [ref=e766] [cursor=pointer]:
+              - /url: /restaurant/istanbul-kebab-house
+              - img "Istanbul Kebab House" [ref=e767]
+              - text: I 🍽️
+              - generic [ref=e768]: Premium
+            - button "Save restaurant" [ref=e769] [cursor=pointer]
+            - generic [ref=e772]:
+              - paragraph [ref=e773]: Turkish
+              - heading [level=3] [ref=e774]:
+                - link "Istanbul Kebab House" [ref=e775] [cursor=pointer]:
+                  - /url: /restaurant/istanbul-kebab-house
+              - paragraph [ref=e776]: Istanbul Kebab House draws on Anatolian grill traditions, its charcoal ovens producing kebabs and mezze built for sharing across a long table.
+              - generic [ref=e777]:
+                - generic "Rating" [ref=e778]: "4.5"
+                - generic [ref=e782]: ·
+                - generic [ref=e783]: PKR 4400/person
+              - generic [ref=e784]: Clifton
+              - generic [ref=e786]: Halal · Nut-free · Low-carb · Business Dinner
+              - generic [ref=e787]:
+                - link "View Restaurant" [ref=e788] [cursor=pointer]:
+                  - /url: /restaurant/istanbul-kebab-house
+                - generic "Add to comparison" [ref=e789] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e790]:
+            - link "Anatolia Grill Premium" [ref=e791] [cursor=pointer]:
+              - /url: /restaurant/anatolia-grill
+              - img "Anatolia Grill" [ref=e792]
+              - text: A 🍽️
+              - generic [ref=e793]: Premium
+            - button "Save restaurant" [ref=e794] [cursor=pointer]
+            - generic [ref=e797]:
+              - paragraph [ref=e798]: Turkish
+              - heading [level=3] [ref=e799]:
+                - link "Anatolia Grill" [ref=e800] [cursor=pointer]:
+                  - /url: /restaurant/anatolia-grill
+              - paragraph [ref=e801]: Anatolia Grill draws on Anatolian grill traditions, its charcoal ovens producing kebabs and mezze built for sharing across a long table.
+              - generic [ref=e802]:
+                - generic "Rating" [ref=e803]: "4.5"
+                - generic [ref=e807]: ·
+                - generic [ref=e808]: PKR 4600/person
+              - generic [ref=e809]: Blue Area
+              - generic [ref=e811]: Halal · Low-carb · High-protein · Birthday
+              - generic [ref=e812]:
+                - link "View Restaurant" [ref=e813] [cursor=pointer]:
+                  - /url: /restaurant/anatolia-grill
+                - generic "Add to comparison" [ref=e814] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e815]:
+            - link "Beirut Nights Premium" [ref=e816] [cursor=pointer]:
+              - /url: /restaurant/beirut-nights
+              - img "Beirut Nights" [ref=e817]
+              - text: B 🍽️
+              - generic [ref=e818]: Premium
+            - button "Save restaurant" [ref=e819] [cursor=pointer]
+            - generic [ref=e822]:
+              - paragraph [ref=e823]: Middle Eastern
+              - heading [level=3] [ref=e824]:
+                - link "Beirut Nights" [ref=e825] [cursor=pointer]:
+                  - /url: /restaurant/beirut-nights
+              - paragraph [ref=e826]: Beirut Nights offers a generous mezze-forward menu rooted in Levantine tradition, served in a warm, softly lit room built for long, unhurried meals.
+              - generic [ref=e827]:
+                - generic "Rating" [ref=e828]: "4.6"
+                - generic [ref=e832]: ·
+                - generic [ref=e833]: PKR 4300/person
+              - generic [ref=e834]: DHA Phase 5
+              - generic [ref=e836]: Halal · High-protein · Vegetarian · Celebration
+              - generic [ref=e837]:
+                - link "View Restaurant" [ref=e838] [cursor=pointer]:
+                  - /url: /restaurant/beirut-nights
+                - generic "Add to comparison" [ref=e839] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e840]:
+            - link "Levant Table Moderate" [ref=e841] [cursor=pointer]:
+              - /url: /restaurant/levant-table
+              - img "Levant Table" [ref=e842]
+              - text: L 🍽️
+              - generic [ref=e843]: Moderate
+            - button "Save restaurant" [ref=e844] [cursor=pointer]
+            - generic [ref=e847]:
+              - paragraph [ref=e848]: Middle Eastern, Mediterranean
+              - heading [level=3] [ref=e849]:
+                - link "Levant Table" [ref=e850] [cursor=pointer]:
+                  - /url: /restaurant/levant-table
+              - paragraph [ref=e851]: Levant Table offers a generous mezze-forward menu rooted in Levantine tradition, served in a warm, softly lit room built for long, unhurried meals.
+              - generic [ref=e852]:
+                - generic "Rating" [ref=e853]: "4.3"
+                - generic [ref=e857]: ·
+                - generic [ref=e858]: PKR 3600/person
+              - generic [ref=e859]: Boat Basin
+              - generic [ref=e861]: Halal · Vegetarian · Vegan · Solo Dining
+              - generic [ref=e862]:
+                - link "View Restaurant" [ref=e863] [cursor=pointer]:
+                  - /url: /restaurant/levant-table
+                - generic "Add to comparison" [ref=e864] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e865]:
+            - link "Olive & Vine Premium" [ref=e866] [cursor=pointer]:
+              - /url: /restaurant/olive-vine
+              - img "Olive & Vine" [ref=e867]
+              - text: O 🍽️
+              - generic [ref=e868]: Premium
+            - button "Save restaurant" [ref=e869] [cursor=pointer]
+            - generic [ref=e872]:
+              - paragraph [ref=e873]: Mediterranean
+              - heading [level=3] [ref=e874]:
+                - link "Olive & Vine" [ref=e875] [cursor=pointer]:
+                  - /url: /restaurant/olive-vine
+              - paragraph [ref=e876]: Sun-drenched and ingredient-led, Olive & Vine keeps its menu simple and seasonal, favouring olive oil, citrus, and open-flame cooking.
+              - generic [ref=e877]:
+                - generic "Rating" [ref=e878]: "4.7"
+                - generic [ref=e882]: ·
+                - generic [ref=e883]: PKR 4500/person
+              - generic [ref=e884]: F-8
+              - generic [ref=e886]: Halal · Vegan · Gluten-free · Brunch
+              - generic [ref=e887]:
+                - link "View Restaurant" [ref=e888] [cursor=pointer]:
+                  - /url: /restaurant/olive-vine
+                - generic "Add to comparison" [ref=e889] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e890]:
+            - link "The Liberty Diner Moderate" [ref=e891] [cursor=pointer]:
+              - /url: /restaurant/the-liberty-diner
+              - img "The Liberty Diner" [ref=e892]
+              - text: T 🍽️
+              - generic [ref=e893]: Moderate
+            - button "Save restaurant" [ref=e894] [cursor=pointer]
+            - generic [ref=e897]:
+              - paragraph [ref=e898]: American
+              - heading [level=3] [ref=e899]:
+                - link "The Liberty Diner" [ref=e900] [cursor=pointer]:
+                  - /url: /restaurant/the-liberty-diner
+              - paragraph [ref=e901]: The Liberty Diner is a confident modern diner serving elevated comfort classics, from smokehouse plates to towering desserts, in a room built for good company.
+              - generic [ref=e902]:
+                - generic "Rating" [ref=e903]: "4.2"
+                - generic [ref=e907]: ·
+                - generic [ref=e908]: PKR 3100/person
+              - generic [ref=e909]: Zamzama
+              - generic [ref=e911]: Halal · Gluten-free · Dairy-free · Quick Lunch
+              - generic [ref=e912]:
+                - link "View Restaurant" [ref=e913] [cursor=pointer]:
+                  - /url: /restaurant/the-liberty-diner
+                - generic "Add to comparison" [ref=e914] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e915]:
+            - link "Route 66 Smokehouse Premium" [ref=e916] [cursor=pointer]:
+              - /url: /restaurant/route-66-smokehouse
+              - img "Route 66 Smokehouse" [ref=e917]
+              - text: R 🍽️
+              - generic [ref=e918]: Premium
+            - button "Save restaurant" [ref=e919] [cursor=pointer]
+            - generic [ref=e922]:
+              - paragraph [ref=e923]: American
+              - heading [level=3] [ref=e924]:
+                - link "Route 66 Smokehouse" [ref=e925] [cursor=pointer]:
+                  - /url: /restaurant/route-66-smokehouse
+              - paragraph [ref=e926]: Route 66 Smokehouse is a confident modern diner serving elevated comfort classics, from smokehouse plates to towering desserts, in a room built for good company.
+              - generic [ref=e927]:
+                - generic "Rating" [ref=e928]: "4.5"
+                - generic [ref=e932]: ·
+                - generic [ref=e933]: PKR 4400/person
+              - generic [ref=e934]: Cavalry Ground
+              - generic [ref=e936]: Halal · Dairy-free · Nut-free · Late Night
+              - generic [ref=e937]:
+                - link "View Restaurant" [ref=e938] [cursor=pointer]:
+                  - /url: /restaurant/route-66-smokehouse
+                - generic "Add to comparison" [ref=e939] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e940]:
+            - link "Le Petit Bistro Luxury" [ref=e941] [cursor=pointer]:
+              - /url: /restaurant/le-petit-bistro
+              - img "Le Petit Bistro" [ref=e942]
+              - text: L 🍽️
+              - generic [ref=e943]: Luxury
+            - button "Save restaurant" [ref=e944] [cursor=pointer]
+            - generic [ref=e947]:
+              - paragraph [ref=e948]: French
+              - heading [level=3] [ref=e949]:
+                - link "Le Petit Bistro" [ref=e950] [cursor=pointer]:
+                  - /url: /restaurant/le-petit-bistro
+              - paragraph [ref=e951]: Le Petit Bistro brings classic French technique to a refined, intimate room, its menu built around rich sauces, buttery pastry, and quiet ceremony.
+              - generic [ref=e952]:
+                - generic "Rating" [ref=e953]: "4.8"
+                - generic [ref=e957]: ·
+                - generic [ref=e958]: PKR 8800/person
+              - generic [ref=e959]: Clifton
+              - generic [ref=e961]: Halal · Nut-free · Low-carb · Friends Gathering
+              - generic [ref=e962]:
+                - link "View Restaurant" [ref=e963] [cursor=pointer]:
+                  - /url: /restaurant/le-petit-bistro
+                - generic "Add to comparison" [ref=e964] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e965]:
+            - link "Dubai Marina Grill Luxury" [ref=e966] [cursor=pointer]:
+              - /url: /restaurant/dubai-marina-grill
+              - img "Dubai Marina Grill" [ref=e967]
+              - text: D 🍽️
+              - generic [ref=e968]: Luxury
+            - button "Save restaurant" [ref=e969] [cursor=pointer]
+            - generic [ref=e972]:
+              - paragraph [ref=e973]: Middle Eastern, Mediterranean
+              - heading [level=3] [ref=e974]:
+                - link "Dubai Marina Grill" [ref=e975] [cursor=pointer]:
+                  - /url: /restaurant/dubai-marina-grill
+              - paragraph [ref=e976]: Dubai Marina Grill offers a generous mezze-forward menu rooted in Levantine tradition, served in a warm, softly lit room built for long, unhurried meals.
+              - generic [ref=e977]:
+                - generic "Rating" [ref=e978]: "4.8"
+                - generic [ref=e982]: ·
+                - generic [ref=e983]: AED 220/person
+              - generic [ref=e984]: Dubai Marina
+              - generic [ref=e986]: Low-carb · High-protein · Casual Meal · Family Dinner
+              - generic [ref=e987]:
+                - link "View Restaurant" [ref=e988] [cursor=pointer]:
+                  - /url: /restaurant/dubai-marina-grill
+                - generic "Add to comparison" [ref=e989] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+          - article [ref=e990]:
+            - link "Covent Garden Kitchen Luxury" [ref=e991] [cursor=pointer]:
+              - /url: /restaurant/covent-garden-kitchen
+              - img "Covent Garden Kitchen" [ref=e992]
+              - text: C 🍽️
+              - generic [ref=e993]: Luxury
+            - button "Save restaurant" [ref=e994] [cursor=pointer]
+            - generic [ref=e997]:
+              - paragraph [ref=e998]: French, Mediterranean
+              - heading [level=3] [ref=e999]:
+                - link "Covent Garden Kitchen" [ref=e1000] [cursor=pointer]:
+                  - /url: /restaurant/covent-garden-kitchen
+              - paragraph [ref=e1001]: Covent Garden Kitchen brings classic French technique to a refined, intimate room, its menu built around rich sauces, buttery pastry, and quiet ceremony.
+              - generic [ref=e1002]:
+                - generic "Rating" [ref=e1003]: "4.9"
+                - generic [ref=e1007]: ·
+                - generic [ref=e1008]: GBP 65/person
+              - generic [ref=e1009]: Covent Garden
+              - generic [ref=e1011]: High-protein · Vegetarian · Family Dinner · Date Night
+              - generic [ref=e1012]:
+                - link "View Restaurant" [ref=e1013] [cursor=pointer]:
+                  - /url: /restaurant/covent-garden-kitchen
+                - generic "Add to comparison" [ref=e1014] [cursor=pointer]:
+                  - checkbox "Compare"
+                  - text: Compare
+  - contentinfo [ref=e1015]:
+    - generic [ref=e1016]:
+      - generic [ref=e1017]:
+        - generic [ref=e1018]:
+          - generic [aria-hidden] [ref=e1019]: A
+          - generic [ref=e1020]: AI Restaurant Intelligence
+        - paragraph [ref=e1021]: Discover smarter. Dine better.
+      - generic [ref=e1022]:
+        - heading "Explore" [level=3] [ref=e1023]
+        - list [ref=e1024]:
+          - listitem [ref=e1025]:
+            - link "Discover" [ref=e1026] [cursor=pointer]:
+              - /url: /discover
+          - listitem [ref=e1027]:
+            - link "Restaurants" [ref=e1028] [cursor=pointer]:
+              - /url: /discover
+          - listitem [ref=e1029]:
+            - link "Cuisines" [ref=e1030] [cursor=pointer]:
+              - /url: /discover#cuisines
+          - listitem [ref=e1031]:
+            - link "Dining Planner" [ref=e1032] [cursor=pointer]:
+              - /url: /planner
+          - listitem [ref=e1033]:
+            - link "Saved" [ref=e1034] [cursor=pointer]:
+              - /url: /saved
+      - generic [ref=e1035]:
+        - heading "AI Tools" [level=3] [ref=e1036]
+        - list [ref=e1037]:
+          - listitem [ref=e1038]:
+            - link "Restaurant Intelligence" [ref=e1039] [cursor=pointer]:
+              - /url: /discover
+          - listitem [ref=e1040]:
+            - link "Menu Analysis" [ref=e1041] [cursor=pointer]:
+              - /url: /discover
+          - listitem [ref=e1042]:
+            - link "Dining Planner" [ref=e1043] [cursor=pointer]:
+              - /url: /planner
+          - listitem [ref=e1044]:
+            - link "Compare Restaurants" [ref=e1045] [cursor=pointer]:
+              - /url: /discover
+      - generic [ref=e1046]:
+        - heading "Company" [level=3] [ref=e1047]
+        - list [ref=e1048]:
+          - listitem [ref=e1049]:
+            - link "About" [ref=e1050] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e1051]:
+            - link "FAQ" [ref=e1052] [cursor=pointer]:
+              - /url: /faq
+          - listitem [ref=e1053]:
+            - link "Contact" [ref=e1054] [cursor=pointer]:
+              - /url: /contact
+    - generic [ref=e1056]:
+      - paragraph [ref=e1057]: © 2026 AI Restaurant Intelligence. All rights reserved.
+      - paragraph [ref=e1058]: Restaurant data is illustrative sample data for demonstration purposes.

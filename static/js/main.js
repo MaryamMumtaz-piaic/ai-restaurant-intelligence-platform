@@ -376,6 +376,16 @@
     var placeholderMark = q(".placeholder-mark");
     if (placeholderMark) placeholderMark.textContent = name.charAt(0);
 
+    var cardImageEl = q(".card-image");
+    if (cardImageEl && restaurant.image) {
+      cardImageEl.onerror = function () {
+        cardImageEl.classList.add("hidden");
+      };
+      cardImageEl.alt = name;
+      cardImageEl.src = restaurant.image;
+      cardImageEl.classList.remove("hidden");
+    }
+
     [q(".card-link"), q(".name-link"), q(".view-link")].forEach(function (linkEl) {
       if (linkEl && slug) linkEl.setAttribute("href", "/restaurant/" + slug);
     });

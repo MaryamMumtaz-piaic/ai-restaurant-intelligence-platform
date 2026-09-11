@@ -14,10 +14,6 @@
     "step-building",
   ];
 
-  function qsa(sel, root) {
-    return Array.prototype.slice.call((root || document).querySelectorAll(sel));
-  }
-
   function getFormValues(form) {
     var data = new FormData(form);
     var values = {};
@@ -39,27 +35,30 @@
     return Array.isArray(value) ? value : [value];
   }
 
+  function resetLoadingSteps() {
+    STEP_IDS.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) {
+        el.classList.remove("step--active", "step--done");
+        el.setAttribute("data-state", "pending");
+      }
+    });
+  }
+
   function runLoadingSteps(onComplete) {
     var delay = 350;
     STEP_IDS.forEach(function (id, index) {
       window.setTimeout(function () {
         var el = document.getElementById(id);
         if (!el) return;
-        qsa(".step--active").forEach(function (activeEl) {
-          activeEl.classList.remove("step--active");
-        });
-        el.classList.add("step--active");
+        el.setAttribute("data-state", "active");
         if (index > 0) {
           var prevEl = document.getElementById(STEP_IDS[index - 1]);
-          if (prevEl) {
-            prevEl.classList.remove("step--active");
-            prevEl.classList.add("step--done");
-          }
+          if (prevEl) prevEl.setAttribute("data-state", "done");
         }
         if (index === STEP_IDS.length - 1 && typeof onComplete === "function") {
           window.setTimeout(function () {
-            el.classList.remove("step--active");
-            el.classList.add("step--done");
+            el.setAttribute("data-state", "done");
             onComplete();
           }, delay);
         }
@@ -70,64 +69,99 @@
   function renderResults(plan) {
     var resultsPanel = document.getElementById("planner-results");
     if (!resultsPanel || !plan) return;
-    resultsPanel.hidden = false;
+    resultsPanel.classList.remove("hidden");
 
-    var setText = function (selector, text) {
-      var el = resultsPanel.querySelector(selector);
-      if (el) el.textContent = text;
-    };
+    var nameEl = document.getElementById("result-restaurant-name");
+    if (nameEl) nameEl.textContent = plan.restaurant_name || "";
 
-    setText("[data-plan-restaurant]", plan.restaurant_name || "");
-    setText("[data-plan-occasion]", plan.occasion || "");
-    setText(
-      "[data-plan-budget]",
-      plan.budget_per_person !== undefined && plan.budget_per_person !== null
-        ? String(plan.budget_per_person)
-        : ""
-    );
-    setText(
-      "[data-plan-total]",
-      plan.estimated_total !== undefined
-        ? plan.estimated_total + " " + (plan.currency || "")
-        : ""
-    );
-    setText("[data-plan-explanation]", plan.explanation || "");
+    var occasionEl = document.getElementById("result-occasion");
+    if (occasionEl) occasionEl.textContent = plan.occasion || "Not specified";
 
-    var coursesEl = resultsPanel.querySelector("[data-plan-courses]");
+    var badge = document.getElementById("result-match-badge");
+    if (badge) {
+      var valueEl = badge.querySelector(".match-badge__value");
+      if (plan.overall_match !== undefined && plan.overall_match !== null) {
+        badge.style.setProperty("--pct", plan.overall_match);
+        if (valueEl) valueEl.textContent = plan.overall_match + "%";
+      } else if (valueEl) {
+        valueEl.textContent = "—";
+      }
+    }
+
+    var explanationEl = document.getElementById("result-explanation");
+    if (explanationEl) explanationEl.textContent = plan.explanation || "";
+
+    var coursesEl = document.getElementById("result-courses");
     if (coursesEl) {
       coursesEl.innerHTML = "";
       (plan.courses || []).forEach(function (course) {
         var li = document.createElement("li");
-        li.textContent =
-          (course.course ? course.course + ": " : "") +
-          (course.item_name || "") +
-          (course.price !== undefined ? " — " + course.price : "");
+        li.className = "menu-item-row";
+        var left = document.createElement("div");
+        left.className = "min-w-0";
+        var p = document.createElement("p");
+        p.className = "font-semibold";
+        p.textContent = (course.course ? course.course + " — " : "") + (course.item_name || "");
+        left.appendChild(p);
+        var priceSpan = document.createElement("span");
+        priceSpan.className = "menu-item-price";
+        priceSpan.textContent = course.price !== undefined ? (plan.currency || "") + " " + course.price : "";
+        li.appendChild(left);
+        li.appendChild(priceSpan);
         coursesEl.appendChild(li);
       });
     }
 
-    var backupEl = resultsPanel.querySelector("[data-plan-backup]");
-    if (backupEl) {
-      if (plan.backup_restaurant_id) {
-        backupEl.hidden = false;
-        backupEl.textContent = "Backup option available.";
-        backupEl.dataset.restaurantId = plan.backup_restaurant_id;
+    var totalEl = document.getElementById("result-total");
+    if (totalEl) {
+      totalEl.textContent =
+        plan.estimated_total !== undefined ? (plan.currency || "") + " " + plan.estimated_total : "";
+    }
+
+    var backupWrap = document.getElementById("result-backup");
+    var backupLink = document.getElementById("result-backup-link");
+    if (backupWrap && backupLink) {
+      if (plan.backup_restaurant_id && plan._backup) {
+        backupWrap.classList.remove("hidden");
+        backupLink.textContent = plan._backup.name || "View backup option";
+        backupLink.href = "/restaurant/" + plan._backup.slug;
       } else {
-        backupEl.hidden = true;
+        backupWrap.classList.add("hidden");
       }
     }
+
+    var viewLink = document.getElementById("result-view-link");
+    if (viewLink) viewLink.href = plan._restaurant_slug ? "/restaurant/" + plan._restaurant_slug : "#";
+  }
+
+  function attachRestaurantDetails(plan) {
+    if (!window.ARI || !plan) return Promise.resolve(plan);
+    return window.ARI
+      .apiFetch("/api/restaurants/" + plan.restaurant_id)
+      .catch(function () {
+        return null;
+      })
+      .then(function (restaurant) {
+        plan._restaurant_slug = restaurant ? restaurant.slug : null;
+        if (!plan.backup_restaurant_id) return plan;
+        return window.ARI
+          .apiFetch("/api/restaurants/" + plan.backup_restaurant_id)
+          .catch(function () {
+            return null;
+          })
+          .then(function (backup) {
+            plan._backup = backup;
+            return plan;
+          });
+      });
   }
 
   function showPlannerError(message) {
     if (window.ARI) window.ARI.showToast(message || "Could not build a dining plan.", { variant: "error" });
-    var resultsPanel = document.getElementById("planner-results");
-    if (resultsPanel) {
-      var errorEl = resultsPanel.querySelector("[data-plan-error]");
-      if (errorEl) {
-        errorEl.textContent = message || "Could not build a dining plan.";
-        errorEl.hidden = false;
-      }
-    }
+    var errorEl = document.getElementById("planner-error");
+    if (errorEl) errorEl.classList.remove("hidden");
+    var placeholderEl = document.getElementById("planner-placeholder");
+    if (placeholderEl) placeholderEl.classList.add("hidden");
   }
 
   function buildPlanFromRestaurant(restaurantId, values) {
@@ -136,7 +170,7 @@
       body: {
         restaurant_id: restaurantId,
         party_size: Number(values.party_size) || 2,
-        budget_per_person: values.budget ? Number(values.budget) : undefined,
+        budget_per_person: values.budget_per_person ? Number(values.budget_per_person) : undefined,
         diet: toArray(values.diet),
         occasion: values.occasion || undefined,
       },
@@ -151,7 +185,7 @@
           query: values.query || undefined,
           cuisine: toArray(values.cuisine),
           diet: toArray(values.diet),
-          budget_per_person: values.budget ? Number(values.budget) : undefined,
+          budget_per_person: values.budget_per_person ? Number(values.budget_per_person) : undefined,
           occasion: values.occasion || undefined,
           atmosphere: toArray(values.atmosphere),
           city: values.city || undefined,
@@ -164,7 +198,10 @@
         if (!matches.length) {
           throw { message: "No matching restaurants found for these preferences." };
         }
-        return buildPlanFromRestaurant(matches[0].restaurant_id, values);
+        return buildPlanFromRestaurant(matches[0].restaurant_id, values).then(function (plan) {
+          plan.overall_match = matches[0].overall_match;
+          return plan;
+        });
       });
   }
 
@@ -177,6 +214,27 @@
 
       if (!form) return;
 
+      var budgetPresetEl = document.getElementById("planner-budget");
+      var budgetCustomEl = document.getElementById("planner-budget-custom");
+      function syncBudgetField() {
+        if (!budgetPresetEl || !budgetCustomEl) return;
+        if (budgetPresetEl.value === "custom") {
+          budgetCustomEl.classList.remove("hidden");
+        } else {
+          budgetCustomEl.classList.add("hidden");
+          budgetCustomEl.value = budgetPresetEl.value;
+        }
+      }
+      if (budgetPresetEl) {
+        budgetPresetEl.addEventListener("change", syncBudgetField);
+        syncBudgetField();
+      }
+
+      var loadingPanel = document.getElementById("planner-loading");
+      var placeholderPanel = document.getElementById("planner-placeholder");
+      var errorPanel = document.getElementById("planner-error");
+      var resultsPanel = document.getElementById("planner-results");
+
       form.addEventListener("submit", function (e) {
         e.preventDefault();
         var values = getFormValues(form);
@@ -184,16 +242,15 @@
         window.ARI.updatePreferences({
           cuisine: toArray(values.cuisine),
           diet: toArray(values.diet),
-          budget: values.budget,
+          budget: values.budget_per_person,
           occasion: values.occasion,
         });
 
-        var resultsPanel = document.getElementById("planner-results");
-        if (resultsPanel) {
-          resultsPanel.hidden = true;
-          var errorEl = resultsPanel.querySelector("[data-plan-error]");
-          if (errorEl) errorEl.hidden = true;
-        }
+        if (resultsPanel) resultsPanel.classList.add("hidden");
+        if (errorPanel) errorPanel.classList.add("hidden");
+        if (placeholderPanel) placeholderPanel.classList.add("hidden");
+        resetLoadingSteps();
+        if (loadingPanel) loadingPanel.classList.remove("hidden");
 
         var planPromise = restaurantIdParam
           ? buildPlanFromRestaurant(restaurantIdParam, values)
@@ -201,11 +258,14 @@
 
         runLoadingSteps(function () {
           planPromise
+            .then(attachRestaurantDetails)
             .then(function (plan) {
+              if (loadingPanel) loadingPanel.classList.add("hidden");
               renderResults(plan);
             })
             .catch(function (err) {
               console.error("ARI planner.js submit failed", err);
+              if (loadingPanel) loadingPanel.classList.add("hidden");
               showPlannerError(err && err.message);
             });
         });

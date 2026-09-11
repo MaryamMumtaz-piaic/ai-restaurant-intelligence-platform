@@ -1,0 +1,269 @@
+- generic [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "AI Restaurant Intelligence home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=e6]: A
+        - generic [ref=e7]: AI RestaurantIntelligence
+      - navigation "Primary" [ref=e8]:
+        - link "Discover" [ref=e9] [cursor=pointer]:
+          - /url: /discover
+        - link "Restaurants" [ref=e10] [cursor=pointer]:
+          - /url: /discover
+        - button "Explore Cuisines" [ref=e12] [cursor=pointer]
+        - link "Dining Planner" [ref=e15] [cursor=pointer]:
+          - /url: /planner
+        - link "Saved" [ref=e16] [cursor=pointer]:
+          - /url: /saved
+      - generic [ref=e17]:
+        - search [ref=e18]:
+          - generic [ref=e19]: Search restaurants
+          - searchbox "Search restaurants" [ref=e20]
+        - link "Find My Restaurant" [ref=e24] [cursor=pointer]:
+          - /url: /discover
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - paragraph [ref=e28]: AI Dining Planner
+      - heading "Let's build your dining plan" [level=1] [ref=e29]
+      - paragraph [ref=e30]: Tell us the essentials. Our agents will discover a restaurant, analyze the menu, and put together a complete plan.
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]: Where? *
+            - combobox "Where?" [ref=e37]:
+              - option "Karachi" [selected]
+              - option "Lahore"
+              - option "Islamabad"
+              - option "Dubai"
+              - option "London"
+              - option "New York"
+          - generic [ref=e38]:
+            - generic [ref=e39]: Area / neighborhood
+            - textbox "Area / neighborhood" [ref=e40]:
+              - /placeholder: e.g. Clifton
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: What cuisine?
+          - group "Cuisine preference" [ref=e43]:
+            - generic [ref=e44] [cursor=pointer]:
+              - checkbox "Pakistani" [checked]
+              - text: Pakistani
+            - generic [ref=e45] [cursor=pointer]:
+              - checkbox "Indian"
+              - text: Indian
+            - generic [ref=e46] [cursor=pointer]:
+              - checkbox "Chinese"
+              - text: Chinese
+            - generic [ref=e47] [cursor=pointer]:
+              - checkbox "Japanese"
+              - text: Japanese
+            - generic [ref=e48] [cursor=pointer]:
+              - checkbox "Korean"
+              - text: Korean
+            - generic [ref=e49] [cursor=pointer]:
+              - checkbox "Thai"
+              - text: Thai
+            - generic [ref=e50] [cursor=pointer]:
+              - checkbox "Italian"
+              - text: Italian
+            - generic [ref=e51] [cursor=pointer]:
+              - checkbox "Mexican"
+              - text: Mexican
+            - generic [ref=e52] [cursor=pointer]:
+              - checkbox "Turkish"
+              - text: Turkish
+            - generic [ref=e53] [cursor=pointer]:
+              - checkbox "Middle Eastern"
+              - text: Middle Eastern
+            - generic [ref=e54] [cursor=pointer]:
+              - checkbox "Mediterranean"
+              - text: Mediterranean
+            - generic [ref=e55] [cursor=pointer]:
+              - checkbox "American"
+              - text: American
+            - generic [ref=e56] [cursor=pointer]:
+              - checkbox "French"
+              - text: French
+            - generic [ref=e57] [cursor=pointer]:
+              - checkbox "Other"
+              - text: Other
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: Who are you dining with? (party size) *
+            - spinbutton "Who are you dining with? (party size)" [ref=e61]: "2"
+          - generic [ref=e62]:
+            - generic [ref=e63]: Budget per person
+            - combobox "Budget per person" [ref=e64]:
+              - option "Budget — ~PKR 2,000"
+              - option "Moderate — ~PKR 5,000" [selected]
+              - option "Premium — ~PKR 10,000"
+              - option "Luxury — ~PKR 20,000"
+              - option "Custom"
+        - generic [ref=e65]:
+          - paragraph [ref=e66]: Dietary requirements
+          - group "Dietary requirements" [ref=e67]:
+            - generic [ref=e68] [cursor=pointer]:
+              - checkbox "No restrictions"
+              - text: No restrictions
+            - generic [ref=e69] [cursor=pointer]:
+              - checkbox "Halal"
+              - text: Halal
+            - generic [ref=e70] [cursor=pointer]:
+              - checkbox "Vegetarian"
+              - text: Vegetarian
+            - generic [ref=e71] [cursor=pointer]:
+              - checkbox "Vegan"
+              - text: Vegan
+            - generic [ref=e72] [cursor=pointer]:
+              - checkbox "Gluten-free"
+              - text: Gluten-free
+            - generic [ref=e73] [cursor=pointer]:
+              - checkbox "Dairy-free"
+              - text: Dairy-free
+            - generic [ref=e74] [cursor=pointer]:
+              - checkbox "Nut-free"
+              - text: Nut-free
+            - generic [ref=e75] [cursor=pointer]:
+              - checkbox "Low-carb"
+              - text: Low-carb
+            - generic [ref=e76] [cursor=pointer]:
+              - checkbox "High-protein"
+              - text: High-protein
+          - generic [ref=e77]:
+            - generic [ref=e78]: Custom dietary restriction
+            - textbox "Custom dietary restriction" [ref=e79]:
+              - /placeholder: Custom restriction (optional)
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: Occasion
+            - combobox "Occasion" [ref=e83]:
+              - option "Select an occasion" [selected]
+              - option "Casual Meal"
+              - option "Family Dinner"
+              - option "Date Night"
+              - option "Business Dinner"
+              - option "Birthday"
+              - option "Celebration"
+              - option "Solo Dining"
+              - option "Brunch"
+              - option "Quick Lunch"
+              - option "Late Night"
+              - option "Friends Gathering"
+          - generic [ref=e84]:
+            - generic [ref=e85]: Date / time
+            - textbox "Date / time" [ref=e86]
+        - generic [ref=e87]:
+          - paragraph [ref=e88]: Atmosphere
+          - group "Atmosphere preference" [ref=e89]:
+            - generic [ref=e90] [cursor=pointer]:
+              - checkbox "Quiet"
+              - text: Quiet
+            - generic [ref=e91] [cursor=pointer]:
+              - checkbox "Romantic"
+              - text: Romantic
+            - generic [ref=e92] [cursor=pointer]:
+              - checkbox "Family-friendly"
+              - text: Family-friendly
+            - generic [ref=e93] [cursor=pointer]:
+              - checkbox "Casual"
+              - text: Casual
+            - generic [ref=e94] [cursor=pointer]:
+              - checkbox "Luxury"
+              - text: Luxury
+            - generic [ref=e95] [cursor=pointer]:
+              - checkbox "Outdoor"
+              - text: Outdoor
+            - generic [ref=e96] [cursor=pointer]:
+              - checkbox "Cozy"
+              - text: Cozy
+            - generic [ref=e97] [cursor=pointer]:
+              - checkbox "Modern"
+              - text: Modern
+            - generic [ref=e98] [cursor=pointer]:
+              - checkbox "Traditional"
+              - text: Traditional
+            - generic [ref=e99] [cursor=pointer]:
+              - checkbox "Lively"
+              - text: Lively
+            - generic [ref=e100] [cursor=pointer]:
+              - checkbox "Work-friendly"
+              - text: Work-friendly
+        - button "Build My Plan" [active] [ref=e101] [cursor=pointer]
+      - generic [ref=e150]:
+        - paragraph [ref=e151]: AI Dining Intelligence
+        - list [ref=e152]:
+          - listitem [ref=e153]:
+            - generic [ref=e154]: ✓
+            - text: Understanding your preferences
+          - listitem [ref=e155]:
+            - generic [ref=e156]: ✓
+            - text: Finding restaurant candidates
+          - listitem [ref=e157]:
+            - generic [ref=e158]: ✓
+            - text: Reading relevant menus
+          - listitem [ref=e159]:
+            - generic [ref=e160]: ✓
+            - text: Checking dietary compatibility
+          - listitem [ref=e161]:
+            - generic [ref=e162]: ✓
+            - text: Comparing top matches
+          - listitem [ref=e163]:
+            - generic [ref=e164]: ✓
+            - text: Building your recommendation
+  - contentinfo [ref=e106]:
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - generic [aria-hidden] [ref=e110]: A
+          - generic [ref=e111]: AI Restaurant Intelligence
+        - paragraph [ref=e112]: Discover smarter. Dine better.
+      - generic [ref=e113]:
+        - heading "Explore" [level=3] [ref=e114]
+        - list [ref=e115]:
+          - listitem [ref=e116]:
+            - link "Discover" [ref=e117] [cursor=pointer]:
+              - /url: /discover
+          - listitem [ref=e118]:
+            - link "Restaurants" [ref=e119] [cursor=pointer]:
+              - /url: /discover
+          - listitem [ref=e120]:
+            - link "Cuisines" [ref=e121] [cursor=pointer]:
+              - /url: /discover#cuisines
+          - listitem [ref=e122]:
+            - link "Dining Planner" [ref=e123] [cursor=pointer]:
+              - /url: /planner
+          - listitem [ref=e124]:
+            - link "Saved" [ref=e125] [cursor=pointer]:
+              - /url: /saved
+      - generic [ref=e126]:
+        - heading "AI Tools" [level=3] [ref=e127]
+        - list [ref=e128]:
+          - listitem [ref=e129]:
+            - link "Restaurant Intelligence" [ref=e130] [cursor=pointer]:
+              - /url: /discover
+          - listitem [ref=e131]:
+            - link "Menu Analysis" [ref=e132] [cursor=pointer]:
+              - /url: /discover
+          - listitem [ref=e133]:
+            - link "Dining Planner" [ref=e134] [cursor=pointer]:
+              - /url: /planner
+          - listitem [ref=e135]:
+            - link "Compare Restaurants" [ref=e136] [cursor=pointer]:
+              - /url: /discover
+      - generic [ref=e137]:
+        - heading "Company" [level=3] [ref=e138]
+        - list [ref=e139]:
+          - listitem [ref=e140]:
+            - link "About" [ref=e141] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e142]:
+            - link "FAQ" [ref=e143] [cursor=pointer]:
+              - /url: /faq
+          - listitem [ref=e144]:
+            - link "Contact" [ref=e145] [cursor=pointer]:
+              - /url: /contact
+    - generic [ref=e147]:
+      - paragraph [ref=e148]: © 2026 AI Restaurant Intelligence. All rights reserved.
+      - paragraph [ref=e149]: Restaurant data is illustrative sample data for demonstration purposes.
